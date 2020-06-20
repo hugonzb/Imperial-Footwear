@@ -1,0 +1,32 @@
+{
+  "name": "imperial-footwear",
+  "version": "1.0.0",
+  "description": "Imperial Footwear Sneaker Store",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --watch back-end-configuration --exec babel-node back-end-configuration/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hugonzb/Imperial-Footwear.git"
+  },
+  "keywords": [
+    "Shoes"
+  ],
+  "author": "Hugo Baird",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hugonzb/Imperial-Footwear/issues"
+  },
+  "homepage": "https://github.com/hugonzb/Imperial-Footwear#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.10.3",
+    "@babel/core": "^7.10.3",
+    "@babel/node": "^7.10.3",
+    "@babel/preset-env": "^7.10.3",
+    "nodemon": "^2.0.4"
+  }
+}
