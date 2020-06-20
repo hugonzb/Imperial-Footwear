@@ -37,6 +37,33 @@ body{
     padding: 0.5rem;
 }
 
+.main-logo a{
+    color: oldlace;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.main-logo button{
+    font-size: 2rem;
+    padding: .5rem;
+    background: none;
+    border: none;
+    color: red;
+    cursor: pointer;
+}
+
+.header-buttons a{
+    color: oldlace;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.header-buttons a:hover{
+    color:red;
+}
+
 .main{
     grid-area: main;
 }
@@ -99,22 +126,4 @@ body{
     justify-content: center;
     align-items: center;
     color: white;
-}
-
-.main-logo a{
-    color: oldlace;
-    font-size: 2.5rem;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-.header-buttons a{
-    color: oldlace;
-    font-size: 1rem;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-.header-buttons a:hover{
-    color:red;
 }
