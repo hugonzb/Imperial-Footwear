@@ -8,7 +8,7 @@ function Home (props) {
     data.shoes.map(shoe =>               
       <li> 
           <div className="footwear">
-                <Link to={'/shoe/' + shoe._id}>
+                <Link to={'/shoe/' + shoe.id}>
                 <img className="shoe-image" src={shoe.image} alt="shoe"></img>
                 </Link>
                 <div className="shoe-name">
