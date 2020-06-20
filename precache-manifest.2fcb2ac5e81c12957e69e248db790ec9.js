@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "2499839ac252c22d85bd725813c0300d",
+    "revision": "d3c8534f3557cc333cb036f23b928992",
     "url": "/Imperial-Footwear/index.html"
   },
   {
-    "revision": "68335d39d55545f64497",
+    "revision": "6473bef3f6db5ed03c20",
     "url": "/Imperial-Footwear/static/css/main.2a736839.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Imperial-Footwear/static/js/2.3afe0f7b.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "68335d39d55545f64497",
-    "url": "/Imperial-Footwear/static/js/main.635f621f.chunk.js"
+    "revision": "6473bef3f6db5ed03c20",
+    "url": "/Imperial-Footwear/static/js/main.934ede47.chunk.js"
   },
   {
     "revision": "88786043f1978fbe9bf0",
