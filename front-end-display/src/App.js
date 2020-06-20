@@ -1,4 +1,5 @@
 import React from 'react';
+import data from './data';
 import './App.css';
 
 function App() {
@@ -43,54 +44,21 @@ function App() {
             <div className="main">
                 <div className="content-display">
                     <ul className="all-footwear">
+                      {
+                      data.shoes.map(shoe =>               
                         <li> 
                             <div className="footwear">
-                                <img className="shoe-image" src="/images/jordan1.jpg" alt="bloodline"></img>
+                                <img className="shoe-image" src={shoe.image} alt="shoe"></img>
                                 <div className="shoe-name">
-                                    <a href="shoe.html">Jordan 1 Bloodline</a>
+                                    <a href="shoe.html">{shoe.name}</a>
                                 </div>
-                                <div className="shoe-brand">Jordan</div>
-                                <div className="shoe-year">2019</div>
-                                <div className="shoe-price">$300</div>
-                                <div className="shoe-rating">10 stars</div>
+                                <div className="shoe-brand">{shoe.brand}</div>
+                                <div className="shoe-year">{shoe.year}</div>
+                                <div className="shoe-price">{shoe.price}</div>
+                                <div className="shoe-rating">{shoe.rating}</div>
                             </div>
-                        </li>
-                        <li> 
-                            <div className="footwear">
-                                <img className="shoe-image" src="/images/jordan1.jpg" alt="bloodline"></img>
-                                <div className="shoe-name">
-                                    <a href="shoe.html">Jordan 1 Bloodline</a>
-                                </div>
-                                <div className="shoe-brand">Jordan</div>
-                                <div className="shoe-year">2019</div>
-                                <div className="shoe-price">$300</div>
-                                <div className="shoe-rating">10 stars</div>
-                            </div>
-                        </li>
-                        <li> 
-                            <div className="footwear">
-                                <img className="shoe-image" src="/images/jordan1.jpg" alt="bloodline"></img>
-                                <div className="shoe-name">
-                                    <a href="shoe.html">Jordan 1 Bloodline</a>
-                                </div>
-                                <div className="shoe-brand">Jordan</div>
-                                <div className="shoe-year">2019</div>
-                                <div className="shoe-price">$300</div>
-                                <div className="shoe-rating">10 stars</div>
-                            </div>
-                        </li>
-                        <li> 
-                            <div className="footwear">
-                                <img className="shoe-image" src="/images/jordan1.jpg" alt="bloodline"></img>
-                                <div className="shoe-name">
-                                    <a href="shoe.html">Jordan 1 Bloodline</a>
-                                </div>
-                                <div className="shoe-brand">Jordan</div>
-                                <div className="shoe-year">2019</div>
-                                <div className="shoe-price">$300</div>
-                                <div className="shoe-rating">10 stars</div>
-                            </div>
-                        </li>
+                        </li>)
+                      }   
                     </ul>
                 </div>
             </div>
