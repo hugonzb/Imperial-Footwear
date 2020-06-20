@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/http//hugonzb.github.io/Imperial-Footwear/static/css/main.2a736839.chunk.css",
+    "main.js": "/http//hugonzb.github.io/Imperial-Footwear/static/js/main.1a4db252.chunk.js",
+    "main.js.map": "/http//hugonzb.github.io/Imperial-Footwear/static/js/main.1a4db252.chunk.js.map",
+    "runtime-main.js": "/http//hugonzb.github.io/Imperial-Footwear/static/js/runtime-main.d80bd917.js",
+    "runtime-main.js.map": "/http//hugonzb.github.io/Imperial-Footwear/static/js/runtime-main.d80bd917.js.map",
+    "static/js/2.3afe0f7b.chunk.js": "/http//hugonzb.github.io/Imperial-Footwear/static/js/2.3afe0f7b.chunk.js",
+    "static/js/2.3afe0f7b.chunk.js.map": "/http//hugonzb.github.io/Imperial-Footwear/static/js/2.3afe0f7b.chunk.js.map",
+    "index.html": "/http//hugonzb.github.io/Imperial-Footwear/index.html",
+    "precache-manifest.c0b9ea99076f71ba476dcc6441861050.js": "/http//hugonzb.github.io/Imperial-Footwear/precache-manifest.c0b9ea99076f71ba476dcc6441861050.js",
+    "service-worker.js": "/http//hugonzb.github.io/Imperial-Footwear/service-worker.js",
+    "static/css/main.2a736839.chunk.css.map": "/http//hugonzb.github.io/Imperial-Footwear/static/css/main.2a736839.chunk.css.map",
+    "static/js/2.3afe0f7b.chunk.js.LICENSE.txt": "/http//hugonzb.github.io/Imperial-Footwear/static/js/2.3afe0f7b.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d80bd917.js",
+    "static/js/2.3afe0f7b.chunk.js",
+    "static/css/main.2a736839.chunk.css",
+    "static/js/main.1a4db252.chunk.js"
+  ]
+}
