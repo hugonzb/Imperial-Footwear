@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Imperial-Footwear/precache-manifest.a28818c1565d243e1e1b1b79e65e6939.js"
+  "/Imperial-Footwear/precache-manifest.b419c28ee574776299405d520a540f6b.js"
 );
 
 self.addEventListener('message', (event) => {
