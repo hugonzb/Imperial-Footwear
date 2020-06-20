@@ -3,6 +3,14 @@ html{
     box-sizing: border-box;
 }
 
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    color: red;
+}
+
 body{
     font: 1.6rem Helvetica;
     height: 100vh;
@@ -31,6 +39,56 @@ body{
 
 .main{
     grid-area: main;
+}
+
+/* Display of all-footwear */
+.all-footwear{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.all-footwear li{
+    list-style-type: none;
+    padding: 0;
+    flex: 0 1 34rem;
+    margin: 1rem;
+    height: 32.5rem;
+    border-bottom: .1rem #c0c0c0 solid;
+}
+
+.footwear{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80%;
+}
+
+.shoe-name{
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.shoe-brand{
+    font-size: 2rem;
+}
+
+.shoe-year{
+    font-size: 2rem;
+}
+
+.shoe-price{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.shoe-image{
+    max-width: 24rem;
+    max-height: 24rem;
+}
+
+.shoe-rating{
+    margin-bottom: 1rem;
 }
 
 .footer{
