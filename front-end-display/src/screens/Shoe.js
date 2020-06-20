@@ -19,7 +19,7 @@ function Shoe (props) {
                         <h3>{shoe.name}</h3>
                     </li>
                     <li>
-                        Rating: {shoe.rating}
+                        Rating: {shoe.rating} Stars
                     </li>
                     <li>
                         Price: $<b>{shoe.price}</b>
