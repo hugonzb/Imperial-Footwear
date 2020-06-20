@@ -8,7 +8,7 @@
         <div class="grid-container">
             <header class="header">
                 <div class="main-logo">
-                    <button>
+                    <button onclick="sidebarOpen()">
                         &#9776;
                     </button>
                     <a href="index.html">Imperial Footwear</a>
@@ -19,6 +19,21 @@
                     <a href="shoppingcart.html">Shopping Cart</a>
                 </div>
             </header>
+            <aside class="sidebar-menu">
+                <h3>Brands</h3>
+                <button class="sidebar-close" onclick="sidebarClose()">x</button>
+                <ul>
+                    <li>
+                        <a href="index.html">Nike</a>
+                    </li>
+                    <li>
+                        <a href="index.html">Jordan</a>
+                    </li>
+                    <li>
+                        <a href="index.html">Adidas</a>
+                    </li>
+                </ul>
+            </aside>
             <main class="main">
                 <div class="content-display">
                     <ul class="all-footwear">
@@ -77,5 +92,13 @@
                 @hugonzb
             </footer>
         </div>
+        <script>
+            function sidebarOpen(){
+                document.querySelector(".sidebar-menu").classList.add("open");
+            }
+            function sidebarClose(){
+                document.querySelector(".sidebar-menu").classList.remove("open");
+            }
+        </script>
     </body>
 </html>
