@@ -26,7 +26,7 @@ function App() {
                 </div>
             </header>
             <aside className="sidebar-menu">
-                <h3>Brands</h3>
+                <h3 className="sidebar-name">Brands</h3>
                 <button className="sidebar-close" onClick={sidebarClose}>x</button>
                 <ul>
                     <li>
