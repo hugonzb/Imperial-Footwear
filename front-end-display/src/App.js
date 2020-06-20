@@ -1,6 +1,9 @@
 import React from 'react';
 import data from './data';
+import {BrowserRouter, Route, Link} from 'react-router-dom';
 import './App.css';
+import Home from './screens/Home';
+import Shoe from './screens/Shoe';
 
 function App() {
 
@@ -12,13 +15,14 @@ function App() {
   }
 
   return (
+  <BrowserRouter>
     <div className="grid-container">
             <header className="header">
                 <div className="main-logo">
                     <button onClick={sidebarOpen}>
                         &#9776;
                     </button>
-                    <a href="index.html">Imperial Footwear</a>
+                    <Link to="/">Imperial Footwear</Link>
                 </div>
                 <div className="header-buttons">
                     <a href="creataccount.html">Create Account</a>
@@ -43,29 +47,15 @@ function App() {
             </aside>
             <div className="main">
                 <div className="content-display">
-                    <ul className="all-footwear">
-                      {
-                      data.shoes.map(shoe =>               
-                        <li> 
-                            <div className="footwear">
-                                <img className="shoe-image" src={shoe.image} alt="shoe"></img>
-                                <div className="shoe-name">
-                                    <a href="shoe.html">{shoe.name}</a>
-                                </div>
-                                <div className="shoe-brand">{shoe.brand}</div>
-                                <div className="shoe-year">{shoe.year}</div>
-                                <div className="shoe-price">{shoe.price}</div>
-                                <div className="shoe-rating">{shoe.rating}</div>
-                            </div>
-                        </li>)
-                      }   
-                    </ul>
+                    <Route path="/shoe/:id" component={Shoe} />
+                    <Route path="/" exact={true} component={Home} />
                 </div>
             </div>
             <footer className="footer">
                 @hugonzb
             </footer>
         </div>
+  </BrowserRouter>
   );
 }
 
