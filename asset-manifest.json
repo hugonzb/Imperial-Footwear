@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/imperial-footwear/static/css/main.2a736839.chunk.css",
-    "main.js": "/imperial-footwear/static/js/main.e2290ec5.chunk.js",
-    "main.js.map": "/imperial-footwear/static/js/main.e2290ec5.chunk.js.map",
+    "main.js": "/imperial-footwear/static/js/main.4c1c6391.chunk.js",
+    "main.js.map": "/imperial-footwear/static/js/main.4c1c6391.chunk.js.map",
     "runtime-main.js": "/imperial-footwear/static/js/runtime-main.f8b3b6f9.js",
     "runtime-main.js.map": "/imperial-footwear/static/js/runtime-main.f8b3b6f9.js.map",
     "static/js/2.3afe0f7b.chunk.js": "/imperial-footwear/static/js/2.3afe0f7b.chunk.js",
     "static/js/2.3afe0f7b.chunk.js.map": "/imperial-footwear/static/js/2.3afe0f7b.chunk.js.map",
     "index.html": "/imperial-footwear/index.html",
-    "precache-manifest.aa48490ca2c6e66be25bdd39b4de54a9.js": "/imperial-footwear/precache-manifest.aa48490ca2c6e66be25bdd39b4de54a9.js",
+    "precache-manifest.d868b72072b59b576d128c2b349f65cc.js": "/imperial-footwear/precache-manifest.d868b72072b59b576d128c2b349f65cc.js",
     "service-worker.js": "/imperial-footwear/service-worker.js",
     "static/css/main.2a736839.chunk.css.map": "/imperial-footwear/static/css/main.2a736839.chunk.css.map",
     "static/js/2.3afe0f7b.chunk.js.LICENSE.txt": "/imperial-footwear/static/js/2.3afe0f7b.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.f8b3b6f9.js",
     "static/js/2.3afe0f7b.chunk.js",
     "static/css/main.2a736839.chunk.css",
-    "static/js/main.e2290ec5.chunk.js"
+    "static/js/main.4c1c6391.chunk.js"
   ]
 }
