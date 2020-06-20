@@ -1,0 +1,157 @@
+html{
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+}
+
+a:hover{
+  color: red;
+}
+
+body{
+  font: 1.6rem Helvetica;
+  height: 100vh;
+  margin: 0;
+}
+
+.grid-container{
+  display: grid;
+  grid-template-areas:
+  "header"
+  "main"
+  "footer";
+  grid-template-columns: 1fr;
+  grid-template-rows: 5rem 1fr 5rem;
+  height: 100%;
+}
+
+.header{
+  grid-area: header;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(1, 1, 66);
+  align-items: center;
+  padding: 0.5rem;
+}
+
+.main-logo a{
+  color: oldlace;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.main-logo button{
+  font-size: 2rem;
+  padding: .5rem;
+  background: none;
+  border: none;
+  color: red;
+  cursor: pointer;
+}
+
+.sidebar-menu{
+  position: fixed;
+  transition: all 0.6s;
+  transform: translateX(-30rem);
+  width: 30rem;
+  background-color: white;
+  height: 50%;
+}
+
+.sidebar-menu.open{
+  transition: all .5se;
+  transform: translateX(0);
+}
+
+.sidebar-close{
+  border-radius: 50%;
+  border: .1rem red;
+  width: 3rem;
+  height: 3rem;
+  padding: .5rem;
+  font-size: 2rem;
+  padding-top: 0;
+  cursor: pointer;
+  position: absolute;
+  right: .5rem;
+  top: .5rem
+}
+
+.header-buttons a{
+  color: oldlace;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.header-buttons a:hover{
+  color:red;
+}
+
+.main{
+  grid-area: main;
+}
+
+/* Display of all-footwear */
+.all-footwear{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.all-footwear li{
+  list-style-type: none;
+  padding: 0;
+  flex: 0 1 34rem;
+  margin: 1rem;
+  height: 32.5rem;
+  border-bottom: .1rem #c0c0c0 solid;
+}
+
+.footwear{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 80%;
+}
+
+.shoe-name{
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.shoe-brand{
+  font-size: 2rem;
+}
+
+.shoe-year{
+  font-size: 2rem;
+}
+
+.shoe-price{
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.shoe-image{
+  max-width: 24rem;
+  max-height: 24rem;
+}
+
+.shoe-rating{
+  margin-bottom: 1rem;
+}
+
+.footer{
+  grid-area: footer;
+  display: flex;
+  background-color: rgb(1, 1, 66);
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
