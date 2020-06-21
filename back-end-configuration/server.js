@@ -17,6 +17,14 @@ mongoose.connect(mongodbUrl, {
 const app = express();
 
 app.use("/api/users", userRoute);
+app.get("/api/shoes/:id", (req, res) => {
+    const shoeId = req.params.id;
+    const shoe = data.shoes.find(x=>x.id===shoeId);
+    if(shoe)
+        res.send(shoe);
+    else
+        res.status(404).send({msg: "Shoe not found. Please contact Hugo to let him know"})
+});
 app.get("/api/shoes", (req, res) => {
     res.send(data.shoes);
 });

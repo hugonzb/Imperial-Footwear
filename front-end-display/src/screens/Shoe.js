@@ -1,15 +1,26 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import {Link} from 'react-router-dom';
-import data from '../data';
+import {useSelector, useDispatch} from 'react-redux';
 
 
 function Shoe (props) {
     
-    const shoe = data.shoes.find(shoe=> shoe.id ===props.match.params.id);
+    const shoeDetails = useSelector(state => state.shoeDetails);
+    const {shoe, loading, error} = shoeDetails;
+    const dispatch = useDispatch;
+
+    useEffect(() => {
+        dispatch(detailsShoe());
+        return () => {
+        };
+    }, [])
     return <div>
         <div className="shoe-detailed-back">
             <Link to="/">Back</Link>
         </div>
+        {loading? <div>Loading Shoe ...</div>:
+            error? <div>{error}</div>:
+            (
         <div className="shoe-details">
             <div className="shoe-detailed-image">
                 <img src={shoe.image} alt="shoe"></img>

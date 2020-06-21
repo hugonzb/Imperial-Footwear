@@ -15,11 +15,11 @@ const listShoes = () => async (dispatch) => {
 
 const detailsShoe = (shoeId) => (dispatch) => {
     try{
-        dispatch({type: SHOE_DETAILS_REQUEST, payload: productId});
+        dispatch({type: SHOE_DETAILS_REQUEST, payload: shoeId});
         const {data} = await axios.get("/api/shoes/" + shoeId);
         dispatch({type: SHOE_DETAILS_SUCCESS, payload: data});
     }catch (error) {
         dispatch({type: SHOE_DETAILS_FAIL, payload: error.message});
     }
 }
-export { listShoes }
+export { listShoes, detailsShoe }
