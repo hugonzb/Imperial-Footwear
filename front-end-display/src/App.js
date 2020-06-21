@@ -32,15 +32,15 @@ function App() {
             <aside className="sidebar-menu">
                 <h3 className="sidebar-name">Brands</h3>
                 <button className="sidebar-close" onClick={sidebarClose}>x</button>
-                <ul>
-                    <li>
-                        <a href="index.html">Nike</a>
+                <ul className = "sidebar-nav">
+                    <li className= "sidebar-logo">
+                        <a href="index.html" className="sidebar-link">Nike</a>
                     </li>
-                    <li>
-                        <a href="index.html">Jordan</a>
+                    <li className= "sidebar-logo">
+                        <a href="index.html" className="sidebar-link">Jordan</a>
                     </li>
-                    <li>
-                        <a href="index.html">Adidas</a>
+                    <li className= "sidebar-logo">
+                        <a href="index.html" className="sidebar-link">Adidas</a>
                     </li>
                 </ul>
             </aside>

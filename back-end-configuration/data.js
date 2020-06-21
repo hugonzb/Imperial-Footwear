@@ -28,25 +28,25 @@ export default {
     },
     {
         id:'4',
-        name: 'Jordan 11 Concord',
+        name: 'Jordan 1 Silver',
         image: '/images/jordan1.jpg',
-        year: 2018,
+        year: 2019,
         price: 200,
         brand: 'Jordan',
-        rating: 5
+        rating: 10
     },
     {
         id:'5',
-        name: 'Jordan 11 Concord',
+        name: 'Yeezy Boost 350',
         image: '/images/jordan1.jpg',
         year: 2018,
         price: 200,
-        brand: 'Jordan',
+        brand: 'Adidas',
         rating: 5
     },
     {
         id:'6',
-        name: 'Jordan 11 Concord',
+        name: 'Jordan 16',
         image: '/images/jordan1.jpg',
         year: 2018,
         price: 200,
@@ -55,7 +55,7 @@ export default {
     },
     {
         id:'7',
-        name: 'Jordan 11 Concord',
+        name: 'Jordan 3',
         image: '/images/jordan1.jpg',
         year: 2018,
         price: 200,
@@ -64,7 +64,7 @@ export default {
     },
     {
         id:'8',
-        name: 'Jordan 100',
+        name: 'Jordan 4',
         image: '/images/jordan1.jpg',
         year: 2018,
         price: 200,

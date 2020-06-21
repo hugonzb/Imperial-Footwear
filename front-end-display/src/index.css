@@ -74,7 +74,7 @@ body{
 }
 
 .sidebar-menu.open{
-  transition: all .5se;
+  transition: all 200ms ease;
   transform: translateX(0);
 }
 
@@ -92,6 +92,27 @@ body{
   position: absolute;
   right: .5rem;
   top: .5rem
+}
+
+.sidebar-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.siderbar-logo {
+  width: 100%;
+}
+
+.sidebar-link {
+  display: flex;
+  align-items: center;
+  height: 5rem;
+  color: lightgrey;
+  text-decoration: none;
 }
 
 .header-buttons a{
