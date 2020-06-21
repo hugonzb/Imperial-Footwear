@@ -27,6 +27,7 @@ function Shoe (props) {
                 <div className="shoe-detailed-image">
                     <img src={shoe.image} alt="shoe"></img>
                 </div>
+                <div className="shoe-detailed-box">
                 <div className="shoe-detailed-info">
                     <ul>
                         <li>
@@ -63,6 +64,7 @@ function Shoe (props) {
                             <button className="shoe-purchase-button">Purchase</button>
                         </li>
                     </ul>
+                </div>
                 </div>
             </div> 
              )
