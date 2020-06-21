@@ -61,6 +61,15 @@ export default {
         price: 200,
         brand: 'Jordan',
         rating: 5
+    },
+    {
+        id:'8',
+        name: 'Jordan 100',
+        image: '/images/jordan1.jpg',
+        year: 2018,
+        price: 200,
+        brand: 'Jordan',
+        rating: 5
     }
     ]
 }

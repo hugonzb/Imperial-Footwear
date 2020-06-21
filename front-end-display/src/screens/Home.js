@@ -1,22 +1,22 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import {Link} from 'react-router-dom'
-import axios from 'axios';
+import { useSelector, useDispatch } from 'react-redux';
+import { listShoes } from '../actions/shoeActions';
 
 function Home (props) {
-
-    const [shoes, setShoes] = useState([]);
-
+    const shoeList = useSelector(state => state.shoeList);
+    const { shoes, loading, error } = shoeList;
+    const dispatch = useDispatch();
     useEffect(() => {
-        const fetchData = async () => {
-            const {data} = await axios.get("/api/shoes");
-            setShoes(data);
-        }
-        fetchData();
+        dispatch(listShoes());
+
         return () => {
         };
     }, [])
 
-    return <ul className="all-footwear">
+    return loading ? <div> Loading Shoes ...</div>:
+        error ? <div>{error}</div>:
+    <ul className="all-footwear">
     {
     shoes.map(shoe =>               
       <li key ={shoe.id}> 

@@ -1,5 +1,6 @@
 import express from 'express';
 import data from './data';
+import config from './config';
 
 const app = express();
 

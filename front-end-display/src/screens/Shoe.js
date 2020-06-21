@@ -4,6 +4,7 @@ import data from '../data';
 
 
 function Shoe (props) {
+    
     const shoe = data.shoes.find(shoe=> shoe.id ===props.match.params.id);
     return <div>
         <div className="shoe-detailed-back">
