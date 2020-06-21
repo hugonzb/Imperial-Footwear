@@ -2,7 +2,7 @@ export default {
     shoes:[{
         id:'1',
         name: 'Jordan 1 Bloodline',
-        image: '/images/jordan1.jpg',
+        image: '/images/jordan1high-bloodline.jpg',
         year: 2019,
         price: 300,
         brand: 'Jordan',
@@ -11,7 +11,7 @@ export default {
     {
         id:'2',
         name: 'Jordan 11 Concord',
-        image: '/images/jordan1.jpg',
+        image: '/images/jordan1high-concord.jpg',
         year: 2018,
         price: 200,
         brand: 'Jordan',
@@ -19,17 +19,17 @@ export default {
     },
     {
         id:'3',
-        name: 'Nike Air Force 1',
-        image: '/images/jordan1.jpg',
-        year: 2010,
+        name: 'Nike Air Force 1 Low Supreme',
+        image: '/images/airforce1-supreme.jpg',
+        year: 2020,
         price: 100,
         brand: 'Nike',
         rating: 1
     },
     {
         id:'4',
-        name: 'Jordan 1 Silver',
-        image: '/images/jordan1.jpg',
+        name: 'Jordan 1 Silver/Gym Red',
+        image: '/images/jordan1mid-blacksilvergymred.jpg',
         year: 2019,
         price: 200,
         brand: 'Jordan',
@@ -37,39 +37,39 @@ export default {
     },
     {
         id:'5',
-        name: 'Yeezy Boost 350',
-        image: '/images/jordan1.jpg',
-        year: 2018,
-        price: 200,
+        name: 'Yeezy Boost 350 V2 Zebra',
+        image: '/images/yeezyboost-350zebra.jpg',
+        year: 2017,
+        price: 500,
         brand: 'Adidas',
-        rating: 5
+        rating: 1
     },
     {
         id:'6',
-        name: 'Jordan 16',
-        image: '/images/jordan1.jpg',
-        year: 2018,
-        price: 200,
+        name: 'Jordan 13 OG Flint',
+        image: '/images/jordan13-ogflint.jpg',
+        year: 1997,
+        price: 300,
         brand: 'Jordan',
-        rating: 5
+        rating: 7
     },
     {
         id:'7',
-        name: 'Jordan 3',
-        image: '/images/jordan1.jpg',
-        year: 2018,
-        price: 200,
+        name: 'Jordan 4 Laser 30th Anniversary',
+        image: '/images/jordan4-laser30anniversary.jpg',
+        year: 2015,
+        price: 270,
         brand: 'Jordan',
-        rating: 5
+        rating: 8
     },
     {
         id:'8',
-        name: 'Jordan 4',
-        image: '/images/jordan1.jpg',
-        year: 2018,
-        price: 200,
-        brand: 'Jordan',
-        rating: 5
+        name: 'Converse Chuck Taylor Commes des Garcons',
+        image: '/images/conversechucktaylor-cdgallstar.jpg',
+        year: 2019,
+        price: 100,
+        brand: 'Converse',
+        rating: 2
     }
     ]
 }
