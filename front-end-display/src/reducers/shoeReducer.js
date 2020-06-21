@@ -1,4 +1,4 @@
-import { SHOE_LIST_REQUEST } from "../constants/shoeConstants";
+import { SHOE_LIST_REQUEST, SHOE_DETAILS_REQUEST, SHOE_DETAILS_SUCCESS, SHOE_DETAILS_FAIL } from "../constants/shoeConstants";
 import { SHOE_LIST_SUCCESS } from "../constants/shoeConstants";
 import { SHOE_LIST_FAIL } from "../constants/shoeConstants";
 
@@ -15,4 +15,17 @@ function shoeListReducer(state={shoes:[]}, action){
 
         }
 }
-export {shoeListReducer}
+
+function shoeDetailsReducer(state={ shoe: {} }, action){
+    switch (action.type) {
+        case SHOE_DETAILS_REQUEST:
+            return {loading: true};
+        case SHOE_DETAILS_SUCCESS:
+            return {loading:false, shoe: action.payload};
+        case SHOE_DETAILS_FAIL:
+            return {loading: false, error: action.payload}
+        default:
+            return state;
+        }
+}
+export {shoeListReducer, shoeDetailsReducer }

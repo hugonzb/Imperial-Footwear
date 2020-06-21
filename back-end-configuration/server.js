@@ -19,7 +19,7 @@ const app = express();
 app.use("/api/users", userRoute);
 app.get("/api/shoes/:id", (req, res) => {
     const shoeId = req.params.id;
-    const shoe = data.shoes.find(x=>x.id===shoeId);
+    const shoe = data.shoes.find(x=>x.id === shoeId);
     if(shoe)
         res.send(shoe);
     else
