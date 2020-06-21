@@ -54,10 +54,9 @@ function Shoe (props) {
                         </li>
                         <li>
                             Quantity: <select value={qty} onChange={(e) => {setQty(e.target.value)}}>
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
+                            {[...Array(shoe.stock).keys()].map(x =>
+                                <option key={x+1} value={x+1}>{x+1}</option>
+                                )}
                             </select>
                         </li>
                         <li>

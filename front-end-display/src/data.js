@@ -6,7 +6,8 @@ export default {
         year: 2019,
         price: 300,
         brand: 'Jordan',
-        rating: 10
+        rating: 10,
+        stock: 5
     },
     {
         id:'2',
@@ -15,7 +16,8 @@ export default {
         year: 2018,
         price: 200,
         brand: 'Jordan',
-        rating: 5
+        rating: 5,
+        stock: 2
     },
     {
         id:'3',
@@ -24,7 +26,8 @@ export default {
         year: 2010,
         price: 100,
         brand: 'Nike',
-        rating: 1
+        rating: 1,
+        stock: 10
     },
     {
         id:'4',
@@ -33,7 +36,8 @@ export default {
         year: 2018,
         price: 200,
         brand: 'Jordan',
-        rating: 5
+        rating: 5,
+        stock: 2
     },
     {
         id:'5',
@@ -42,7 +46,8 @@ export default {
         year: 2018,
         price: 200,
         brand: 'Jordan',
-        rating: 5
+        rating: 5,
+        stock: 9
     },
     {
         id:'6',
@@ -51,7 +56,8 @@ export default {
         year: 2018,
         price: 200,
         brand: 'Jordan',
-        rating: 5
+        rating: 5,
+        stock: 8
     },
     {
         id:'7',
@@ -60,7 +66,8 @@ export default {
         year: 2018,
         price: 200,
         brand: 'Jordan',
-        rating: 5
+        rating: 5,
+        stock: 3
     }
     ]
 }
