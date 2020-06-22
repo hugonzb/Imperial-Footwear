@@ -14,6 +14,7 @@ function Shoe (props) {
         return () => {
             //
         };
+    // eslint-disable-next-line 
     }, []);
 
     return <div>
@@ -31,9 +32,16 @@ function Shoe (props) {
                 </div>
                 <div className="shoe-detailed-box">
                 <div className="shoe-detailed-info">
+                    <div className="shoe-detailed-info-centered">
                     <ul>
                         <li>
                             <h3>{shoe.name}</h3>
+                        </li>
+                        <li>
+                            Colorway: {shoe.colorway}
+                        </li>
+                        <li>
+                            Style: {shoe.style}
                         </li>
                         <li>
                             Rating: {shoe.rating} Stars
@@ -46,6 +54,7 @@ function Shoe (props) {
                             {shoe.description}
                         </li>
                     </ul>
+                    </div>
                 </div>
                 <div className="shoe-detailed-actions">
                     <ul>

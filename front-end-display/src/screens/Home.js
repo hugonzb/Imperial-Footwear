@@ -12,6 +12,7 @@ function Home (props) {
 
         return () => {
         };
+    // eslint-disable-next-line 
     }, [])
 
     return loading ? <div> Loading Shoes ...</div>:
@@ -26,13 +27,13 @@ function Home (props) {
                 <img className="shoe-image" src={shoe.image} alt="shoe"></img>
                 </Link>
                 <div className="shoe-info">
-                    <div className="shoe-name">
-                    {shoe.name}
+                    <div className="shoe-name">{shoe.name}</div>
+                    <div className="shoe-info-detailed">
+                        <div className="shoe-brand">{shoe.colorway}</div>
+                        <div className="shoe-year">{shoe.year}</div>
+                        <div className="shoe-price">${shoe.price} NZD</div>
+                        <div className="shoe-rating">{shoe.rating} Stars</div>
                     </div>
-                    <div className="shoe-brand">{shoe.brand}</div>
-                    <div className="shoe-year">{shoe.year}</div>
-                    <div className="shoe-price">${shoe.price} NZD</div>
-                    <div className="shoe-rating">{shoe.rating} Stars</div>
                 </div>
           </div> 
           </Link>

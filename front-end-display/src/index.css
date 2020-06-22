@@ -74,13 +74,13 @@ body::-webkit-scrollbar-thumb {
   transition: all 0.6s;
   transform: translateX(-30rem);
   width: 30rem;
-  background-color: lightgrey;
+  background-color: rgb(44, 43, 43);
   height: 100%;
 }
 
 .sidebar-name{
   font-size: 3rem;
-  color: rgb(78, 75, 75);
+  color: rgb(197, 196, 196);
   font-weight: bold;
   letter-spacing: 0.3ch;
   text-transform: uppercase;
@@ -216,6 +216,17 @@ body::-webkit-scrollbar-thumb {
   background-color: rgb(224, 224, 224);
 }
 
+.shoe-info-detailed{
+  padding: 0rem;
+  min-height:10.5rem;
+  display: flex;
+  color: black;
+  flex-direction: column;
+  text-decoration: none;
+  justify-content: space-between;
+  background-color: rgb(224, 224, 224);
+}
+
 .shoe-name{
   font-size: 2rem;
   font-weight: bold;
@@ -224,15 +235,15 @@ body::-webkit-scrollbar-thumb {
 }
 
 .shoe-brand{
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .shoe-year{
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .shoe-price{
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: bold;
 }
 
@@ -284,7 +295,8 @@ body::-webkit-scrollbar-thumb {
   border-radius: 0.5rem;
   display: flex;
   max-width: 50rem;
-  max-height: 16rem;
+  padding: 2rem;
+  max-height: 20rem;
 }
 
 .shoe-detailed-actions{
