@@ -31,10 +31,10 @@ function Home (props) {
                     </div>
                     <div className="shoe-brand">{shoe.brand}</div>
                     <div className="shoe-year">{shoe.year}</div>
-                    <div className="shoe-price">${shoe.price}</div>
+                    <div className="shoe-price">${shoe.price} NZD</div>
                     <div className="shoe-rating">{shoe.rating} Stars</div>
                 </div>
-          </div>
+          </div> 
           </Link>
       </li>)
     }   

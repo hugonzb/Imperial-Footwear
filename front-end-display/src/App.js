@@ -48,6 +48,21 @@ function App() {
                             <img src="../images/adidas.png" alt="adidas"></img>
                         </button>
                     </li>
+                    <li className= "sidebar-logo">
+                        <button className ="sidebar-button" href="index.html">
+                            <img src="../images/converse.png" alt="converse"></img>
+                        </button>
+                    </li>
+                    <li className= "sidebar-logo">
+                        <button className ="sidebar-button" href="index.html">
+                            <img src="../images/bape.png" alt="bape"></img>
+                        </button>
+                    </li>
+                    <li className= "sidebar-logo">
+                        <button className ="sidebar-button" href="index.html">
+                            <img src="../images/asics.png" alt="asics"></img>
+                        </button>
+                    </li>
                 </ul>
             </aside>
             <div className="main">

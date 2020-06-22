@@ -129,6 +129,19 @@ body::-webkit-scrollbar-thumb {
   cursor: pointer;
   width: 30rem;
   background-color: black;
+  max-height: 6rem;
+  justify-content: center;
+  align-items: center;
+  min-height: 6rem;
+}
+
+.sidebar-button img{
+  max-height: 5rem;
+  max-width: 7rem;
+  padding-bottom: 2rem;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
 }
 
 .sidebar-button:hover{
@@ -230,6 +243,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .footer{
+  grid-area: footer;
   display: flex;
   background-color: black;
   justify-content: center;
