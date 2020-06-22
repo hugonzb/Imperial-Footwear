@@ -20,13 +20,14 @@ function Home (props) {
     {
     shoes.map(shoe =>               
       <li key ={shoe.id}> 
+         <Link to={'/shoe/' + shoe.id}>
           <div className="footwear">
                 <Link to={'/shoe/' + shoe.id}>
                 <img className="shoe-image" src={shoe.image} alt="shoe"></img>
                 </Link>
                 <div className="shoe-info">
                     <div className="shoe-name">
-                        <Link to={'/shoe/' + shoe._id}>{shoe.name}</Link>
+                        <Link to={'/shoe/' + shoe.id}>{shoe.name}</Link>
                     </div>
                     <div className="shoe-brand">{shoe.brand}</div>
                     <div className="shoe-year">{shoe.year}</div>
@@ -34,6 +35,7 @@ function Home (props) {
                     <div className="shoe-rating">{shoe.rating} Stars</div>
                 </div>
           </div>
+          </Link>
       </li>)
     }   
     </ul>

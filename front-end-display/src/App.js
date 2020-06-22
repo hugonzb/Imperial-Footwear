@@ -24,7 +24,7 @@ function App() {
                     <Link to="/">Imperial Footwear</Link>
                 </div>
                 <div className="header-buttons">
-                    <a href="creataccount.html">Create Account</a>
+                    <a href="creataccount.html" className="header-button">Create Account</a>
                     <a href="signin.html">Sign In</a>
                     <a href="shoppingcart.html">Shopping Cart</a>
                 </div>
@@ -57,7 +57,12 @@ function App() {
                 </div>
             </div>
             <footer className="footer">
-                @hugonzb
+                <div>
+                GitHub: hugonzb LinkedIn: Hugo Baird
+                </div>
+                <div>
+                Email: hugonzb@gmail.com
+                </div>
             </footer>
         </div>
   </BrowserRouter>  

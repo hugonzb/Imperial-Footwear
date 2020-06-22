@@ -50,7 +50,7 @@ body::-webkit-scrollbar-thumb {
   grid-area: header;
   display: flex;
   justify-content: space-between;
-  background-color: rgb(1, 1, 66);
+  background-color: black;
   align-items: center;
   padding: 0.5rem;
 }
@@ -60,6 +60,7 @@ body::-webkit-scrollbar-thumb {
   font-size: 2.5rem;
   font-weight: bold;
   text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .main-logo button{
@@ -96,15 +97,15 @@ body::-webkit-scrollbar-thumb {
 }
 
 .sidebar-close{
+  text-decoration: none;
   border-radius: 50%;
-  border: .1rem red;
   width: 3rem;
   height: 3rem;
   padding: .5rem;
   font-size: 2rem;
   padding-top: 0;
   color: white;
-  background-color: red;
+  background-color: rgb(112, 112, 112);
   cursor: pointer;
   position: absolute;
   right: .5rem;
@@ -112,7 +113,11 @@ body::-webkit-scrollbar-thumb {
 }
 
 .sidebar-close:hover{
-  background-color: black;
+  background-color: darkred;
+}
+
+.sidebar-close:focus{
+  outline-style: none;
 }
 
 .sidebar-nav {
@@ -145,7 +150,7 @@ body::-webkit-scrollbar-thumb {
 .header-buttons a{
   color: oldlace;
   font-size: 1.5rem;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   text-decoration: none;
   margin-right:2rem;
@@ -222,12 +227,13 @@ body::-webkit-scrollbar-thumb {
 }
 
 .footer{
-  grid-area: footer;
   display: flex;
-  background-color: rgb(1, 1, 66);
+  background-color: black;
   justify-content: center;
   align-items: center;
   color: white;
+  flex-direction: column;
+  white-space: pre-line;
 }
 
 /* Styling for shoe details (when user clicks on a shoe) */
@@ -282,7 +288,11 @@ body::-webkit-scrollbar-thumb {
 }
 
 .shoe-detailed-back{
-  padding: 1rem;
+  margin-left: 1rem;
+  margin-top: 1rem;
+}
+.shoe-detailed-back .img{
+  max-height: 0.5rem;
 }
 
 .shoe-purchase-button{
