@@ -30,17 +30,23 @@ function App() {
                 </div>
             </header>
             <aside className="sidebar-menu">
-                <h3 className="sidebar-name">Brands</h3>
                 <button className="sidebar-close" onClick={sidebarClose}>x</button>
                 <ul className = "sidebar-nav">
+                    <h3 className="sidebar-name">Brands</h3>
                     <li className= "sidebar-logo">
-                        <a href="index.html" className="sidebar-link">Nike</a>
+                        <button className ="sidebar-button" href="index.html">
+                            <img src="../images/nike.png" alt="nike"></img>
+                        </button>
                     </li>
                     <li className= "sidebar-logo">
-                        <a href="index.html" className="sidebar-link">Jordan</a>
+                        <button className ="sidebar-button" href="index.html">
+                            <img src="../images/jordan.png" alt="jordan"></img>
+                        </button>
                     </li>
                     <li className= "sidebar-logo">
-                        <a href="index.html" className="sidebar-link">Adidas</a>
+                        <button className ="sidebar-button" href="index.html">
+                            <img src="../images/adidas.png" alt="adidas"></img>
+                        </button>
                     </li>
                 </ul>
             </aside>
@@ -54,7 +60,7 @@ function App() {
                 @hugonzb
             </footer>
         </div>
-  </BrowserRouter>
+  </BrowserRouter>  
   );
 }
 
