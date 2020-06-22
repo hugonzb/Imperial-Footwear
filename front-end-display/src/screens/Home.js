@@ -27,7 +27,7 @@ function Home (props) {
                 </Link>
                 <div className="shoe-info">
                     <div className="shoe-name">
-                        <Link to={'/shoe/' + shoe.id}>{shoe.name}</Link>
+                    {shoe.name}
                     </div>
                     <div className="shoe-brand">{shoe.brand}</div>
                     <div className="shoe-year">{shoe.year}</div>
