@@ -4,6 +4,7 @@ import './App.css';
 import Home from './screens/Home';
 import Shoe from './screens/Shoe';
 import SignIn from './screens/SignIn';
+import Register from './screens/Register';
 
 function App() {
 
@@ -70,6 +71,7 @@ function App() {
             <div className="main">
                 <div className="content-display">
                     <Route path="/signin" component={SignIn} />
+                    <Route path="/register" component={Register} />
                     <Route path="/shoe/:id" component={Shoe} />
                     <Route path="/" exact={true} component={Home} />
                 </div>
