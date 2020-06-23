@@ -213,7 +213,7 @@ body::-webkit-scrollbar-thumb {
   flex-direction: column;
   text-decoration: none;
   justify-content: space-between;
-  background-color: rgb(224, 224, 224);
+  background-color: rgb(114, 112, 131);
 }
 
 .shoe-info-detailed{
@@ -224,7 +224,6 @@ body::-webkit-scrollbar-thumb {
   flex-direction: column;
   text-decoration: none;
   justify-content: space-between;
-  background-color: rgb(224, 224, 224);
 }
 
 .shoe-name{
