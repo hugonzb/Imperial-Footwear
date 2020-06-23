@@ -3,6 +3,7 @@ import {BrowserRouter, Route, Link} from 'react-router-dom';
 import './App.css';
 import Home from './screens/Home';
 import Shoe from './screens/Shoe';
+import SignIn from './screens/SignIn';
 
 function App() {
 
@@ -25,6 +26,7 @@ function App() {
                 </div>
                 <div className="header-buttons">
                     <a href="creataccount.html" className="header-button">Create Account</a>
+                    <Link to="/signin">Sign In Here</Link>
                     <a href="signin.html">Sign In</a>
                     <a href="shoppingcart.html">Shopping Cart</a>
                 </div>
@@ -67,6 +69,7 @@ function App() {
             </aside>
             <div className="main">
                 <div className="content-display">
+                    <Route path="/signin" component={SignIn} />
                     <Route path="/shoe/:id" component={Shoe} />
                     <Route path="/" exact={true} component={Home} />
                 </div>
