@@ -17,6 +17,7 @@ body{
   font: 1.6rem Helvetica;
   height: 100vh;
   margin: 0;
+  background-color: rgb(185, 185, 185);
 }
 
 body::-webkit-scrollbar {
@@ -196,6 +197,7 @@ body::-webkit-scrollbar-thumb {
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
+  background-color: white;
 }
 
 .footwear:hover{
@@ -213,7 +215,7 @@ body::-webkit-scrollbar-thumb {
   flex-direction: column;
   text-decoration: none;
   justify-content: space-between;
-  background-color: rgb(114, 112, 131);
+  background-color: rgb(117, 117, 143);
 }
 
 .shoe-info-detailed{
