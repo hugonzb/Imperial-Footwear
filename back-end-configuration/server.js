@@ -3,7 +3,8 @@ import data from './data';
 import config from './config';
 import dotenv from 'dotenv';
 import mongoose from 'mongoose';
-import userRoute from './routes/userRoutes';
+import bodyParser from 'body-parser';
+import userRoutes from './routes/userRoutes';
 
 dotenv.config();
 
@@ -15,8 +16,8 @@ mongoose.connect(mongodbUrl, {
 }).catch(error => console.log(error.reason));
 
 const app = express();
-
-app.use("/api/users", userRoute);
+app.use(bodyParser.json());
+app.use("/api/users", userRoutes);
 app.get("/api/shoes/:id", (req, res) => {
     const shoeId = req.params.id;
     const shoe = data.shoes.find(x=>x.id === shoeId);
