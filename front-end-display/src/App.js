@@ -5,15 +5,19 @@ import Home from './screens/Home';
 import Shoe from './screens/Shoe';
 import SignIn from './screens/SignIn';
 import Register from './screens/Register';
+import { useSelector } from 'react-redux';
 
 function App() {
 
-  const sidebarOpen = () => {
-      document.querySelector(".sidebar-menu").classList.add("open");
-  }
-  const sidebarClose = () => {
-    document.querySelector(".sidebar-menu").classList.remove("open");
-  }
+    const userSignin = useSelector(state=>state.userSignin);
+    const {userInfo} = userSignin;
+
+    const sidebarOpen = () => {
+        document.querySelector(".sidebar-menu").classList.add("open");
+    }
+    const sidebarClose = () => {
+        document.querySelector(".sidebar-menu").classList.remove("open");
+    }
 
   return (
   <BrowserRouter>
@@ -26,9 +30,11 @@ function App() {
                     <Link to="/">Imperial Footwear</Link>
                 </div>
                 <div className="header-buttons">
-                    <a href="creataccount.html" className="header-button">Create Account</a>
-                    <Link to="/signin">Sign In Here</Link>
-                    <a href="signin.html">Sign In</a>
+                    <Link to="/register">Register</Link>
+                    {
+                        userInfo ? <Link to="/profile">{userInfo.name}</Link>:
+                        <Link to="/signin">Sign In</Link>
+                    }
                     <a href="shoppingcart.html">Shopping Cart</a>
                 </div>
             </header>
