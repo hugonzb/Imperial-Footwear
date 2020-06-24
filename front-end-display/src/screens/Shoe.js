@@ -25,8 +25,10 @@ function Shoe (props) {
         </div>
         {loading? <div>Loading Shoe ...</div>:
             error ? <div>{error}</div>:
-            (
+            (   
+                <div className="shoe-container">
                 <div className="shoe-details">
+                
                 <div className="shoe-detailed-image">
                     <img src={shoe.image} alt="shoe"></img>
                 </div>
@@ -77,7 +79,8 @@ function Shoe (props) {
                     </ul>
                 </div>
                 </div>
-            </div> 
+            </div>
+            </div>
              )
             }    
         </div>    
