@@ -37,7 +37,7 @@ function Register (props) {
                 </li>
                 <li>
                     <label htmlFor="email">Email</label>
-                    <input type ="email" name="email" id="email" onChange ={(e) => setEmail(e.target.value)}></input>
+                    <input type ="email" name="email" id="email" onChange ={(e) => setEmail(e.target.value.toLowerCase())}></input>
                 </li>
                 <li>
                     <label htmlFor="name">Name</label>
