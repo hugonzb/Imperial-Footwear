@@ -15,7 +15,7 @@ function Register (props) {
 
     useEffect(() => {
         if(userInfo){
-            props.history.push("/");
+            props.history.push("/signin");
         }
         return () => {
             //
@@ -49,7 +49,7 @@ function Register (props) {
                 </li>
                 <li>
                     <label htmlFor="rePassword">Re-Enter Password</label>
-                    <input type ="rePassword" name="rePassword" id="rePassword" onChange ={(e) => setRePassword(e.target.value)}></input>
+                    <input type ="password" name="rePassword" id="rePassword" onChange ={(e) => setRePassword(e.target.value)}></input>
                 </li>
                 <li>
                     <button type = "submit" className="button primary">Register</button>

@@ -30,11 +30,12 @@ function App() {
                     <Link to="/">Imperial Footwear</Link>
                 </div>
                 <div className="header-buttons">
-                    <Link to="/register">Register</Link>
                     {
-                        userInfo ? <Link to="/profile">{userInfo.name}</Link>:
-                        <Link to="/signin">Sign In</Link>
+                        userInfo ? ( <Link to="/profile">{userInfo.name}</Link> ) :
+                        ( <Link to="/signin">Sign In</Link> )
                     }
+                     
+                    { userInfo ? ( null ) : ( <Link to="/register">Register</Link> ) }
                     <a href="shoppingcart.html">Shopping Cart</a>
                 </div>
             </header>
