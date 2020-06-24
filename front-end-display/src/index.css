@@ -17,7 +17,7 @@ body{
   font: 1.6rem Helvetica;
   height: 100vh;
   margin: 0;
-  background-color: rgb(219, 218, 218);
+  background-color: rgb(185, 185, 185);
 }
 
 body::-webkit-scrollbar {
@@ -269,9 +269,10 @@ body::-webkit-scrollbar-thumb {
 
 .shoe-details{
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   padding: 1rem;
   flex-wrap: wrap;
+  padding-left: 5%;
 }
 
 .shoe-detailed-box{
@@ -281,33 +282,40 @@ body::-webkit-scrollbar-thumb {
 }
 
 .shoe-detailed-image{
-  flex: 0 0 30rem;
+  flex: 2 1 60rem;
+  width: 100%;
+  height: 100%;
+  max-width: 70rem;
+  max-height: 70rem;
 }
 
 .shoe-detailed-image img{
-  max-width: 50rem;
-  widows: 100%;
+  width: 100%;
+  max-width: 70rem;
+  display: flex;
   border: grey solid;
 }
 
 .shoe-detailed-info{
-  flex: 1 0 30rem;
+  flex: 1 1 30rem;
   border: .1rem dimgray solid;
   border-radius: 0.5rem;
   display: flex;
   max-width: 50rem;
   padding: 2rem;
+  margin: .5rem;
   max-height: 20rem;
 }
 
 .shoe-detailed-actions{
-  flex: 1 0 30rem;
+  flex: 1 1 30rem;
   border: .1rem grey solid;
   border-radius: .5rem;
   background-color: lightgray;
   padding: 1rem;
   min-width:48rem;
   display: flex;
+  margin: .5rem;
   max-height: 15rem;
 }
 
