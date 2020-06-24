@@ -71,7 +71,7 @@ export default {
         image: '/images/jordan4-laser30anniversary.jpg',
         year: '02/13/2015',
         price: 250,
-        colorway: 'Jordan',
+        colorway: 'Laser White/Chrome-Metallic Silver',
         rating: 8,
         stock: 7,
         style: '705333-105'
@@ -86,6 +86,28 @@ export default {
         rating: 2,
         stock: 5,
         style: '150205C'
+    },
+    {
+        id:'9',
+        name: 'Nike Air Max 97 Silver Bullet',
+        image: '/images/nikeairmax97-silverbullet.jpg',
+        year: '11/09/2018',
+        price: 185,
+        colorway: 'Black/Varsity Red-Metallic Silver-White',
+        rating: 10,
+        stock: 20,
+        style: 'AT5458-001'
+    },
+    {
+        id:'10',
+        name: 'Jordan 1 Retro High Off-White UNC',
+        image: '/images/jordan1high-offwhiteunc.jpg',
+        year: '06/23/2018',
+        price: 2000,
+        colorway: 'White/Dark Powder Blue-Cone',
+        rating: 6,
+        stock: 1,
+        style: 'AQ0818-148'
     }
     ]
 }
