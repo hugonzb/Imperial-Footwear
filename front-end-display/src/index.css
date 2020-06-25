@@ -279,7 +279,7 @@ body::-webkit-scrollbar-thumb {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  width: 87.5%;
+  width: 86.5%;
   min-width: 0;
 }
 
@@ -297,7 +297,7 @@ body::-webkit-scrollbar-thumb {
   flex-wrap: wrap;
   max-height: 60rem;
   width: 100%;
-  max-width: 60rem;
+  max-width: 50rem;
 }
 
 .shoe-detailed-image{
