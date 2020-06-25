@@ -2,10 +2,10 @@
 import axios from 'axios';
 import { SHOE_LIST_REQUEST, SHOE_LIST_SUCCESS, SHOE_LIST_FAIL, SHOE_DETAILS_REQUEST, SHOE_DETAILS_SUCCESS, SHOE_DETAILS_FAIL, SHOE_SAVE_REQUEST, SHOE_SAVE_SUCCESS, SHOE_SAVE_FAIL } from '../constants/shoeConstants';
 
-const listShoes = (category='', searchWord='', sortOrder='') => async (dispatch) => {
+const listShoes = (brand='', searchWord='', sortOrder='') => async (dispatch) => {
     try {
         dispatch({ type: SHOE_LIST_REQUEST });
-        const { data } = await axios.get("/api/shoes?category=" + category + "&searchWord=" + searchWord + "&sortOrder=" + sortOrder);
+        const { data } = await axios.get("/api/shoes?brand=" + brand + "&searchWord=" + searchWord + "&sortOrder=" + sortOrder);
         dispatch({ type: SHOE_LIST_SUCCESS, payload: data });
     }
     catch (error) {

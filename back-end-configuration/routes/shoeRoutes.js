@@ -4,7 +4,7 @@ import Shoe from '../models/shoeModel';
 const router = express.Router();
 
 router.get('/', async (req, res) =>{
-  const category = req.query.category ? { category: req.query.category } : {};
+  const brand = req.query.brand ? { brand: req.query.brand } : {};
   const searchWord = req.query.searchWord ? { 
     name: {
       $regex: req.query.searchWord,
@@ -17,7 +17,7 @@ router.get('/', async (req, res) =>{
       $options: 'i',
     },
   } : {};
-  const shoes = await Shoe.find({...category, ...searchWord, ...sortOrder});
+  const shoes = await Shoe.find({...brand, ...searchWord, ...sortOrder});
   res.send(shoes);
 }); 
 

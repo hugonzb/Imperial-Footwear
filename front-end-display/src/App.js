@@ -6,7 +6,6 @@ import Shoe from './screens/Shoe';
 import SignIn from './screens/SignIn';
 import Register from './screens/Register';
 import { useSelector } from 'react-redux';
-import { listShoes } from './actions/shoeActions';
 import ShoeCreate from './screens/ShoeCreate';
 
 function App() {
@@ -47,38 +46,46 @@ function App() {
                 <ul className = "sidebar-nav">
                     <h3 className="sidebar-name">Brands</h3>
                     <li className= "sidebar-logo">
-                        <Link to="/category/Nike">
+                        <Link to="/brand/Nike">
                             <button className ="sidebar-button">
                                 <img src="../images/nike.png" alt="nike"></img>
                             </button>
                         </Link>
                     </li>
                     <li className= "sidebar-logo">
-                        <Link to="/category/Jordan">
+                        <Link to="/brand/Jordan">
                             <button className ="sidebar-button">
                                 <img src="../images/jordan.png" alt="jordan"></img>
                             </button>
                         </Link>
                     </li>
                     <li className= "sidebar-logo">
+                        <Link to="/brand/adidas">
                         <button className ="sidebar-button" href="index.html">
                             <img src="../images/adidas.png" alt="adidas"></img>
                         </button>
+                        </Link>
                     </li>
                     <li className= "sidebar-logo">
-                        <button className ="sidebar-button" href="index.html">
+                        <Link to="/brand/Converse">
+                        <button className ="sidebar-button">
                             <img src="../images/converse.png" alt="converse"></img>
                         </button>
+                        </Link>
                     </li>
                     <li className= "sidebar-logo">
-                        <button className ="sidebar-button" href="index.html">
+                        <Link to="/brand/BAPE">
+                        <button className ="sidebar-button">
                             <img src="../images/bape.png" alt="bape"></img>
                         </button>
+                        </Link>
                     </li>
                     <li className= "sidebar-logo">
-                        <button className ="sidebar-button" href="index.html">
+                        <Link to="/brand/Asics">
+                        <button className ="sidebar-button">
                             <img src="../images/asics.png" alt="asics"></img>
                         </button>
+                        </Link>
                     </li>
                 </ul>
             </aside>
@@ -88,7 +95,7 @@ function App() {
                     <Route path="/signin" component={SignIn} />
                     <Route path="/register" component={Register} />
                     <Route path="/shoe/:id" component={Shoe} />
-                    <Route path="/category/:id" component={Home} />
+                    <Route path="/brand/:id" component={Home} />
                     <Route path="/" exact={true} component={Home} />
                 </div>
             </div>

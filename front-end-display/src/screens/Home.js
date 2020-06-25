@@ -6,25 +6,25 @@ import { listShoes } from '../actions/shoeActions';
 function Home (props) {
     const [searchWord, setSearchWord] = useState('');
     const[sortOrder, setSortOrder] = useState('');
-    const category = props.match.params.id ? props.match.params.id : '';
+    const brand = props.match.params.id ? props.match.params.id : '';
     const shoeList = useSelector(state => state.shoeList);
     const { shoes, loading, error } = shoeList;
     const dispatch = useDispatch();
     useEffect(() => {
-        dispatch(listShoes(category));
+        dispatch(listShoes(brand));
 
         return () => {
         };
-    }, [category]);
+    }, [brand]);
 
     const submitHandler = (e) =>{
         e.preventDefault();
-        dispatch(listShoes(category, searchWord, sortOrder))
+        dispatch(listShoes(brand, searchWord, sortOrder))
     }
 
     return <>
-        {category &&
-           <h2>{category}</h2>}
+        {brand &&
+           <h2>{brand}</h2>}
 
         <ul className="filter">
             <li>

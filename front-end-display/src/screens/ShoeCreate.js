@@ -14,7 +14,7 @@ function ShoeCreate (props) {
     const [stock, setStock] = useState('');
     const [style, setStyle] = useState('');
     const shoeSave = useSelector(state=>state.shoeSave);
-    const {loading: loadingSave, success: successSave, error: errorSave} = shoeSave;
+    const {loading: loadingSave, error: errorSave} = shoeSave;
     const dispatch = useDispatch();
 
     useEffect(() => {
