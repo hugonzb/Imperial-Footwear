@@ -5,6 +5,7 @@ import path from 'path';
 import mongoose from 'mongoose';
 import bodyParser from 'body-parser';
 import userRoutes from './routes/userRoutes';
+import shoeRoutes from './routes/shoeRoutes';
 
 const mongodbUrl = config.MONGODB_URL;
 mongoose.connect(mongodbUrl, {
@@ -16,6 +17,7 @@ mongoose.connect(mongodbUrl, {
 const app = express();
 app.use(bodyParser.json());
 app.use("/api/users", userRoutes);
+app.use("/api/shoes", shoeRoutes);
 app.get("/api/shoes/:id", (req, res) => {
     const shoeId = req.params.id;
     const shoe = data.shoes.find(x=>x.id === shoeId);

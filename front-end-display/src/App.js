@@ -7,6 +7,7 @@ import SignIn from './screens/SignIn';
 import Register from './screens/Register';
 import { useSelector } from 'react-redux';
 import { listShoes } from './actions/shoeActions';
+import ShoeCreate from './screens/ShoeCreate';
 
 function App() {
 
@@ -37,6 +38,7 @@ function App() {
                     }
                      
                     { userInfo ? ( null ) : ( <Link to="/register">Register</Link> ) }
+                    <Link to="/shoes">Add Product</Link>
                     <a href="shoppingcart.html">Shopping Cart</a>
                 </div>
             </header>
@@ -82,6 +84,7 @@ function App() {
             </aside>
             <div className="main">
                 <div className="content-display">
+                    <Route path="/shoes" component={ShoeCreate} />
                     <Route path="/signin" component={SignIn} />
                     <Route path="/register" component={Register} />
                     <Route path="/shoe/:id" component={Shoe} />
