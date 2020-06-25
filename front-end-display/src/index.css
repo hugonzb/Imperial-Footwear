@@ -313,7 +313,7 @@ body::-webkit-scrollbar-thumb {
 
 .shoe-detailed-image img{
   width: 100%;
-  min-width: 40rem;
+  min-width: 10rem;
   max-width: 62rem;
   max-height: 62rem;
   display: flex;
@@ -325,7 +325,7 @@ body::-webkit-scrollbar-thumb {
   border: .1rem dimgray solid;
   border-radius: 0.5rem;
   display: flex;
-  min-width: 35rem;
+  min-width: 10rem;
   width: 95%;
   padding: 1rem;
   margin: .5rem;
@@ -338,7 +338,7 @@ body::-webkit-scrollbar-thumb {
   border-radius: .5rem;
   background-color: lightgray;
   padding: 1rem;
-  min-width: 35rem;
+  min-width: 10rem;
   width: 95%;
   display: flex;
   margin: .5rem;
