@@ -176,6 +176,30 @@ body::-webkit-scrollbar-thumb {
   grid-area: main;
 }
 
+.filter{
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 1rem auto;
+  max-width: 50rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.filter input,
+.filter button,
+.filter select{
+  padding:1rem;
+  border-radius: 0.5rem;
+  border: .1rem #c0c0c0 solid;
+  font-size: 1.6rem;
+  list-style-type: none;
+  outline: none;
+}
+
+.filter input:focus{
+  border: .1rem rgb(5, 2, 194) solid;
+}
 
 /* Display of all-footwear */
 .all-footwear{

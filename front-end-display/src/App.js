@@ -6,6 +6,7 @@ import Shoe from './screens/Shoe';
 import SignIn from './screens/SignIn';
 import Register from './screens/Register';
 import { useSelector } from 'react-redux';
+import { listShoes } from './actions/shoeActions';
 
 function App() {
 
@@ -44,14 +45,18 @@ function App() {
                 <ul className = "sidebar-nav">
                     <h3 className="sidebar-name">Brands</h3>
                     <li className= "sidebar-logo">
-                        <button className ="sidebar-button" href="index.html">
-                            <img src="../images/nike.png" alt="nike"></img>
-                        </button>
+                        <Link to="/category/nike">
+                            <button className ="sidebar-button">
+                                <img src="../images/nike.png" alt="nike"></img>
+                            </button>
+                        </Link>
                     </li>
                     <li className= "sidebar-logo">
-                        <button className ="sidebar-button" href="index.html">
-                            <img src="../images/jordan.png" alt="jordan"></img>
-                        </button>
+                        <Link to="/category/jordan">
+                            <button className ="sidebar-button" href="/category/jordan">
+                                <img src="../images/jordan.png" alt="jordan"></img>
+                            </button>
+                        </Link>
                     </li>
                     <li className= "sidebar-logo">
                         <button className ="sidebar-button" href="index.html">

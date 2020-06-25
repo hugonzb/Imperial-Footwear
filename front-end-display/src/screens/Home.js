@@ -11,7 +11,7 @@ function Home (props) {
     const { shoes, loading, error } = shoeList;
     const dispatch = useDispatch();
     useEffect(() => {
-        dispatch(listShoes());
+        dispatch(listShoes(category));
 
         return () => {
         };
@@ -27,7 +27,7 @@ function Home (props) {
         setSortOrder(e.target.value);
         dispatch(listShoes(category, searchWord, sortOrder))
     }
-    return <div className = "content">
+    return <>
         {category &&
            <h2>{category}</h2>}
 
@@ -39,6 +39,7 @@ function Home (props) {
                 </form>
             </li>
             <li>
+                Sort By { ' ' }
                 <select name="sortOrder" onChange={sortHandler}>
                     <option value="">Newest</option>
                     <option value="">Lowest Price</option>
@@ -72,7 +73,7 @@ function Home (props) {
     }   
     </ul>
     }
-    </div>
+    </>
     
 }
 export default Home;
