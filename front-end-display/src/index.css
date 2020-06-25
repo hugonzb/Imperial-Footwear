@@ -176,6 +176,7 @@ body::-webkit-scrollbar-thumb {
   grid-area: main;
 }
 
+
 /* Display of all-footwear */
 .all-footwear{
   display: flex;

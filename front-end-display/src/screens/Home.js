@@ -1,9 +1,12 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import {Link} from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import { listShoes } from '../actions/shoeActions';
 
 function Home (props) {
+    const [searchWord, setSearchWord] = useState('');
+    const[sortOrder, setSortOrder] = useState('');
+    const category = props.match.params.id ? props.match.params.id : '';
     const shoeList = useSelector(state => state.shoeList);
     const { shoes, loading, error } = shoeList;
     const dispatch = useDispatch();
@@ -13,9 +16,37 @@ function Home (props) {
         return () => {
         };
     // eslint-disable-next-line 
-    }, [])
+    }, []);
 
-    return loading ? <div> Loading Shoes ...</div>:
+    const submitHandler = (e) =>{
+        e.preventDefault();
+        dispatch(listShoes(category, searchWord, sortOrder))
+    }
+
+    const sortHandler = (e) =>{
+        setSortOrder(e.target.value);
+        dispatch(listShoes(category, searchWord, sortOrder))
+    }
+    return <div className = "content">
+        {category &&
+           <h2>{category}</h2>}
+
+        <ul className="filter">
+            <li>
+                <form onSubmit={submitHandler}>
+                    <input name="searchWord" onChange={(e) => {setSearchWord(e.target.value)}} />
+                    <button type = "submit">Search</button>
+                </form>
+            </li>
+            <li>
+                <select name="sortOrder" onChange={sortHandler}>
+                    <option value="">Newest</option>
+                    <option value="">Lowest Price</option>
+                    <option value="">Highest Price</option>
+                </select>
+            </li>
+        </ul>
+        {loading ? <div> Loading Shoes ...</div>:
         error ? <div>{error}</div>:
     <ul className="all-footwear">
     {
@@ -40,6 +71,8 @@ function Home (props) {
       </li>)
     }   
     </ul>
-
+    }
+    </div>
+    
 }
 export default Home;
