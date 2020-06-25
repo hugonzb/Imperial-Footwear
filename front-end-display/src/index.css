@@ -325,8 +325,8 @@ body::-webkit-scrollbar-thumb {
   border: .1rem dimgray solid;
   border-radius: 0.5rem;
   display: flex;
-  min-width: 40rem;
-  width: 100%;
+  min-width: 35rem;
+  width: 95%;
   padding: 1rem;
   margin: .5rem;
   max-height: 20rem;
@@ -338,8 +338,8 @@ body::-webkit-scrollbar-thumb {
   border-radius: .5rem;
   background-color: lightgray;
   padding: 1rem;
-  min-width:40rem;
-  width: 100%;
+  min-width: 35rem;
+  width: 95%;
   display: flex;
   margin: .5rem;
   max-height: 15rem;
