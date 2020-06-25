@@ -18,7 +18,7 @@ const app = express();
 app.use(bodyParser.json());
 app.use("/api/users", userRoutes);
 app.use("/api/shoes", shoeRoutes);
-app.get("/api/shoes/:id", (req, res) => {
+/*app.get("/api/shoes/:id", (req, res) => {
     const shoeId = req.params._id;
     const shoe = data.shoes.find(x=>x._id === shoeId);
     if(shoe)
@@ -29,6 +29,7 @@ app.get("/api/shoes/:id", (req, res) => {
 app.get("/api/shoes", (req, res) => {
     res.send(data.shoes);
 });
+*/
 
 app.use(express.static(path.join(__dirname, '/../front-end-display/build')));
 app.get('*', (req, res) => { 

@@ -10,7 +10,7 @@ function Shoe (props) {
     const dispatch = useDispatch();
 
     useEffect(() => {
-        dispatch(detailsShoe(props.match.params._id));
+        dispatch(detailsShoe(props.match.params.id));
         return () => {
             //
         };

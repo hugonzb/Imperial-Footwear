@@ -52,10 +52,10 @@ function Home (props) {
     <ul className="all-footwear">
     {
     shoes.map(shoe =>               
-      <li key ={shoe.id}> 
-         <Link to={'/shoe/' + shoe.id}>
+      <li key ={shoe._id}> 
+         <Link to={'/shoe/' + shoe._id}>
           <div className="footwear">
-                <Link to={'/shoe/' + shoe.id}>
+                <Link to={'/shoe/' + shoe._id}>
                 <img className="shoe-image" src={shoe.image} alt="shoe"></img>
                 </Link>
                 <div className="shoe-info">
