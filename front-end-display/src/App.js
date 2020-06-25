@@ -38,7 +38,7 @@ function App() {
                     }
                      
                     { userInfo ? ( null ) : ( <Link to="/register">Register</Link> ) }
-                    <Link to="/shoes">Add Product</Link>
+                    {/* <Link to="/shoes">Add Product</Link>  */}
                     <a href="shoppingcart.html">Shopping Cart</a>
                 </div>
             </header>
@@ -47,15 +47,15 @@ function App() {
                 <ul className = "sidebar-nav">
                     <h3 className="sidebar-name">Brands</h3>
                     <li className= "sidebar-logo">
-                        <Link to="/category/nike">
+                        <Link to="/category/Nike">
                             <button className ="sidebar-button">
                                 <img src="../images/nike.png" alt="nike"></img>
                             </button>
                         </Link>
                     </li>
                     <li className= "sidebar-logo">
-                        <Link to="/category/jordan">
-                            <button className ="sidebar-button" href="/category/jordan">
+                        <Link to="/category/Jordan">
+                            <button className ="sidebar-button">
                                 <img src="../images/jordan.png" alt="jordan"></img>
                             </button>
                         </Link>
@@ -88,6 +88,7 @@ function App() {
                     <Route path="/signin" component={SignIn} />
                     <Route path="/register" component={Register} />
                     <Route path="/shoe/:id" component={Shoe} />
+                    <Route path="/category/:id" component={Home} />
                     <Route path="/" exact={true} component={Home} />
                 </div>
             </div>

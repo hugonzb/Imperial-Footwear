@@ -4,8 +4,21 @@ import Shoe from '../models/shoeModel';
 const router = express.Router();
 
 router.get('/', async (req, res) =>{
-    const shoes = await Shoe.find({});
-    res.send(shoes);
+  const category = req.query.category ? { category: req.query.category } : {};
+  const searchWord = req.query.searchWord ? { 
+    name: {
+      $regex: req.query.searchWord,
+      $options: 'i',
+    },
+  } : {};
+  const sortOrder = req.query.sortOrder ? { 
+    name: {
+      $regex: req.query.sortOrder,
+      $options: 'i',
+    },
+  } : {};
+  const shoes = await Shoe.find({...category, ...searchWord, ...sortOrder});
+  res.send(shoes);
 }); 
 
 router.post("/", async(req, res) => {

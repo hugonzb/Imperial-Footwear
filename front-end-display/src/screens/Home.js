@@ -15,18 +15,13 @@ function Home (props) {
 
         return () => {
         };
-    // eslint-disable-next-line 
-    }, []);
+    }, [category]);
 
     const submitHandler = (e) =>{
         e.preventDefault();
         dispatch(listShoes(category, searchWord, sortOrder))
     }
 
-    const sortHandler = (e) =>{
-        setSortOrder(e.target.value);
-        dispatch(listShoes(category, searchWord, sortOrder))
-    }
     return <>
         {category &&
            <h2>{category}</h2>}
@@ -39,12 +34,15 @@ function Home (props) {
                 </form>
             </li>
             <li>
-                Sort By { ' ' }
-                <select name="sortOrder" onChange={sortHandler}>
-                    <option value="">Newest</option>
-                    <option value="">Lowest Price</option>
-                    <option value="">Highest Price</option>
+                <form onSubmit={submitHandler}>
+                <select name="sortOrder" onChange={(e) => {setSortOrder(e.target.value)}}>
+                    <option value=" ">All</option>
+                    <option value="Low">Low</option>
+                    <option value="Mid">Mid</option>
+                    <option value="High">High</option>
                 </select>
+                <button type = "submit">Filter</button>
+                </form>
             </li>
         </ul>
         {loading ? <div> Loading Shoes ...</div>:
