@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import {Link} from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
-import { listShoes, favListShoes } from '../actions/shoeActions';
+import { favListShoes } from '../actions/shoeActions';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import { faFilter } from "@fortawesome/free-solid-svg-icons";
@@ -9,28 +9,25 @@ import { faFilter } from "@fortawesome/free-solid-svg-icons";
 function Favorites(props) {
     const [searchWord, setSearchWord] = useState('');
     const[sortOrder, setSortOrder] = useState('');
-    const brand = props.match.params.id ? props.match.params.id : '';
     const favorites = props.match.params.id ? props.match.params.id : '';
     const shoeList = useSelector(state => state.shoeList);
     const { shoes, loading, error } = shoeList;
     const dispatch = useDispatch();
 
     useEffect(() => {
-        dispatch(listShoes(brand));
         dispatch(favListShoes(favorites));
         return () => {
         };
         // eslint-disable-next-line
-    }, [brand, favorites]);
+    }, [favorites]);
 
     const submitHandler = (e) =>{
         e.preventDefault();
-        dispatch(listShoes(brand, searchWord, sortOrder))
         dispatch(favListShoes(favorites, searchWord, sortOrder))
     }
 
     return <>
-        {brand &&
+        {favorites &&
            <h2>Hugo's Favorites</h2>}
 
         <ul className="filter">
