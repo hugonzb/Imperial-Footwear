@@ -6,12 +6,17 @@ import Shoe from './screens/Shoe';
 import SignIn from './screens/SignIn';
 import Register from './screens/Register';
 import Favorites from './screens/Favorites';
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 import ShoeCreate from './screens/ShoeCreate';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
+import { logout } from './actions/userActions';
 
 function App() {
+    const dispatch = useDispatch();
+    const handleLogout = () =>{
+        dispatch(logout());
+    }   
 
     const userSignin = useSelector(state=>state.userSignin);
     const {userInfo} = userSignin;
@@ -41,10 +46,10 @@ function App() {
                                 } <FontAwesomeIcon icon={faAngleDown} /></button>
                         <div className="dropdown-content">
                             {
-                                userInfo ? ( <Link to="/profile">Profile</Link> ) :
+                                userInfo ? ( <Link to="/profile" >Profile</Link> ) :
                                 ( <Link to="/signin">Sign In</Link> )
                             }
-                            { userInfo ? ( null ) : ( <Link to="/register">Register</Link> ) }
+                            { userInfo ? ( <button type ="button" className="logout-button" onClick={handleLogout} >Log out</button> ) : ( <Link to="/register">Register</Link> ) }
                         </div>
                     </div>
                     {/* <Link to="/shoes">Add Product</Link>  */}
