@@ -9,6 +9,7 @@ const shoeSchema = new mongoose.Schema({
     rating: { type: Number, default: 0, required: true },
     stock: { type: Number, default: 0, required: true },
     style: { type: String, required: true },
+    favorites: { type: String, required: true },
 })
 
 const shoeModel = mongoose.model("Shoe", shoeSchema);

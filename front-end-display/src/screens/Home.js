@@ -1,27 +1,28 @@
 import React, { useEffect, useState } from 'react';
 import {Link} from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
-import { listShoes } from '../actions/shoeActions';
+import { listShoes, favListShoes } from '../actions/shoeActions';
 
 function Home (props) {
     const [searchWord, setSearchWord] = useState('');
     const[sortOrder, setSortOrder] = useState('');
     const brand = props.match.params.id ? props.match.params.id : '';
+    const favorites = props.match.params.id ? props.match.params.id : '';
     const shoeList = useSelector(state => state.shoeList);
     const { shoes, loading, error } = shoeList;
     const dispatch = useDispatch();
 
     useEffect(() => {
         dispatch(listShoes(brand));
-
         return () => {
         };
         // eslint-disable-next-line
-    }, [brand]);
+    }, [brand, favorites]);
 
     const submitHandler = (e) =>{
         e.preventDefault();
         dispatch(listShoes(brand, searchWord, sortOrder))
+        dispatch(favListShoes(favorites, searchWord, sortOrder))
     }
 
     return <>

@@ -5,6 +5,7 @@ import Home from './screens/Home';
 import Shoe from './screens/Shoe';
 import SignIn from './screens/SignIn';
 import Register from './screens/Register';
+import Favorites from './screens/Favorites';
 import { useSelector } from 'react-redux';
 import ShoeCreate from './screens/ShoeCreate';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -48,6 +49,7 @@ function App() {
                     </div>
                     {/* <Link to="/shoes">Add Product</Link>  */}
                     <a href="shoppingcart.html">Shopping Cart</a>
+                    <Link to="/about">About</Link>
                 </div>
             </header>
             <aside className="sidebar-menu">
@@ -96,15 +98,45 @@ function App() {
                         </button>
                         </Link>
                     </li>
+                    <li className= "sidebar-logo">
+                        <Link to="/brand/Puma">
+                        <button className ="sidebar-button">
+                            <img src="../images/puma.png" alt="puma"></img>
+                        </button>
+                        </Link>
+                    </li>
+                    <li className= "sidebar-logo">
+                        <Link to="/brand/Vans">
+                        <button className ="sidebar-button">
+                            <img src="../images/vans.png" alt="vans"></img>
+                        </button>
+                        </Link>
+                    </li>
+                    <li className= "sidebar-logo">
+                        <Link to="/brand/Timberland">
+                        <button className ="sidebar-button">
+                            <img src="../images/timberland.png" alt="timberland"></img>
+                        </button>
+                        </Link>
+                    </li>
+                    <li className= "sidebar-logo">
+                        <Link to="/favorites/Hugo">
+                        <button className ="sidebar-button">
+                            Hugo's Favorites
+                        </button>
+                        </Link>
+                    </li>
                 </ul>
             </aside>
             <div className="main">
                 <div className="content-display">
+                    <Route path="/about" component={Home} />
                     <Route path="/shoes" component={ShoeCreate} />
                     <Route path="/signin" component={SignIn} />
                     <Route path="/register" component={Register} />
                     <Route path="/shoe/:id" component={Shoe} />
                     <Route path="/brand/:id" component={Home} />
+                    <Route path="/favorites/:id" component={Favorites} />
                     <Route path="/" exact={true} component={Home} />
                 </div>
             </div>

@@ -13,6 +13,17 @@ const listShoes = (brand='', searchWord='', sortOrder='') => async (dispatch) =>
     }
 }
 
+const favListShoes = (favorites='', searchWord='', sortOrder='') => async (dispatch) => {
+    try {
+        dispatch({ type: SHOE_LIST_REQUEST });
+        const { data } = await axios.get("/api/shoes?favorites=" + favorites + "&searchWord=" + searchWord + "&sortOrder=" + sortOrder);
+        dispatch({ type: SHOE_LIST_SUCCESS, payload: data });
+    }
+    catch (error) {
+        dispatch({ type: SHOE_LIST_FAIL, payload: error.message });
+    }
+}
+
 const saveShoe = (shoe) => async(dispatch) => {
     try {
         dispatch({type: SHOE_SAVE_REQUEST, payload: shoe});
@@ -32,4 +43,4 @@ const detailsShoe = (shoeId) => async (dispatch) => {
         dispatch({type: SHOE_DETAILS_FAIL, payload: error.message});
     }
 }
-export { listShoes, detailsShoe, saveShoe }
+export { listShoes, detailsShoe, saveShoe, favListShoes }

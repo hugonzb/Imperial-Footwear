@@ -136,6 +136,10 @@ body::-webkit-scrollbar-thumb {
   justify-content: center;
   align-items: center;
   min-height: 6rem;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
 }
 
 .sidebar-button img{
@@ -186,6 +190,7 @@ body::-webkit-scrollbar-thumb {
   background-color: black;
   color: oldlace;
   font-weight: bold;
+  font-size: 1.5rem;
 }
 
 .dropdown-content {
