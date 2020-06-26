@@ -2,6 +2,9 @@ import React, { useEffect, useState } from 'react';
 import {Link} from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import { listShoes, favListShoes } from '../actions/shoeActions';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSearch } from "@fortawesome/free-solid-svg-icons";
+import { faFilter } from "@fortawesome/free-solid-svg-icons";
 
 function Favorites(props) {
     const [searchWord, setSearchWord] = useState('');
@@ -34,7 +37,7 @@ function Favorites(props) {
             <li>
                 <form onSubmit={submitHandler}>
                     <input name="searchWord" onChange={(e) => {setSearchWord(e.target.value)}} />
-                    <button type = "submit">Search</button>
+                    <button type = "submit"><FontAwesomeIcon icon={faSearch}/></button>
                 </form>
             </li>
             <li>
@@ -45,11 +48,11 @@ function Favorites(props) {
                     <option value="Mid">Mid</option>
                     <option value="High">High</option>
                 </select>
-                <button type = "submit">Filter</button>
+                <button type = "submit"><FontAwesomeIcon icon={faFilter}/></button>
                 </form>
             </li>
         </ul>
-        {loading ? <div> Loading Shoes ...</div>:
+        {loading ? <div> Loading Shoes...</div>:
         error ? <div>{error}</div>:
     <ul className="all-footwear">
     {

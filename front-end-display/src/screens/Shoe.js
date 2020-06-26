@@ -23,7 +23,7 @@ function Shoe (props) {
                 <img src="../images/arrow.png" alt="jordan"></img>
             </Link>
         </div>
-        {loading? <div>Loading Shoe ...</div>:
+        {loading? <div>Loading Chosen Shoe...</div>:
             error ? <div>{error}</div>:
             (   
                 <div className="shoe-container">
