@@ -34,10 +34,13 @@ function App() {
                 </div>
                 <div className="header-buttons">
                     <div className="dropdown">
-                        <button className="dropdown-button">Account <FontAwesomeIcon icon={faAngleDown} /></button>
+                        <button className="dropdown-button"> {
+                                userInfo ? ( userInfo.name ) :
+                                ( "Account" )
+                                } <FontAwesomeIcon icon={faAngleDown} /></button>
                         <div className="dropdown-content">
                             {
-                                userInfo ? ( <Link to="/profile">{userInfo.name}</Link> ) :
+                                userInfo ? ( <Link to="/profile">Profile</Link> ) :
                                 ( <Link to="/signin">Sign In</Link> )
                             }
                             { userInfo ? ( null ) : ( <Link to="/register">Register</Link> ) }

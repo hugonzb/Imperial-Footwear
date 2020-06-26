@@ -192,7 +192,7 @@ body::-webkit-scrollbar-thumb {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
-  min-width: 160px;
+  width: 10rem;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
@@ -200,16 +200,19 @@ body::-webkit-scrollbar-thumb {
   float: none;
   color: black;
   padding: 12px 12px;
+  width: 10rem;
   text-decoration: none;
   display: block;
 }
 
 .dropdown-content a:hover {
   background-color: #ddd;
+  width: 10rem;
 }
 
 .dropdown:hover .dropdown-content {
   display: block;
+  width: 12.5rem;
 }
 
 .main{
