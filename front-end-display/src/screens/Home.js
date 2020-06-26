@@ -10,11 +10,13 @@ function Home (props) {
     const shoeList = useSelector(state => state.shoeList);
     const { shoes, loading, error } = shoeList;
     const dispatch = useDispatch();
+
     useEffect(() => {
         dispatch(listShoes(brand));
 
         return () => {
         };
+        // eslint-disable-next-line
     }, [brand]);
 
     const submitHandler = (e) =>{
