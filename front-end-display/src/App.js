@@ -7,6 +7,8 @@ import SignIn from './screens/SignIn';
 import Register from './screens/Register';
 import { useSelector } from 'react-redux';
 import ShoeCreate from './screens/ShoeCreate';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
 
 function App() {
 
@@ -31,12 +33,16 @@ function App() {
                     <Link to="/">Imperial Footwear</Link>
                 </div>
                 <div className="header-buttons">
-                    {
-                        userInfo ? ( <Link to="/profile">{userInfo.name}</Link> ) :
-                        ( <Link to="/signin">Sign In</Link> )
-                    }
-                     
-                    { userInfo ? ( null ) : ( <Link to="/register">Register</Link> ) }
+                    <div className="dropdown">
+                        <button className="dropdown-button">Account <FontAwesomeIcon icon={faAngleDown} /></button>
+                        <div className="dropdown-content">
+                            {
+                                userInfo ? ( <Link to="/profile">{userInfo.name}</Link> ) :
+                                ( <Link to="/signin">Sign In</Link> )
+                            }
+                            { userInfo ? ( null ) : ( <Link to="/register">Register</Link> ) }
+                        </div>
+                    </div>
                     {/* <Link to="/shoes">Add Product</Link>  */}
                     <a href="shoppingcart.html">Shopping Cart</a>
                 </div>

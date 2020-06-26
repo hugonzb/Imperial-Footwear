@@ -172,6 +172,46 @@ body::-webkit-scrollbar-thumb {
   color:red;
 }
 
+.dropdown {
+  float: left;
+  overflow: hidden;
+  margin-right: 1rem;
+}
+
+.dropdown .dropdown-button {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  font-family: 'Montserrat', sans-serif;
+  background-color: black;
+  color: oldlace;
+  font-weight: bold;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 12px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
 .main{
   grid-area: main;
 }
