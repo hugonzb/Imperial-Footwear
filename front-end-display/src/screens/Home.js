@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import {Link} from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
-import { listShoes, favListShoes } from '../actions/shoeActions';
+import { listShoes } from '../actions/shoeActions';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import { faFilter } from "@fortawesome/free-solid-svg-icons";
@@ -10,7 +10,6 @@ function Home (props) {
     const [searchWord, setSearchWord] = useState('');
     const[sortOrder, setSortOrder] = useState('');
     const brand = props.match.params.id ? props.match.params.id : '';
-    const favorites = props.match.params.id ? props.match.params.id : '';
     const shoeList = useSelector(state => state.shoeList);
     const { shoes, loading, error } = shoeList;
     const dispatch = useDispatch();
@@ -20,12 +19,11 @@ function Home (props) {
         return () => {
         };
         // eslint-disable-next-line
-    }, [brand, favorites]);
+    }, [brand]);
 
     const submitHandler = (e) =>{
         e.preventDefault();
         dispatch(listShoes(brand, searchWord, sortOrder))
-        dispatch(favListShoes(favorites, searchWord, sortOrder))
     }
 
     return <>
