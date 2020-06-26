@@ -36,8 +36,8 @@ function Favorites(props) {
         <ul className="filter">
             <li>
                 <form onSubmit={submitHandler}>
-                    <input name="searchWord" onChange={(e) => {setSearchWord(e.target.value)}} />
-                    <button type = "submit"><FontAwesomeIcon icon={faSearch}/></button>
+                    <input name="searchWord" placeholder="Search" onChange={(e) => {setSearchWord(e.target.value)}} />
+                    <button className = "cursor-pointer" type = "submit"><FontAwesomeIcon icon={faSearch}/></button>
                 </form>
             </li>
             <li>
@@ -48,7 +48,7 @@ function Favorites(props) {
                     <option value="Mid">Mid</option>
                     <option value="High">High</option>
                 </select>
-                <button type = "submit"><FontAwesomeIcon icon={faFilter}/></button>
+                <button className = "cursor-pointer" type = "submit"><FontAwesomeIcon icon={faFilter}/></button>
                 </form>
             </li>
         </ul>

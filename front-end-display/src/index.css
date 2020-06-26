@@ -180,6 +180,7 @@ body::-webkit-scrollbar-thumb {
   float: left;
   overflow: hidden;
   margin-right: 1rem;
+  min-height: 2rem;
 }
 
 .dropdown .dropdown-button {
@@ -194,10 +195,11 @@ body::-webkit-scrollbar-thumb {
 }
 
 .dropdown-content {
+  margin-top: .1rem;
   display: none;
   position: absolute;
   background-color: #f9f9f9;
-  width: 10rem;
+  width: 8rem;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
@@ -205,19 +207,19 @@ body::-webkit-scrollbar-thumb {
   float: none;
   color: black;
   padding: 12px 12px;
-  width: 10rem;
+  width: 8rem;
   text-decoration: none;
   display: block;
 }
 
 .dropdown-content a:hover {
   background-color: #ddd;
-  width: 10rem;
+  width: 8rem;
 }
 
 .dropdown:hover .dropdown-content {
   display: block;
-  width: 12.5rem;
+  width: 10.5rem;
 }
 
 .main{
@@ -264,6 +266,7 @@ body::-webkit-scrollbar-thumb {
   flex: 1 1 25rem;
   margin: 1rem;
   height: 32.5rem;
+  max-width: 25rem;
 }
 
 .footwear{
@@ -476,4 +479,10 @@ input{
   padding: 1rem;
   border: .1rem #c0c0c0 solid;
   border-radius: .5rem;
+}
+
+/* misc */
+
+.cursor-pointer{
+  cursor: pointer;
 }
