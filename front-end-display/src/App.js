@@ -16,7 +16,6 @@ import About from './screens/About';
 function App() {
     const dispatch = useDispatch();
     const handleLogout = () =>{
-        window.location.reload();
         dispatch(logout());
     }   
 
@@ -129,7 +128,7 @@ function App() {
             </aside>
             <div className="main">
                 <div className="content-display">
-                    <Route path="/about" component={About} />
+                    <Route path="/about" exact={true} component={About} />
                     <Route path="/shoes" component={ShoeCreate} />
                     <Route path="/signin" component={SignIn} />
                     <Route path="/register" component={Register} />
