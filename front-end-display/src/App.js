@@ -16,12 +16,12 @@ import About from './screens/About';
 function App() {
     const dispatch = useDispatch();
     const handleLogout = () =>{
+        window.location.reload();
         dispatch(logout());
     }   
 
     const userSignin = useSelector(state=>state.userSignin);
     const {userInfo} = userSignin;
-
     const sidebarOpen = () => {
         document.querySelector(".sidebar-menu").classList.add("open");
     }
@@ -141,7 +141,7 @@ function App() {
             </div>
             <footer className="footer">
                 <div>
-                GitHub: hugonzb LinkedIn: Hugo Baird
+                Developed and Maitained by Hugo Baird
                 </div>
                 <div>
                 Email: hugonzb@gmail.com

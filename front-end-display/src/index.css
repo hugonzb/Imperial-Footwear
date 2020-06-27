@@ -51,7 +51,7 @@ body::-webkit-scrollbar-thumb {
   justify-content: space-between;
   background-color: black;
   align-items: center;
-  padding: 0.5rem;
+  padding: 1rem;
 }
 
 .main-logo a{
@@ -354,6 +354,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .footer{
+  padding: 5rem;
   grid-area: footer;
   display: flex;
   background-color: black;
@@ -509,7 +510,7 @@ input{
   margin: 1.5rem;
   border: rgb(1, 1, 65) solid;
   padding:3rem;
-  background-color: rgb(139, 146, 187);
+  background-color: rgb(176, 180, 202);
   border-radius: 25px;
   text-align: center;
 }
