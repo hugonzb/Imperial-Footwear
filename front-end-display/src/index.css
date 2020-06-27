@@ -497,6 +497,59 @@ input{
   border-radius: .5rem;
 }
 
+.about{
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-text{
+  max-width: 40rem;
+  margin: 1.5rem;
+  border: rgb(1, 1, 65) solid;
+  padding:3rem;
+  background-color: rgb(139, 146, 187);
+  border-radius: 25px;
+  text-align: center;
+}
+
+.profile {
+  border-radius: 50%;
+  float: top;   
+  border: black solid;
+  max-width: 30rem;
+}
+
+.about-tech-img { 
+  max-width: 8rem;
+  margin: 1rem;
+}
+
+.about-link-img { 
+  max-width: 6rem;
+  margin: 2rem;
+}
+
+.about-email-img { 
+  max-width: 3rem;
+  max-height: 3rem;
+}
+
+.about-email-text{
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.about-email{
+  margin-bottom: 2rem;
+  padding:1rem;
+  font-family: unset;
+  font-weight: bold;
+}
+
 /* misc */
 
 .cursor-pointer{

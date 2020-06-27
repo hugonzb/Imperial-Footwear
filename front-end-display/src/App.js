@@ -11,6 +11,7 @@ import ShoeCreate from './screens/ShoeCreate';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
 import { logout } from './actions/userActions';
+import About from './screens/About';
 
 function App() {
     const dispatch = useDispatch();
@@ -118,13 +119,6 @@ function App() {
                         </Link>
                     </li>
                     <li className= "sidebar-logo">
-                        <Link to="/brand/Timberland">
-                        <button className ="sidebar-button">
-                            <img src="../images/timberland.png" alt="timberland"></img>
-                        </button>
-                        </Link>
-                    </li>
-                    <li className= "sidebar-logo">
                         <Link to="/favorites/Hugo">
                         <button className ="sidebar-button">
                             Hugo's Favorites
@@ -135,7 +129,7 @@ function App() {
             </aside>
             <div className="main">
                 <div className="content-display">
-                    <Route path="/about" component={Home} />
+                    <Route path="/about" component={About} />
                     <Route path="/shoes" component={ShoeCreate} />
                     <Route path="/signin" component={SignIn} />
                     <Route path="/register" component={Register} />
