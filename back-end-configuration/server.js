@@ -31,7 +31,6 @@ app.get("/api/shoes", (req, res) => {
     res.send(data.shoes);
 });
 */
-
 app.use(express.static(path.join(__dirname, '/../front-end-display/build')));
 app.get('*', (req, res) => { 
     res.sendFile(path.join('${__dirname}/../front-end-display/build/index.html'));
