@@ -5,6 +5,7 @@ import { listShoes } from '../actions/shoeActions';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import { faFilter } from "@fortawesome/free-solid-svg-icons";
+import Rating from '../components/Rating';
 
 function Home (props) {
     const [searchWord, setSearchWord] = useState('');
@@ -66,7 +67,11 @@ function Home (props) {
                         <div className="shoe-brand">{shoe.colorway}</div>
                         <div className="shoe-year">{shoe.year}</div>
                         <div className="shoe-price">${shoe.price} NZD</div>
-                        <div className="shoe-rating">{shoe.rating} Stars</div>
+                        <div className="shoe-rating">
+                            <Rating 
+                            value={shoe.rating}
+                            text={shoe.numRatings + ' Reviews'}/>
+                        </div>
                     </div>
                 </div>
           </div> 

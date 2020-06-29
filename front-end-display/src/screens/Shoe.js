@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import { detailsShoe } from '../actions/shoeActions';
+import Rating from '../components/Rating';
 
 function Shoe (props) {
     const [qty, setQty] = useState(1);
@@ -46,7 +47,12 @@ function Shoe (props) {
                             Style: {shoe.style}
                         </li>
                         <li>
-                            Rating: {shoe.rating} Stars
+                            <a href="#reviews">
+                            <Rating 
+                            value={shoe.rating}
+                            text={shoe.numRatings + ' Reviews'}
+                            />
+                            </a>
                         </li>
                         <li>
                             Price: $<b>{shoe.price}</b>

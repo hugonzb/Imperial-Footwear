@@ -7,6 +7,7 @@ const shoeSchema = new mongoose.Schema({
     price: { type: Number, default: 0, required: true },
     colorway: { type: String, required: true },
     rating: { type: Number, default: 0, required: true },
+    numRatings: { type: Number, default: 0, required: true },
     stock: { type: Number, default: 0, required: true },
     style: { type: String, required: true },
     favorites: { type: String, required: true },

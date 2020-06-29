@@ -353,6 +353,25 @@ body::-webkit-scrollbar-thumb {
   max-height: 13rem;
 }
 
+/* Shoe Rating */
+
+.rating span {
+  color: blue;
+  font-size: 1.8rem;
+  margin: 0.1rem;
+}
+
+.rating span:last-child{
+  color: black;
+  font-size: 1.4rem;
+}
+
+a > .rating > span:last-child {
+  color: darkblue;
+}
+
+/* Footer */
+
 .footer{
   padding: 5rem;
   grid-area: footer;
