@@ -141,7 +141,7 @@ function App() {
             </div>
             <footer className="footer">
                 <div>
-                Developed and Maitained by Hugo Baird
+                Developed and Maintained by Hugo Baird
                 </div>
                 <div>
                 Email: hugonzb@gmail.com

@@ -152,8 +152,9 @@ function Shoe (props) {
                                 <div>
                                     <Rating value={review.rating}></Rating>
                                 </div>
+
                                 <div>
-                                    {review.createdAt.substring(0,10)}
+                                    {new Date(review.createdAt).toString().substring(21,0)}
                                 </div>
                                 <div>
                                     {review.comment}
