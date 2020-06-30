@@ -353,6 +353,22 @@ body::-webkit-scrollbar-thumb {
   max-height: 13rem;
 }
 
+/* Shoe Reviews */
+
+ul.review {
+  list-style-type: none;
+  padding: 0;
+}
+
+.review li {
+  margin: 1rem;
+  margin-bottom: 2rem;
+}
+
+.review li > div{
+  margin: 0.5rem;
+}
+
 /* Shoe Rating */
 
 .rating span {

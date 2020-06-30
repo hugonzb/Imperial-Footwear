@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
-import { detailsShoe } from '../actions/shoeActions';
+import { detailsShoe, saveShoeReview } from '../actions/shoeActions';
 import Rating from '../components/Rating';
+import { SHOE_REVIEW_SAVE_RESET } from '../constants/shoeConstants';
 
 function Shoe (props) {
     const [qty, setQty] = useState(1);
@@ -12,9 +13,17 @@ function Shoe (props) {
     const {userInfo} = userSignin;
     const shoeDetails = useSelector(state => state.shoeDetails);
     const { shoe, loading, error } = shoeDetails;
+    const shoeReviewSave = useSelector ( state => state.shoeReviewSave );
+    const { success: shoeSaveSuccess } = shoeReviewSave;
     const dispatch = useDispatch();
 
     useEffect(() => {
+        if (shoeSaveSuccess){
+            alert("Review Submitted Successfully.");
+            setRating(0);
+            setComment('');
+            dispatch({ type: SHOE_REVIEW_SAVE_RESET });
+        }
         dispatch(detailsShoe(props.match.params.id));
         return () => {
             //
@@ -23,7 +32,14 @@ function Shoe (props) {
     }, []);
     const submitHandler = (e) => {
         e.preventDefault();
-    }
+        dispatch(
+            saveShoeReview(props.match.params.id, {
+                name: userInfo.name,
+                rating: rating,
+                comment: comment,
+            })
+        );
+    };
 
     return <div>
         <div className="shoe-detailed-back">
@@ -96,6 +112,7 @@ function Shoe (props) {
             </div>
             </div>
             <div className="content-margined">
+                    <h2> Reviews </h2>
                     {!shoe.reviews.length && <div> There are currently no reviews, be the first? </div>}
                     <ul className="review" id="reviews">
                         {shoe.reviews.map((review) => (

@@ -1,4 +1,4 @@
-import { SHOE_LIST_REQUEST, SHOE_DETAILS_REQUEST, SHOE_DETAILS_SUCCESS, SHOE_DETAILS_FAIL, SHOE_SAVE_REQUEST, SHOE_SAVE_SUCCESS, SHOE_SAVE_FAIL } from "../constants/shoeConstants";
+import { SHOE_LIST_REQUEST, SHOE_DETAILS_REQUEST, SHOE_DETAILS_SUCCESS, SHOE_DETAILS_FAIL, SHOE_SAVE_REQUEST, SHOE_SAVE_SUCCESS, SHOE_SAVE_FAIL, SHOE_REVIEW_SAVE_REQUEST, SHOE_REVIEW_SAVE_RESET, SHOE_REVIEW_SAVE_FAIL, SHOE_REVIEW_SAVE_SUCCESS } from "../constants/shoeConstants";
 import { SHOE_LIST_SUCCESS } from "../constants/shoeConstants";
 import { SHOE_LIST_FAIL } from "../constants/shoeConstants";
 
@@ -41,4 +41,24 @@ function shoeSaveReducer(state={ shoe: {} }, action){
             return state;
         }
 }
-export {shoeListReducer, shoeDetailsReducer, shoeSaveReducer }
+
+function shoeReviewSaveReducer(state = {}, action){
+    switch(action.type){
+        case SHOE_REVIEW_SAVE_REQUEST:
+            return { loading: true };
+        case SHOE_REVIEW_SAVE_SUCCESS:
+            return { loading: false, review: action.payload, success: true };
+        case SHOE_REVIEW_SAVE_FAIL:
+            return { loading: false, error: action.payload };
+        case SHOE_REVIEW_SAVE_RESET:
+            return {};
+        default:
+            return state;
+    }
+}
+export { 
+        shoeListReducer, 
+        shoeDetailsReducer, 
+        shoeSaveReducer, 
+        shoeReviewSaveReducer,
+    };

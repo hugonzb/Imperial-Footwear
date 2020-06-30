@@ -1,6 +1,6 @@
 
 import axios from 'axios';
-import { SHOE_LIST_REQUEST, SHOE_LIST_SUCCESS, SHOE_LIST_FAIL, SHOE_DETAILS_REQUEST, SHOE_DETAILS_SUCCESS, SHOE_DETAILS_FAIL, SHOE_SAVE_REQUEST, SHOE_SAVE_SUCCESS, SHOE_SAVE_FAIL } from '../constants/shoeConstants';
+import { SHOE_LIST_REQUEST, SHOE_LIST_SUCCESS, SHOE_LIST_FAIL, SHOE_DETAILS_REQUEST, SHOE_DETAILS_SUCCESS, SHOE_DETAILS_FAIL, SHOE_SAVE_REQUEST, SHOE_SAVE_SUCCESS, SHOE_SAVE_FAIL, SHOE_REVIEW_SAVE_REQUEST, SHOE_REVIEW_SAVE_FAIL, SHOE_REVIEW_SAVE_SUCCESS } from '../constants/shoeConstants';
 
 const listShoes = (brand='', searchWord='', sortOrder='') => async (dispatch) => {
     try {
@@ -43,4 +43,25 @@ const detailsShoe = (shoeId) => async (dispatch) => {
         dispatch({type: SHOE_DETAILS_FAIL, payload: error.message});
     }
 }
-export { listShoes, detailsShoe, saveShoe, favListShoes }
+
+const saveShoeReview = (shoeId, review) => async (dispatch, getState) => {
+    try{
+        const {
+            userSignin:{
+                userInfo:{ token },
+            },
+        } = getState();
+        dispatch({type: SHOE_REVIEW_SAVE_REQUEST, payload: review});
+        const { data } = await axios.post(`/api/products/${shoeId}/reviews`, review, {
+            headers:{
+                Authorization: 'Bearer ' + token,
+            },
+        }
+        );
+        dispatch({type: SHOE_REVIEW_SAVE_SUCCESS, payload: data });
+    }catch(error){
+        dispatch({type: SHOE_REVIEW_SAVE_FAIL, payload: error.message});
+    }
+};
+
+export { listShoes, detailsShoe, saveShoe, favListShoes, saveShoeReview }
