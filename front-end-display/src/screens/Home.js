@@ -70,7 +70,7 @@ function Home (props) {
                         <div className="shoe-rating">
                             <Rating 
                             value={shoe.rating}
-                            text={shoe.numRatings + ' Reviews'}/>
+                            text={shoe.numRatings === 1 ? shoe.numRatings + " Review" : shoe.numRatings + " Reviews"}/> 
                         </div>
                     </div>
                 </div>

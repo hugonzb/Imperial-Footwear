@@ -7,7 +7,7 @@ import { SHOE_REVIEW_SAVE_RESET } from '../constants/shoeConstants';
 
 function Shoe (props) {
     const [qty, setQty] = useState(1);
-    const [rating, setRating] = useState(0);
+    const [rating, setRating] = useState(1);
     const [comment, setComment] = useState('');
     const userSignin = useSelector(state => state.userSignin);
     const {userInfo} = userSignin;
@@ -26,8 +26,8 @@ function Shoe (props) {
         }
         dispatch(detailsShoe(props.match.params.id));
         return () => {
-            //
         };
+    // eslint-disable-next-line
     }, [shoeSaveSuccess]);
     const submitHandler = (e) => {
         e.preventDefault();
@@ -73,8 +73,7 @@ function Shoe (props) {
                             <a href="#reviews">
                             <Rating 
                             value={shoe.rating}
-                            text={shoe.numRatings + ' Reviews'}
-                            />
+                            text={shoe.numRatings === 1 ? shoe.numRatings + " Review" : shoe.numRatings + " Reviews"}/>
                             </a>
                         </li>
                         <li>
@@ -140,7 +139,7 @@ function Shoe (props) {
                                         <label htmlFor="rating">
                                             Rating
                                         </label>
-                                        <select name="raing" id="rating" value={rating}
+                                        <select name="rating" id="rating" value={rating}
                                         onChange={(e)=> setRating(e.target.value)}>
                                             <option value="1">1</option>
                                             <option value="2">2</option>
