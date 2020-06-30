@@ -129,6 +129,7 @@ function App() {
             <div className="main">
                 <div className="content-display">
                     <Route path="/about" exact={true} component={About} />
+                    <Route path="/shoeCreate" component={ShoeCreate} />
                     <Route path="/shoes" component={ShoeCreate} />
                     <Route path="/signin" component={SignIn} />
                     <Route path="/register" component={Register} />

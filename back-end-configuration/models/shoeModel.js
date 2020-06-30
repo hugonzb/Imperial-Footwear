@@ -4,7 +4,8 @@ const reviewSchema = new mongoose.Schema({
     name:{type: String, required: true},
     rating: {type:Number, default:0},
     comment: {type: String, required: true},
-    
+}, {
+    timestamps: true,
 });
 
 const shoeSchema = new mongoose.Schema({
@@ -16,7 +17,7 @@ const shoeSchema = new mongoose.Schema({
     rating: { type: Number, default: 0, required: true },
     numRatings: { type: Number, default: 0, required: true },
     stock: { type: Number, default: 0, required: true },
-    reviews: { reviewSchema }, 
+    reviews: [ reviewSchema ], 
     style: { type: String, required: true },
     favorites: { type: String, required: true },
 });

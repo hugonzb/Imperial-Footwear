@@ -13,6 +13,7 @@ function ShoeCreate (props) {
     const [rating, setRating] = useState('');
     const [stock, setStock] = useState('');
     const [style, setStyle] = useState('');
+    const [favorites, setFavorites] = useState('');
     const shoeSave = useSelector(state=>state.shoeSave);
     const {loading: loadingSave, error: errorSave} = shoeSave;
     const dispatch = useDispatch();
@@ -26,7 +27,7 @@ function ShoeCreate (props) {
 
     const submitHandler = (e) => {
         e.preventDefault();
-        dispatch(saveShoe({name, price, image, colorway, year, rating, stock, style}));
+        dispatch(saveShoe({name, price, image, colorway, year, rating, stock, style, favorites}));
     }
     return <div className="form">
         <form onSubmit={submitHandler}>
@@ -67,6 +68,10 @@ function ShoeCreate (props) {
                 <li>
                     <label htmlFor="name">Style</label>
                     <input type ="text" name="style" id="style" onChange ={(e) => setStyle(e.target.value)}></input>
+                </li>
+                <li>
+                    <label htmlFor="favorites">Hugo Favorite</label>
+                    <input type ="text" name="favorites" id="favorites" onChange ={(e) => setFavorites(e.target.value)}></input>
                 </li>
                 <li>
                     <button type = "submit" className="button primary">Create</button>

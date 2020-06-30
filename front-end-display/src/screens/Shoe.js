@@ -28,8 +28,7 @@ function Shoe (props) {
         return () => {
             //
         };
-    // eslint-disable-next-line 
-    }, []);
+    }, [shoeSaveSuccess]);
     const submitHandler = (e) => {
         e.preventDefault();
         dispatch(
@@ -122,6 +121,9 @@ function Shoe (props) {
                                 </div>
                                 <div>
                                     <Rating value={review.rating}></Rating>
+                                </div>
+                                <div>
+                                    {review.createdAt.substring(0,10)}
                                 </div>
                                 <div>
                                     {review.comment}

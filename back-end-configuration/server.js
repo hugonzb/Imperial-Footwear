@@ -30,9 +30,10 @@ app.use("/api/shoes", shoeRoutes);
 app.get("/api/shoes", (req, res) => {
     res.send(data.shoes);
 });
+
 */
-app.use(express.static(path.join(__dirname, '/../front-end-display/build')));
+/* app.use(express.static(path.join(__dirname, '/../front-end-display/build')));
 app.get('*', (req, res) => { 
     res.sendFile(path.join('${__dirname}/../front-end-display/build/index.html'));
-});
+}); */
 app.listen(config.PORT, () => { console.log("Server successfully started"); });

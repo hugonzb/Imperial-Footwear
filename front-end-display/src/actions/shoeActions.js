@@ -52,7 +52,7 @@ const saveShoeReview = (shoeId, review) => async (dispatch, getState) => {
             },
         } = getState();
         dispatch({type: SHOE_REVIEW_SAVE_REQUEST, payload: review});
-        const { data } = await axios.post(`/api/products/${shoeId}/reviews`, review, {
+        const { data } = await axios.post(`/api/shoes/${shoeId}/reviews`, review, {
             headers:{
                 Authorization: 'Bearer ' + token,
             },
