@@ -16,7 +16,7 @@ function shoeListReducer(state={shoes:[]}, action){
         }
 }
 
-function shoeDetailsReducer(state={ shoe: {} }, action){
+function shoeDetailsReducer(state={ shoe: { reviews: [] } }, action){
     switch (action.type) {
         case SHOE_DETAILS_REQUEST:
             return {loading: true};
