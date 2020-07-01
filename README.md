@@ -1,7 +1,7 @@
 [![HitCount](http://hits.dwyl.com/hugonzb/Imperial-Footwear.svg)](http://hits.dwyl.com/hugonzb/Imperial-Footwear)
 <br><br>
-## [LIVE Demo Here!]()
-<br><br>
+## [LIVE Demo Here!](imperial-footwear.herokuapp.com/)
+<br>
 
 ### Features
 **1. Search for particular Footwear.**
@@ -22,7 +22,7 @@
 # Run the project in your environment
 
 #### Clone the project: 
-https://github.com/hugonzb/COVID19-Stat-Tracker.git
+https://github.com/hugonzb/Imperial-Footwear.git
 
 #### Install dependencies
 ### `npm install`
