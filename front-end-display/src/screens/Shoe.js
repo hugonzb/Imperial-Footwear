@@ -41,6 +41,7 @@ function Shoe (props) {
     };
 
     return <div>
+        {window.scrollTo(0, 0)}
         <div className="shoe-detailed-back">
             <Link to="/"> 
                 <img src="../images/arrow.png" alt="jordan"></img>
