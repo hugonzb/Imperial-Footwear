@@ -8,10 +8,10 @@ export default function Rating(props) {
                 ? 'fa fa-star'
                 : props.value >= 0.5
                 ? 'fa fa-star-half-o'
-                : props.value === 0
-                ? "ZERO"
+                : props.value === -1
+                ? 'fa fa-star-o'
                 :
-                'fa fa-star-o'
+                null
             }
             ></i>
         </span>

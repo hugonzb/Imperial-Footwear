@@ -71,6 +71,10 @@ function Home (props) {
                             <Rating 
                             value={shoe.rating}
                             text={shoe.numRatings === 1 ? shoe.numRatings + " Review" : shoe.numRatings + " Reviews"}/> 
+                            {shoe.rating=== 0 ? <Rating 
+                                value={-1}
+                                text={shoe.numRatings + " Reviews"}/>
+                                : null}
                         </div>
                     </div>
                 </div>
