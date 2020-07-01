@@ -26,6 +26,7 @@ const register = (name, email, password) => async (dispatch) => {
 
 const logout = () =>(dispatch)=>{
     Cookie.remove("userInfo");
+    window.location.href = "/";
     dispatch({type: USER_LOGOUT});
 }
 
