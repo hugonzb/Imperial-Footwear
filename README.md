@@ -1,9 +1,8 @@
-[![HitCount](http://hits.dwyl.com/hugonzb/COVID19-Stat-Tracker.svg)](http://hits.dwyl.com/hugonzb/COVID19-Stat-Tracker)
+[![HitCount](http://hits.dwyl.com/hugonzb/Imperial-Footwear.svg)](http://hits.dwyl.com/hugonzb/Imperial-Footwear)
 <br><br>
-## [LIVE Demo Here!](https://hugonzb.github.io/COVID19-Stat-Tracker/)
+## [LIVE Demo Here!]()
 <br><br>
-COVID-19 API used to fetch data from: https://covid19.mathdro.id/api
-<br>
+
 ### Features
 **1. Search for particular Footwear.**
 
