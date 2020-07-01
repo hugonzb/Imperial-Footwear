@@ -41,7 +41,6 @@ function Shoe (props) {
     };
 
     return <div>
-        {window.scrollTo(0, 0)}
         <div className="shoe-detailed-back">
             <Link to="/"> 
                 <img src="../images/arrow.png" alt="jordan"></img>
@@ -113,40 +112,44 @@ function Shoe (props) {
                 </div>
                 </div>
             </div>
-            </div>
+            
+            <div className="form-content-container">
             <div className="content-margined">
-            <li>
-                    <h2>
-                        Write a review for this shoe
-                    </h2>
-                        {userInfo ? <form onSubmit={submitHandler}>
-                            <ul className="form-container">
+                        <li>
+                        <h2>
+                            Write a review for this shoe
+                        </h2>
+                        <div className="form-review">
+                        {userInfo ? <form className="review-form" onSubmit={submitHandler}>
+                          
+                            <ul> 
                                 <li>
                                     <label htmlFor="rating">
                                         Rating
                                     </label>
                                     <select name="rating" id="rating" value={rating}
                                     onChange={(e)=> setRating(e.target.value)}>
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>
-                                        <option value="5">5</option>
+                                        <option value="1">1 Star</option>
+                                        <option value="2">2 Stars</option>
+                                        <option value="3">3 Stars</option>
+                                        <option value="4">4 Stars</option>
+                                        <option value="5">5 Stars</option>
                                     </select>
                                 </li>
                                 <li>
                                     <label htmlFor="comment">Comment</label>
-                                    <textarea name="comment" value={comment} onChange={(e)=>setComment(e.target.value)}></textarea>
+                                    <textarea name="comment" rows="4" cols="50" value={comment} onChange={(e)=>setComment(e.target.value)}></textarea>
                                 </li>
                                 <li>
-                                    <button type="submit" className="button primary">Submit</button>
+                                    <button type="submit" className="shoe-purchase-button">Submit</button>
                                 </li>
-                                </ul>
+                            </ul>
                             </form>:
-                            <div>Please <Link to="/signin">Sign In</Link> to write a review for this shoe.</div>}
+                            <div className="review-signin-message">Please <Link to="/signin">Sign In</Link> to write a review for this shoe.</div>}
+                            </div>
                         </li>
                     <div>
-                    <h2> Reviews </h2>
+                    <h2> Customer Reviews </h2>
                     {!shoe.reviews.length && <div> There are currently no reviews, be the first? </div>}
                     <ul className="review" id="reviews">
                         {shoe.reviews.slice(0).reverse().map((review) => (
@@ -168,6 +171,8 @@ function Shoe (props) {
                         ))}
                     </ul>
                     </div>
+            </div>
+            </div>
             </div>
             </>
             )

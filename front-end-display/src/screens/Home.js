@@ -58,7 +58,7 @@ function Home (props) {
       <li key ={shoe._id}> 
           <Link to={'/shoe/' + shoe._id}>
           <div className="footwear">
-                <Link to={'/shoe/' + shoe._id}>
+                <Link to={'/shoe/' + shoe._id} >
                 <img className="shoe-image" src={shoe.image} alt="shoe"></img>
                 </Link>
                 <div className="shoe-info">
