@@ -76,6 +76,10 @@ function Shoe (props) {
                             value={shoe.rating}
                             text={shoe.numRatings === 1 ? shoe.numRatings + " Review" : shoe.numRatings + " Reviews"}/>
                             </a>
+                            {shoe.rating=== 0 ? <Rating 
+                                value={-1}
+                                text={shoe.numRatings + " Reviews"}/>
+                                : null}
                         </li>
                         <li>
                             Price: $<b>{shoe.price}</b>

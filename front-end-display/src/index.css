@@ -372,14 +372,14 @@ ul.review {
 /* Shoe Rating */
 
 .rating span {
-  color: blue;
-  font-size: 1.8rem;
+  color: rgb(232, 250, 71);
+  font-size: 2.3rem;
   margin: 0.1rem;
 }
 
 .rating span:last-child{
   color: black;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
 }
 
 a > .rating > span:last-child {
