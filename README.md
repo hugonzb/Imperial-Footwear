@@ -1,8 +1,7 @@
 [![HitCount](http://hits.dwyl.com/hugonzb/Imperial-Footwear.svg)](http://hits.dwyl.com/hugonzb/Imperial-Footwear)
 <br><br>
-## [LIVE Demo Here!](imperial-footwear.herokuapp.com/)
+## [LIVE Demo Here!](https://imperial-footwear.herokuapp.com/)
 <br>
-
 ### Features
 **1. Search for particular Footwear.**
 
