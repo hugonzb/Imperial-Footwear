@@ -392,6 +392,7 @@ body::-webkit-scrollbar-thumb {
   width: 20rem;
   list-style-type: none;
   background-color: rgb(226, 226, 226);
+  margin-bottom: 4rem;
 }
 
 .form-review ul{
@@ -655,4 +656,14 @@ input{
 
 .cursor-pointer{
   cursor: pointer;
+}
+
+select:required:invalid {
+  color: gray;
+}
+option[value=""][disabled] {
+  display: none;
+}
+option {
+  color: black;
 }

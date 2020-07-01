@@ -129,6 +129,7 @@ function Shoe (props) {
                                     </label>
                                     <select name="rating" id="rating" value={rating}
                                     onChange={(e)=> setRating(e.target.value)}>
+                                        <option value="1" disabled selected data-default>Select your rating...</option>
                                         <option value="1">1 Star</option>
                                         <option value="2">2 Stars</option>
                                         <option value="3">3 Stars</option>
@@ -138,7 +139,7 @@ function Shoe (props) {
                                 </li>
                                 <li>
                                     <label htmlFor="comment">Comment</label>
-                                    <textarea name="comment" rows="4" cols="50" value={comment} onChange={(e)=>setComment(e.target.value)}></textarea>
+                                    <textarea name="comment" placeholder="E.g. Why did you give it this rating?" rows="4" cols="50" value={comment} onChange={(e)=>setComment(e.target.value)}></textarea>
                                 </li>
                                 <li>
                                     <button type="submit" className="shoe-purchase-button">Submit</button>
