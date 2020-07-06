@@ -1,6 +1,7 @@
 /* Font imports */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@600&family=News+Cycle&family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
 
 html{
   font-size: 62.5%;
@@ -609,17 +610,19 @@ input{
 .about-text{
   max-width: 40rem;
   margin: 1.5rem;
-  border: rgb(1, 1, 65) solid;
+  border: 0.125rem rgb(1, 1, 78) solid;
+  font-family: 'Quicksand', sans-serif;
   padding:3rem;
-  background-color: rgb(176, 180, 202);
+  background-color: rgb(206, 212, 241);
   border-radius: 25px;
   text-align: center;
 }
 
 .profile {
+  margin-top: 1.5rem;
   border-radius: 50%;
   float: top;   
-  border: black solid;
+  border: .25rem rgb(16, 2, 97) solid;
   max-width: 30rem;
 }
 
@@ -643,11 +646,12 @@ input{
   display: flex;
   flex-direction: row;
   justify-content: center;
+  margin-bottom: 1rem;
+  margin-top: 3rem;
 }
 
 .about-email{
-  margin-bottom: 2rem;
-  padding:1rem;
+  padding: 1rem;
   font-family: unset;
   font-weight: bold;
 }

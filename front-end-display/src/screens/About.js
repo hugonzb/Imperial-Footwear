@@ -5,7 +5,10 @@ function About () {
     return <div className="about">
         <div className="about-text">
             <h2>Overview</h2>
-            This is a personal full-stack development project that aims to provide an eCommerce footwear website for users to purchase and review shoes.
+            This is a personal full-stack development 
+            project that aims to provide an eCommerce 
+            footwear website for users to purchase and 
+            review designer shoes.
         </div>
         <div className="about-text">
             <h2>Technologies and Frameworks</h2>
@@ -27,9 +30,7 @@ function About () {
                     hugonzb@gmail.com
                 </div>
             </div>
-        </div>
-        <div className="about-links">
-            <div className="about-link-image">
+            <div>
                 <a href="https://github.com/hugonzb"><img className="about-tech-img" src="../images/github.png" alt="github"></img></a>
                 <a href="https://www.linkedin.com/in/hugo-baird/"><img className="about-link-img" src="../images/linkedin.png" alt="linkedin"></img></a>
             </div>
