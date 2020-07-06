@@ -10,6 +10,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import ShoeCreate from './screens/ShoeCreate';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
+import { faHeart } from "@fortawesome/free-solid-svg-icons";
 import { logout } from './actions/userActions';
 import About from './screens/About';
 
@@ -120,7 +121,7 @@ function App() {
                     <li className= "sidebar-logo">
                         <Link to="/favorites/Hugo">
                         <button className ="sidebar-button">
-                            Hugo's Favorites
+                            <FontAwesomeIcon icon={faHeart} color="red"/> Hugo's Favorites
                         </button>
                         </Link>
                     </li>
