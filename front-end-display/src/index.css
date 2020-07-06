@@ -270,6 +270,20 @@ body::-webkit-scrollbar-thumb {
   border: .1rem rgb(5, 2, 194) solid;
 }
 
+.home-brand-name{
+  background-color: white;
+  font-size: 3rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  text-align: center;
+  align-items: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border: 0.1px rgb(184, 184, 184) solid;
+}
+
 /* Display of all-footwear */
 .all-footwear{
   display: flex;

@@ -121,7 +121,7 @@ function App() {
                     <li className= "sidebar-logo">
                         <Link to="/favorites/Hugo">
                         <button className ="sidebar-button">
-                            <FontAwesomeIcon icon={faHeart} color="red"/> Hugo's Favorites
+                            <FontAwesomeIcon icon={faHeart} color="red"/> &nbsp; Hugo's Favorites
                         </button>
                         </Link>
                     </li>

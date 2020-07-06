@@ -5,6 +5,7 @@ import { favListShoes } from '../actions/shoeActions';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import { faFilter } from "@fortawesome/free-solid-svg-icons";
+import { faHeart } from "@fortawesome/free-solid-svg-icons";
 import Rating from '../components/Rating';
 
 function Favorites(props) {
@@ -29,7 +30,7 @@ function Favorites(props) {
 
     return <>
         {favorites &&
-           <h2>Hugo's Favorites</h2>}
+           <div className="home-brand-name"><FontAwesomeIcon icon={faHeart} color="red"/>&nbsp; Hugo's Favorites</div>}
 
         <ul className="filter">
             <li>

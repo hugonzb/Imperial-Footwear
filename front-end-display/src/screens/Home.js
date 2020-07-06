@@ -29,7 +29,7 @@ function Home (props) {
 
     return <>
         {brand &&
-           <h1>{brand}</h1>}
+           <div className="home-brand-name">{brand}</div>}
 
         <ul className="filter">
             <li>
