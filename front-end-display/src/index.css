@@ -253,6 +253,7 @@ body::-webkit-scrollbar-thumb {
   max-width: 50rem;
   justify-content: space-between;
   align-items: center;
+  margin-top: 2.5rem;
 }
 
 .filter input,
@@ -305,7 +306,6 @@ body::-webkit-scrollbar-thumb {
 .footwear{
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   height: 100%;
   background-color: white;
   width: 100%;
@@ -319,7 +319,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .shoe-info{
-  min-height: 16rem;
+  min-height: 15.4rem;
   margin-bottom: 1rem;
   margin-top:1rem;
   border-top: rgb(201, 199, 199) solid;
@@ -333,17 +333,16 @@ body::-webkit-scrollbar-thumb {
 }
 
 .shoe-info-detailed{
-  padding: 0rem;
+  margin-top: 1rem;
   min-height:10.5rem;
   display: flex;
   color: black;
   flex-direction: column;
   text-decoration: none;
-  justify-content: space-between;
 }
 
 .shoe-name{
-  font-size: 2.3rem;
+  font-size: 2.2rem;
   line-height: 1;
   font-weight: bold;
   color: black;
@@ -352,16 +351,18 @@ body::-webkit-scrollbar-thumb {
 
 .shoe-brand{
   font-size: 1.5rem;
-  line-height: 1.2;
+  line-height: 1.5;
 }
 
 .shoe-year{
   font-size: 1.5rem;
+  line-height: 1.5;
 }
 
 .shoe-price{
   font-size: 1.5rem;
   font-weight: bold;
+  line-height: 1.5;
 }
 
 .shoe-image{
