@@ -390,7 +390,7 @@ body::-webkit-scrollbar-thumb {
   padding: 5rem;
   background-color: rgb(235, 233, 233);
   min-width: 10rem;
-  max-width: 105rem;
+  max-width: 100rem;
   width: 100%;
 }
 
@@ -544,7 +544,7 @@ a > .rating > span:last-child {
   border-radius: 0.5rem;
   display: flex;
   min-width: 10rem;
-  min-height: 22rem;
+  min-height: 24rem;
   width: 95%;
   padding: 0.5rem;
   margin: .5rem;
