@@ -34,7 +34,7 @@ function Home (props) {
         <ul className="filter">
             <li>
                 <form onSubmit={submitHandler}>
-                    <input name="searchWord" placeholder="Search" onChange={(e) => {setSearchWord(e.target.value)}} />
+                    <input className = "search" name="searchWord" placeholder="Search" onChange={(e) => {setSearchWord(e.target.value)}} />
                     <button className = "cursor-pointer" type = "submit"><FontAwesomeIcon icon={faSearch}/></button>
                 </form>
             </li>
