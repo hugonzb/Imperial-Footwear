@@ -544,7 +544,7 @@ a > .rating > span:last-child {
   border-radius: 0.5rem;
   display: flex;
   min-width: 10rem;
-  min-height: 28rem;
+  min-height: 25rem;
   width: 95%;
   padding: 0.5rem;
   margin: .5rem;
