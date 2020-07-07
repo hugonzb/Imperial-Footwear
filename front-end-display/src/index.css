@@ -390,7 +390,7 @@ body::-webkit-scrollbar-thumb {
   padding: 5rem;
   background-color: rgb(235, 233, 233);
   min-width: 10rem;
-  max-width: 100rem;
+  max-width: 108rem;
   width: 100%;
   margin-left: 1rem;
 }
@@ -404,7 +404,7 @@ body::-webkit-scrollbar-thumb {
   border-radius: 0.5rem;
   background-color: rgb(235, 233, 233);
   min-width: 10rem;
-  max-width: 20rem;
+  max-width: 25rem;
   width: 100%;
 }
 
@@ -514,19 +514,20 @@ a > .rating > span:last-child {
   flex-wrap: wrap;
   max-height: 60rem;
   width: 100%;
-  max-width: 50rem;
+  max-width: 54rem;
+  margin-right: 0rem;
+  margin-top: 3%;
 }
 
 .shoe-detailed-image{
   justify-content: center;
-  flex-wrap: wrap;
   flex: 1 2 60rem;
   width: 100%;
   min-width: 22.5rem;
-  max-width: 70rem;
-  max-height: 70rem;
-  margin-left: 0.5rem;
-  margin-bottom: 1rem;
+  max-width: 64rem;
+  max-height: 60rem;
+  margin-left: 5%;
+  margin-top: 3rem;
 }
 
 .shoe-detailed-image img{
@@ -536,6 +537,7 @@ a > .rating > span:last-child {
   max-height: 62rem;
   display: flex;
   border: grey solid;
+  border-radius: 0.5rem;
 }
 
 .shoe-detailed-info{
@@ -544,9 +546,9 @@ a > .rating > span:last-child {
   border-radius: 0.5rem;
   display: flex;
   min-width: 10rem;
-  min-height: 30rem;
+  min-height: 22rem;
   width: 95%;
-  padding: 1rem;
+  padding: 0.5rem;
   margin: .5rem;
   max-height: 20rem;
 }
@@ -556,11 +558,14 @@ a > .rating > span:last-child {
   border: .1rem grey solid;
   border-radius: .5rem;
   background-color: lightgray;
-  padding: 1rem;
+  padding: 0.5rem;
+  padding-bottom: 1.5rem;
   min-width: 10rem;
   width: 95%;
   display: flex;
   margin: .5rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
   max-height: 15rem;
 }
 

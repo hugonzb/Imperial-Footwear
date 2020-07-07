@@ -70,6 +70,12 @@ function Shoe (props) {
                             Style: {shoe.style}
                         </li>
                         <li>
+                            Price: $<b>{shoe.price}</b>
+                        </li>
+                        <li>
+                            Designer: {shoe.designer}
+                        </li>
+                        <li>
                             <a href="#reviews">
                             <Rating 
                             value={shoe.rating}
@@ -79,12 +85,6 @@ function Shoe (props) {
                                 value={-1}
                                 text={shoe.numRatings + " Reviews"}/>
                                 : null}
-                        </li>
-                        <li>
-                            Price: $<b>{shoe.price}</b>
-                        </li>
-                        <li>
-                            Designer: {shoe.designer}
                         </li>
                     </ul>
                     </div>
