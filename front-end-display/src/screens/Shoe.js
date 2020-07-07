@@ -83,9 +83,8 @@ function Shoe (props) {
                         <li>
                             Price: $<b>{shoe.price}</b>
                         </li>
-                        <b>Description:</b>
                         <li>
-                            {shoe.description}
+                            Designer: {shoe.designer}
                         </li>
                     </ul>
                     </div>

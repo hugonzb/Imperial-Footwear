@@ -12,6 +12,7 @@ const shoeSchema = new mongoose.Schema({
     name: { type: String, required: true },
     image: { type: String, required: true },
     year: { type: String, required: true },
+    designer: { type: String, required: true },
     price: { type: Number, default: 0, required: true },
     colorway: { type: String, required: true },
     rating: { type: Number, default: 0, required: true },

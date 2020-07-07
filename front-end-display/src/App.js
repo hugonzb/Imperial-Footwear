@@ -77,7 +77,7 @@ function App() {
                         </Link>
                     </li>
                     <li className= "sidebar-logo">
-                        <Link to="/brand/adidas">
+                        <Link to="/brand/Adidas">
                         <button className ="sidebar-button" href="index.html">
                             <img src="../images/adidas.png" alt="adidas"></img>
                         </button>
