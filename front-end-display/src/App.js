@@ -34,12 +34,19 @@ function App() {
     <div className="grid-container">
             <header className="header">
                 <div className="main-logo">
+                    <div>
                     <button onClick={sidebarOpen}>
                         &#9776;
                     </button>
+                    </div>
+                    <div className ="if-logo">
                     <Link to="/">Imperial Footwear</Link>
+                    </div>
                 </div>
                 <div className="header-buttons">
+                    {/* <Link to="/shoes">Add Product</Link>  */}
+                    <a href="shoppingcart.html">Shopping Cart</a>
+                    <Link to="/about">About</Link>
                     <div className="dropdown">
                         <button className="dropdown-button"> {
                                 userInfo ? ( userInfo.name ) :
@@ -53,9 +60,6 @@ function App() {
                             { userInfo ? ( <button type ="button" className="logout-button" onClick={handleLogout} >Log out</button> ) : ( <Link to="/register">Register</Link> ) }
                         </div>
                     </div>
-                    {/* <Link to="/shoes">Add Product</Link>  */}
-                    <a href="shoppingcart.html">Shopping Cart</a>
-                    <Link to="/about">About</Link>
                 </div>
             </header>
             <aside className="sidebar-menu">
