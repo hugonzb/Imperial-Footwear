@@ -70,7 +70,7 @@ function Shoe (props) {
                             Style: {shoe.style}
                         </li>
                         <li>
-                            Price: $<b>{shoe.price}</b>
+                            Price: <b>${shoe.price}</b>
                         </li>
                         <li>
                             Designer: {shoe.designer}
