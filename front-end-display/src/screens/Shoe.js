@@ -108,7 +108,7 @@ function Shoe (props) {
                             </select>
                         </li>
                         <li>
-                            <button onClick={addToCart} className="submit-button">Purchase</button>
+                            <button onClick={addToCart} className="submit-button">Add to Cart</button>
                         </li>
                     </ul>
                 </div>
