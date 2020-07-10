@@ -42,13 +42,14 @@ function SignIn (props) {
                     <input type ="password" name="password" id="password" onChange ={(e) => setPassword(e.target.value)}></input>
                 </li>
                 <li>
-                    <button type = "submit" className="button primary">Sign In</button>
+                    <button type = "submit" className="submit-button">Sign In</button>
                 </li>
                 <li>
+                    <br></br>
                     New to Imperial Footwear?
                 </li>
                 <li>
-                    <Link to="/register" className="button full-width">Create account here</Link>
+                    <Link to="/register" className="button full-width">Create your account here</Link>
                 </li>
             </ul>
         </form>

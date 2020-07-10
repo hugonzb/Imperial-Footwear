@@ -105,7 +105,7 @@ function Shoe (props) {
                             </select>
                         </li>
                         <li>
-                            <button className="shoe-purchase-button">Purchase</button>
+                            <button className="submit-button">Purchase</button>
                         </li>
                     </ul>
                 </div>

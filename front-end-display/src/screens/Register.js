@@ -52,7 +52,7 @@ function Register (props) {
                     <input type ="password" name="rePassword" id="rePassword" onChange ={(e) => setRePassword(e.target.value)}></input>
                 </li>
                 <li>
-                    <button type = "submit" className="button primary">Register</button>
+                    <button type = "submit" className="submit-button">Register</button>
                 </li>
             </ul>
         </form>
