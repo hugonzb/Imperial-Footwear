@@ -45,8 +45,8 @@ function App() {
                 </div>
                 <div className="header-buttons">
                     {/* <Link to="/shoes">Add Product</Link>  */}
-                    <a href="shoppingcart.html">Shopping Cart</a>
                     <Link to="/about">About</Link>
+                    <a href="shoppingcart.html">Shopping Cart</a>
                     <div className="dropdown">
                         <button className="dropdown-button"> {
                                 userInfo ? ( userInfo.name ) :
