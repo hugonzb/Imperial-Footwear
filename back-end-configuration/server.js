@@ -34,5 +34,8 @@ app.get("/api/shoes", (req, res) => {
 */
 
 app.use(express.static(path.join(__dirname, '/../front-end-display/build')));
+app.get('*', (req, res) => {
+    res.sendFile(path.join(`${__dirname}/../front-end-display/build/index.html`));
+});
 
 app.listen(config.PORT, () => { console.log("Server successfully started"); });
