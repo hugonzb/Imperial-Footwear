@@ -39,6 +39,9 @@ function Shoe (props) {
             })
         );
     };
+    const addToCart = () => {
+        props.history.push('/cart/' + props.match.params.id + '?qty=' + qty);
+    };
 
     return <div>
         <div className="shoe-detailed-back">
@@ -105,7 +108,7 @@ function Shoe (props) {
                             </select>
                         </li>
                         <li>
-                            <button className="submit-button">Purchase</button>
+                            <button onClick={addToCart} className="submit-button">Purchase</button>
                         </li>
                     </ul>
                 </div>

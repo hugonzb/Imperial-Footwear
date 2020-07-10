@@ -13,6 +13,7 @@ import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
 import { faHeart } from "@fortawesome/free-solid-svg-icons";
 import { logout } from './actions/userActions';
 import About from './screens/About';
+import CartScreen from './screens/CartScreen';
 
 function App() {
     const dispatch = useDispatch();
@@ -46,7 +47,7 @@ function App() {
                 <div className="header-buttons">
                     {/* <Link to="/shoes">Add Product</Link>  */}
                     <Link to="/about">About</Link>
-                    <a href="shoppingcart.html">Shopping Cart</a>
+                    <Link to="/cart">Shopping Cart</Link>
                     <div className="dropdown">
                         <button className="dropdown-button"> {
                                 userInfo ? ( userInfo.name ) :
@@ -133,6 +134,7 @@ function App() {
             </aside>
             <div className="main">
                 <div className="content-display">
+                    <Route path ="/cart/:id?" component ={CartScreen} />
                     <Route path="/about" exact={true} component={About} />
                     <Route path="/shoeCreate" component={ShoeCreate} />
                     <Route path="/shoes" component={ShoeCreate} />
