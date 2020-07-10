@@ -257,12 +257,12 @@ body::-webkit-scrollbar-thumb {
   float: none;
   color: white;
   padding: 8px 8px;
-  width: 12rem;
+  width: 12.3rem;
   margin-bottom: 0;
   text-decoration: none;
-  background-color: grey;
+  background-color: rgb(48, 48, 48);
   display: block;
-  min-width: 10rem;
+  min-width: 10.4rem;
   border-radius: 0.5rem;
   text-align: center;
   color: oldlace;
@@ -376,7 +376,7 @@ body::-webkit-scrollbar-thumb {
   flex-direction: column;
   text-decoration: none;
   justify-content: space-between;
-  background-color: rgb(189, 189, 218);
+  background-color: rgb(142, 160, 199);
 }
 
 .shoe-info-detailed{
@@ -759,6 +759,12 @@ option {
   
   .header-buttons {
     float: none;
+    text-align: center;
+  }
+
+  .header-buttons a{
+    float: none;
+    text-align: center;
   }
 
   .main-logo{
