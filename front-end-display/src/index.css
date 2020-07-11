@@ -382,7 +382,7 @@ body::-webkit-scrollbar-thumb {
   flex-direction: column;
   text-decoration: none;
   justify-content: space-between;
-  background-color: rgb(142, 160, 199);
+  background-color: rgb(180, 185, 192);
 }
 
 .shoe-info-detailed{
@@ -761,37 +761,62 @@ input{
   list-style-type: none;
 }
 
+.cart-list-container li{
+  display: flex;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: .1rem #808080 solid;
+}
+
 .cart-list-container li:first-child{
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  border-top: .1rem #808080 solid;
+  padding-top: 1rem;
 }
 
-.cart-list-container li img{
+.cart-list-container img{
   max-height: 20rem; 
   max-width: 20rem;
   border: .1rem rgb(117, 117, 117) solid;
   border-radius: 0.5rem;
 }
 
+.cart-item{
+  display: flex;
+  max-width: 40rem;
+}
+
 .cart-image{
   flex: 1 1;
+  margin-right: 2rem;
 }
 
 .cart-name{
   flex: 8 1;
+  margin-bottom: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.cart-colorway{
+  flex: 1 1;
+  margin-top: 0.8rem;
 }
 
 .cart-price{
   flex: 1 1;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-top: 0.8rem;
 }
 
 .cart-action{
   flex: 1 1 20rem;
-  background-color: #f8f8f8;
+  background-color: #e0dddd;
   border: .1rem #f0f0f0 solid;
   border-radius: 0.5rem;
   padding: 1rem;
+  margin-top: 3rem;
 }
 
 /* misc */

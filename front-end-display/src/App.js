@@ -151,8 +151,12 @@ function App() {
                 Developed and Maintained by Hugo Baird (hugonzb@gmail.com)
                 </div>
                 <div>
-                    <a href="https://github.com/hugonzb"><img className ="github-footer" src="../images/githubwhite.png" alt="github"></img></a>
-                    <a href="https://www.linkedin.com/in/hugo-baird/"><img src="../images/linkedinblue.png" alt="linkedin"></img></a>
+                    <a href="https://github.com/hugonzb">
+                        <img className ="github-footer" src="../images/githubwhite.png" alt="github"></img>
+                    </a>
+                    <a href="https://www.linkedin.com/in/hugo-baird/">
+                        <img src="../images/linkedinblue.png" alt="linkedin"></img>
+                    </a>
                 </div>
             </footer>
         </div>

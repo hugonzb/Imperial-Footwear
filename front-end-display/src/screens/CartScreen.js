@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { addToCart } from '../actions/cartActions';
 
@@ -20,7 +21,6 @@ function CartScreen(props){
                 Shopping Cart
             </div>
             <ul className="cart-list-container">
-                <li>
                     {
                         cartItems.length === 0?
                         <div>
@@ -28,22 +28,30 @@ function CartScreen(props){
                         </div>
                         :
                         cartItems.map( item =>
-                            <div>
-                                <div className="cart-image">
-                                <img src={item.image} alt ="shoe"/>
+                            <li>
+                                <div className="cart-item">
+                                    <div className="cart-image">
+                                        <img src={item.image} alt ="shoe"/>
+                                    </div>
+                                    <div className="cart-info">
+                                        <div className="cart-name">
+                                            <Link to={"/shoe/" + item.shoe }>
+                                                {item.name}
+                                            </Link>
+                                        </div>
+                                        <div>
+                                            {item.style}
+                                        </div>
+                                        <div className="cart-colorway">
+                                            {item.colorway}
+                                        </div>
+                                        <div className="cart-price">
+                                            ${item.price}
+                                        </div>
+                                    </div>
                                 </div>
-                                <div className="cart-name">
-                                    {item.name}
-                                </div>
-                                <div>
-                                    {item.style}
-                                </div>
-                                <div className="cart-price">
-                                    ${item.price}
-                                </div>
-                            </div>)
+                            </li>)
                     }
-                </li>
             </ul>
         </div>
         <div className="cart-action">

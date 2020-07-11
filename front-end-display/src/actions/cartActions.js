@@ -12,6 +12,7 @@ const addToCart = (shoeId, qty) => async (dispatch) => {
                 price: data.price,
                 stock: data.stock,
                 style: data.style,
+                colorway: data.colorway,
                 qty
             }
         });
