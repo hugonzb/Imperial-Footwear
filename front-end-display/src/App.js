@@ -9,7 +9,7 @@ import Favorites from './screens/Favorites';
 import { useSelector, useDispatch } from 'react-redux';
 import ShoeCreate from './screens/ShoeCreate';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
+import { faAngleDown, faShoppingCart, faUserCircle, faInfoCircle } from "@fortawesome/free-solid-svg-icons";
 import { faHeart } from "@fortawesome/free-solid-svg-icons";
 import { logout } from './actions/userActions';
 import About from './screens/About';
@@ -46,10 +46,10 @@ function App() {
                 </div>
                 <div className="header-buttons">
                     {/* <Link to="/shoes">Add Product</Link>  */}
-                    <Link to="/about">About</Link>
-                    <Link to="/cart">Shopping Cart</Link>
+                    <Link to="/about"><FontAwesomeIcon icon={faInfoCircle} />&nbsp; About</Link>
+                    <Link to="/cart"><FontAwesomeIcon icon={faShoppingCart}/>&nbsp; Cart</Link>
                     <div className="dropdown">
-                        <button className="dropdown-button"> {
+                        <button className="dropdown-button"> <FontAwesomeIcon icon={faUserCircle} />&nbsp; {
                                 userInfo ? ( userInfo.name ) :
                                 ( "Account" )
                                 } <FontAwesomeIcon icon={faAngleDown} /></button>
