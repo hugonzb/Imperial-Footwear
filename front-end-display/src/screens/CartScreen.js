@@ -16,12 +16,10 @@ function CartScreen(props){
 
     return <div className="cart">
         <div className="cart-list">
+            <div className="home-brand-name">
+                Shopping Cart
+            </div>
             <ul className="cart-list-container">
-                <li>
-                    <h3>
-                        Shopping Cart
-                    </h3>
-                </li>
                 <li>
                     {
                         cartItems.length === 0?

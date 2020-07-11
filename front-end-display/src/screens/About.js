@@ -7,8 +7,10 @@ function About () {
             <h2>Overview</h2>
             This is a personal full-stack development 
             project that aims to provide an eCommerce 
-            footwear website for users to purchase and 
-            review designer shoes.
+            footwear service for users to purchase and 
+            review designer shoes. This project is completely
+            fictional and developed to practice and demonstrate
+            my skills using these technologies.
         </div>
         <div className="about-text">
             <h2>Technologies and Frameworks</h2>

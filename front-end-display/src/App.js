@@ -36,7 +36,7 @@ function App() {
             <header className="header">
                 <div className="main-logo">
                     <div>
-                    <button onClick={sidebarOpen}>
+                    <button className="sidebar-burger" onClick={sidebarOpen}>
                         &#9776;
                     </button>
                     </div>

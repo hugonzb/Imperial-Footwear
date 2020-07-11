@@ -45,7 +45,7 @@ body::-webkit-scrollbar-thumb {
   overflow: hidden;
   display: flex;
   justify-content: space-between;
-  background-color: black;
+  background-color: rgb(12, 12, 12);
   align-content: center;
   padding: 1rem;
   max-height: 4rem;
@@ -107,6 +107,7 @@ body::-webkit-scrollbar-thumb {
   background-color: rgb(44, 43, 43);
   height: 90%;
   text-decoration: none;
+  outline-style: none;
 }
 
 .sidebar-name{
@@ -122,6 +123,7 @@ body::-webkit-scrollbar-thumb {
   transition: all 200ms ease;
   transform: translateX(0);
   text-decoration: none;
+  outline-style: none;
 }
 
 .sidebar-close{
@@ -157,6 +159,10 @@ body::-webkit-scrollbar-thumb {
   align-items: center;
 }
 
+.sidebar-burger{
+  outline-style: none;
+}
+
 .sidebar-button{
   cursor: pointer;
   width: 30rem;
@@ -170,6 +176,7 @@ body::-webkit-scrollbar-thumb {
   font-weight: bold;
   font-size: 1.5rem;
   text-decoration: none;
+  outline-style: none;
 }
 
 .sidebar-button img{
@@ -677,7 +684,7 @@ input{
 .about-text{
   max-width: 40rem;
   margin: 1.5rem;
-  border: 0.125rem rgb(1, 1, 78) solid;
+  border: 0.125rem rgb(18, 18, 54) solid;
   font-family: 'Quicksand', sans-serif;
   padding:3rem;
   background-color: rgb(197, 200, 218);
