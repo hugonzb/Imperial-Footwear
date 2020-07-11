@@ -39,7 +39,10 @@ function CartScreen(props){
                                    {item.name}
                                </div>
                                <div>
-                                   {item.price}
+                                   {item.style}
+                               </div>
+                               <div>
+                                   ${item.price}
                                </div>
                             </div>)
                     }
@@ -47,9 +50,17 @@ function CartScreen(props){
             </ul>
         </div>
         <div className="cart-action">
+            <h3>
+                Subtotal ( Quantity: {cartItems.reduce((a,c) => a + c.qty, 0)} )
+                :
+                $ {cartItems.reduce((a,c) => a + c.price * c.qty, 0)}
+            </h3>
+            <button className ="submit-button" disabled={cartItems.length===0}>
+                Proceed to Checkout
+            </button>
             
         </div>
     </div>
-}
+}                           
 
 export default CartScreen;
