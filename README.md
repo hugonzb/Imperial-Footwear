@@ -2,7 +2,7 @@
 [![HitCount](http://hits.dwyl.com/hugonzb/Imperial-Footwear.svg)](http://hits.dwyl.com/hugonzb/Imperial-Footwear)
 <br><br>
 ## [LIVE Demo Here!](https://imperial-footwear.herokuapp.com/)
-Note: The link may take a while to load, so you may have to be a little patient. :)
+Note: The link may take a while to load - you may have to be a little patient! 
 <br>
 
 ### Features
