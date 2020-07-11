@@ -148,10 +148,11 @@ function App() {
             </div>
             <footer className="footer">
                 <div>
-                Developed and Maintained by Hugo Baird
+                Developed and Maintained by Hugo Baird (hugonzb@gmail.com)
                 </div>
                 <div>
-                Email: hugonzb@gmail.com
+                    <a href="https://github.com/hugonzb"><img className ="github-footer" src="../images/githubwhite.png" alt="github"></img></a>
+                    <a href="https://www.linkedin.com/in/hugo-baird/"><img src="../images/linkedinblue.png" alt="linkedin"></img></a>
                 </div>
             </footer>
         </div>

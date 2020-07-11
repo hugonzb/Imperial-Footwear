@@ -524,15 +524,28 @@ a > .rating > span:last-child {
 /* Footer */
 
 .footer{
-  padding: 3rem;
+  padding-top: 3rem;
   grid-area: footer;
   display: flex;
-  background-color: black;
+  background-color: rgb(12, 12, 12);
   justify-content: center;
   align-items: center;
+  text-align: center;
   color: white;
   flex-direction: column;
   white-space: pre-line;
+}
+
+.footer img{
+  height: 4rem;
+  margin-top: 1rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.github-footer{
+  max-height: 3rem;
+  margin-bottom: 0.7rem;
 }
 
 /* Styling for shoe details (when user clicks on a shoe) */
