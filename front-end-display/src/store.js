@@ -6,8 +6,8 @@ import { cartReducer } from './reducers/cartReducer';
 import Cookie from 'js-cookie';
 
 const userInfo = Cookie.getJSON("userInfo") || null;
-
-const initialState = {userSignin: {userInfo}};
+const cartItems = Cookie.getJSON("cartItems") || [];
+const initialState = {userSignin: {userInfo}, cart: {cartItems}};
 const reducer = combineReducers({
     shoeList: shoeListReducer,
     shoeDetails: shoeDetailsReducer,
