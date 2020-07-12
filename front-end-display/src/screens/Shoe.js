@@ -101,11 +101,14 @@ function Shoe (props) {
                             Stock: {shoe.stock}
                         </li>
                         <li>
-                            Qty: {' '} <select value={qty} onChange={(e) => {setQty(e.target.value)}}>
+                           
+                            Quantity: 
+                            <div className="select">{' '} <select value={qty} onChange={(e) => {setQty(e.target.value)}}>
                             {[...Array(shoe.stock).keys()].map((x) =>
                                 <option key={x+1} value={x+1}>{x+1}</option>
                                 )}
                             </select>
+                            </div>
                         </li>
                         <li>
                             <button onClick={addToCart} className="submit-button">Add to Cart</button>
@@ -131,7 +134,7 @@ function Shoe (props) {
                                     </label>
                                     <select name="rating" id="rating" value={rating}
                                     onChange={(e)=> setRating(e.target.value)}>
-                                        <option value="1" disabled selected data-default>Select your rating...</option>
+                                        <option value="0" disabled selected data-default>Select your rating...</option>
                                         <option value="1">1 Star</option>
                                         <option value="2">2 Stars</option>
                                         <option value="3">3 Stars</option>
