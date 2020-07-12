@@ -5,23 +5,24 @@
 Note: The link may take a while to load - you may have to be a little patient! 
 <br>
 
-### Features
+## Features
+
 **1. Search for particular Footwear.**
 
-**2. Filter Footwear by Brands.**
+**2. Filter Footwear by a particular brand.**
 
-**3. Create account and Sign in functionality with JWT Authentication.**
+**3. Create account and Sign in functionality (with JWT Authentication).**
 
 **4. Create a review for a specific shoe/footwear and rate it out of 5**
 
-**5. Responsive design.**
+**5. Responsive design and mobile-friendly.**
 <br>
-### Upcoming features
+## Upcoming features
 - Add to cart and checkout
 - Responsive header
 - Imperial-Footwear Logo
 
-# Run the project in your environment
+## Run the project in your environment
 
 #### Clone the project: 
 https://github.com/hugonzb/Imperial-Footwear.git
