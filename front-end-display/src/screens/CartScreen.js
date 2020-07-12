@@ -73,14 +73,14 @@ function CartScreen(props){
                             </li>)
                     }
                                 <div className="cart-action">
-                <h2>
+                <div className="cart-summary-header">
                     Cart Summary
-                </h2>
-                <h3>
+                </div>
+                <div className="cart-summary">
                     Total Quantity: {cartItems.reduce((a,c) => a + c.qty, 0)} items
                     <br></br>
                     Total Price: ${cartItems.reduce((a,c) => a + c.price * c.qty, 0)}
-                </h3>
+                </div>
                 <button onClick={checkoutHandler} className ="submit-button" disabled={cartItems.length===0}>
                     Proceed To Checkout
                 </button>
