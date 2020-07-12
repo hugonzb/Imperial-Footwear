@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {BrowserRouter, Route, Link} from 'react-router-dom';
 import './App.css';
 import Home from './screens/Home';
@@ -50,7 +50,7 @@ function App() {
                     <Link to="/cart"><FontAwesomeIcon icon={faShoppingCart}/>&nbsp; Cart</Link>
                     <div className="dropdown">
                         <button className="dropdown-button"> <FontAwesomeIcon icon={faUserCircle} />&nbsp; {
-                                userInfo ? ( userInfo.name ) :
+                                userInfo ? ( userInfo.name  ) :
                                 ( "Account" )
                                 } <FontAwesomeIcon icon={faAngleDown} /></button>
                         <div className="dropdown-content">
