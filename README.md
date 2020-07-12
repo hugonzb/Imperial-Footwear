@@ -7,15 +7,17 @@ Note: The link may take a while to load - you may have to be a little patient!
 
 ## Features
 
-**1. Search for particular Footwear.**
+*1. Search for particular Footwear.*
 
-**2. Filter Footwear by a particular brand.**
+*2. Filter Footwear by a particular brand.*
 
-**3. Create account and Sign in functionality (with JWT Authentication).**
+*3. Create account and Sign in functionality (with JWT Authentication).*
 
-**4. Create a review for a specific shoe/footwear and rate it out of 5**
+*4. Add footwear to a shopping cart with a redirect to checkout.*
 
-**5. Responsive design and mobile-friendly.**
+*5. Create a review for a specific shoe/footwear and rate it out of 5.*
+
+*6. Responsive design and mobile-friendly.*
 <br>
 ## Upcoming features
 - Add to cart and checkout
