@@ -17,7 +17,9 @@ function CartScreen(props){
             dispatch(addToCart(shoeId, qty));
         }
     }, []);
-
+    const checkoutHandler= () => {
+        props.history.push("/signin?redirect=checkout");
+    }
     return <div className="cart">
         <div className="cart-list">
             <div className="home-brand-name">
@@ -27,7 +29,7 @@ function CartScreen(props){
                     {
                         cartItems.length === 0?
                         <div>
-                            Cart is empty
+                            Your cart is currently empty.
                         </div>
                         :
                         cartItems.map( item =>
@@ -38,7 +40,7 @@ function CartScreen(props){
                                     </div>
                                     <div className="cart-info">
                                         <div className="cart-name">
-                                            <Link to={"/shoe/" + item.shoe }>
+                                            <Link className= "cart-name" to={"/shoe/" + item.shoe }>
                                                 {item.name}
                                             </Link>
                                         </div>
@@ -52,25 +54,28 @@ function CartScreen(props){
                                             ${item.price}
                                         </div>
                                     </div>
-                                    <button type="submit-button" onClick={() => removeFromCartHandler(item.shoe)}> 
-                                        Delete
+                                </div>
+                                <div className="cart-buttons">
+                                    <button type="cart-delete-button" className="cart-delete-button" onClick={() => removeFromCartHandler(item.shoe)}> 
+                                        Remove
                                     </button> 
                                 </div>
                             </li>)
                     }
+                                <div className="cart-action">
+                <h3>
+                    Subtotal ( Quantity: {cartItems.reduce((a,c) => a + c.qty, 0)} )
+                    :
+                    $ {cartItems.reduce((a,c) => a + c.price * c.qty, 0)}
+                </h3>
+                <button onClick={checkoutHandler} className ="submit-button" disabled={cartItems.length===0}>
+                    Proceed To Checkout
+                </button>
+            </div>
             </ul>
+
         </div>
-        <div className="cart-action">
-            <h3>
-                Subtotal ( Quantity: {cartItems.reduce((a,c) => a + c.qty, 0)} )
-                :
-                $ {cartItems.reduce((a,c) => a + c.price * c.qty, 0)}
-            </h3>
-            <button className ="submit-button" disabled={cartItems.length===0}>
-                Proceed to Checkout
-            </button>
-            
-        </div>
+
     </div>
 }                           
 
