@@ -1,10 +1,13 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import Cookie from "js-cookie";
 import { useDispatch, useSelector } from 'react-redux';
 import { addToCart, removeFromCart } from '../actions/cartActions';
 
 function CartScreen(props){
     const cart = useSelector(state => state.cart);
+    const userSignin = useSelector(state=>state.userSignin);
+    const {userInfo} = userSignin;
     const { cartItems } = cart;
     const shoeId = props.match.params.id;
     const qty = props.location.search? Number(props.location.search.split("=")[1]):1;
@@ -16,10 +19,15 @@ function CartScreen(props){
         if(shoeId){
             dispatch(addToCart(shoeId, qty));
         }
+    // eslint-disable-next-line
     }, []);
+
     const checkoutHandler= () => {
-        props.history.push("/signin?redirect=checkout");
+        userInfo?props.history.push("/about"):
+        props.history.push("/signin");
+        Cookie.remove("cartItems");
     }
+    
     return <div className="cart">
         <div className="cart-list">
             <div className="home-brand-name">

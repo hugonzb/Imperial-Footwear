@@ -383,7 +383,7 @@ body::-webkit-scrollbar-thumb {
   flex-direction: column;
   text-decoration: none;
   justify-content: space-between;
-  background-color: rgb(117, 141, 165);
+  background-color: rgb(140, 154, 168);
 }
 
 .shoe-info-detailed{

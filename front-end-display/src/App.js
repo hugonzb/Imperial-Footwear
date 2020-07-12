@@ -135,7 +135,7 @@ function App() {
             <div className="main">
                 <div className="content-display">
                     <Route path ="/cart/:id?" component ={CartScreen} />
-                    <Route path="/about" exact={true} component={About} />
+                    <Route path="/about" component={About} />
                     <Route path="/shoeCreate" component={ShoeCreate} />
                     <Route path="/shoes" component={ShoeCreate} />
                     <Route path="/signin" component={SignIn} />
