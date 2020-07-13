@@ -1,8 +1,7 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import Cookie from "js-cookie";
 import { useDispatch, useSelector } from 'react-redux';
-import { addToCart, removeFromCart } from '../actions/cartActions';
+import { addToCart, removeFromCart, removeCart } from '../actions/cartActions';
 
 function CartScreen(props){
     const cart = useSelector(state => state.cart);
@@ -23,9 +22,12 @@ function CartScreen(props){
     }, []);
 
     const checkoutHandler= () => {
-        userInfo?props.history.push("/checkout"):
-        props.history.push("/signin");
-        Cookie.remove("cartItems");
+        if(userInfo){
+            props.history.push("/checkout");
+            dispatch(removeCart());
+        }else{
+            props.history.push("/signin");
+        }
     }
     
     return <div className="cart">
