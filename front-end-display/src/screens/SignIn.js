@@ -25,6 +25,7 @@ function SignIn (props) {
         e.preventDefault();
         dispatch(signin(email, password));
     }
+
     return <div className="form">
         <form onSubmit={submitHandler}>
             <ul className="form-container">

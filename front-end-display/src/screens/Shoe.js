@@ -163,7 +163,7 @@ function Shoe (props) {
                         </li>
                     <div>
                     <h2> Customer Reviews </h2>
-                    {!shoe.reviews.length && <div> There are currently no reviews, be the first? </div>}
+                    {!shoe.reviews.length && <div className="review-signin-message"> There are currently no reviews, be the first? </div>}
                     <ul className="review" id="reviews">
                         {shoe.reviews.slice(0).reverse().map((review) => (
                             <li key={review._id}>
