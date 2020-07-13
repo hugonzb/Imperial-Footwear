@@ -46,7 +46,7 @@ function Shoe (props) {
     return <div>
         <div className="shoe-detailed-back">
             <Link to="/"> 
-                <img src="../images/arrow.png" alt="jordan"></img>
+                <img src="../images/arrow.png" alt="arrow"></img>
             </Link>
         </div>
         {loading? <div>Loading Chosen Shoe...</div>:

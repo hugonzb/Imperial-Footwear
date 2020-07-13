@@ -33,11 +33,24 @@ function CartScreen(props){
             <div className="home-brand-name">
                 Shopping Cart
             </div>
+            { cartItems.length !== 0?
+            <div className="shoe-detailed-back">
+                <Link to="/"> 
+                    <div><img src="../images/arrow.png" alt="arrow"></img></div>
+                </Link>
+                <Link to="/"> 
+                    <div className="cart-name">&nbsp; Continue Shopping</div>
+                </Link>
+            </div> 
+            :
+            null }
             <ul className="cart-list-container">
                     {
                         cartItems.length === 0?
-                        <div>
-                            Your cart is currently empty.
+                        <div className="cart-empty-message">
+                            Your cart is currently empty. 
+                            <br></br>
+                            Start shopping <Link to="/"> here </Link>
                         </div>
                         :
                         cartItems.map( item =>

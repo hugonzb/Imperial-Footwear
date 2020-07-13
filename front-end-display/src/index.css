@@ -640,6 +640,11 @@ a > .rating > span:last-child {
 .shoe-detailed-back{
   margin-left: 1rem;
   margin-top: 1rem;
+  text-decoration: none;
+  color: black;
+  max-height: 3rem;
+  display: flex;
+  flex-direction: row;
 }
 .shoe-detailed-back .img{
   max-height: 0.5rem;
@@ -863,6 +868,10 @@ input{
   font-family: 'Quicksand', sans-serif;
   font-weight: bold;
   margin-bottom: 2rem;
+}
+
+.cart-empty-message{
+  text-align: center;
 }
 
 /* misc */
