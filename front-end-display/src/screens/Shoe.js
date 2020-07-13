@@ -25,6 +25,7 @@ function Shoe (props) {
             dispatch({ type: SHOE_REVIEW_SAVE_RESET });
         }
         dispatch(detailsShoe(props.match.params.id));
+        window.scrollTo(0, 0);
         return () => {
         };
     // eslint-disable-next-line
