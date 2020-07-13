@@ -17,6 +17,7 @@ function Home (props) {
 
     useEffect(() => {
         dispatch(listShoes(brand));
+        window.scrollTo(0, 0);
         return () => {
         };
         // eslint-disable-next-line

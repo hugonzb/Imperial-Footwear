@@ -15,8 +15,8 @@ function SignIn (props) {
         if(userInfo){
             props.history.push("/");
         }
+        window.scrollTo(0, 0);
         return () => {
-            //
         };
     // eslint-disable-next-line 
     }, [userInfo]);

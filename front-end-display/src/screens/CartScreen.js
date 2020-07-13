@@ -18,6 +18,7 @@ function CartScreen(props){
         if(shoeId){
             dispatch(addToCart(shoeId, qty));
         }
+        window.scrollTo(0, 0);
     // eslint-disable-next-line
     }, []);
 
@@ -29,6 +30,7 @@ function CartScreen(props){
             props.history.push("/signin");
         }
     }
+
     
     return <div className="cart">
         <div className="cart-list">
