@@ -7,16 +7,13 @@ function Register (props) {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-    // eslint-disable-next-line
     const [rePassword, setRePassword] = useState('');
     const userRegister = useSelector(state=>state.userRegister);
     const {loading, userInfo, error} = userRegister;
+    const [message, setMessage] = useState('');
     const dispatch = useDispatch();
 
     useEffect(() => {
-        if(userInfo){
-            props.history.push("/signin");
-        }
         window.scrollTo(0, 0);
         return () => {
         };
@@ -25,15 +22,23 @@ function Register (props) {
 
     const submitHandler = (e) => {
         e.preventDefault();
-        dispatch(register(name, email, password));
+        if(password === rePassword){
+            dispatch(register(name, email, password));
+            props.history.push("/signin");
+        }else{
+            setMessage("Passwords do not match");
+        }
     }
     return <div className="form">
         <form onSubmit={submitHandler}>
             <ul className="form-container">
                 <h2>Register</h2>
                 <li>
-                    {loading && <div>Loading Sign In...</div>}
+                    {loading && <div>Loading Register Form...</div>}
                     {error && <div>{error}</div>}
+                </li>
+                <li>
+                    {message}
                 </li>
                 <li>
                     <label htmlFor="email">Email</label>
