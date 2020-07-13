@@ -874,6 +874,15 @@ input{
   text-align: center;
 }
 
+.checkout{
+  background-color: rgb(226, 226, 224);
+  width: 100%;
+  height: 33rem;
+  text-align: center;
+  padding-top: 25rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 /* misc */
 
 .cursor-pointer{
@@ -919,12 +928,6 @@ select::-ms-expand {
   border-radius: .25em;
 }
 
-.s
-{
-    color:white;
-        font-size:0px;
-    display:none;
-}
 select {
   flex: 1;
   padding: 0 .5em;

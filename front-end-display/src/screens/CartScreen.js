@@ -23,7 +23,7 @@ function CartScreen(props){
     }, []);
 
     const checkoutHandler= () => {
-        userInfo?props.history.push("/about"):
+        userInfo?props.history.push("/checkout"):
         props.history.push("/signin");
         Cookie.remove("cartItems");
     }

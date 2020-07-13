@@ -14,6 +14,7 @@ import { faHeart } from "@fortawesome/free-solid-svg-icons";
 import { logout } from './actions/userActions';
 import About from './screens/About';
 import CartScreen from './screens/CartScreen';
+import Checkout from './screens/Checkout';
 
 function App() {
     const dispatch = useDispatch();
@@ -136,6 +137,7 @@ function App() {
                 <div className="content-display">
                     <Route path ="/cart/:id?" component ={CartScreen} />
                     <Route path="/about" component={About} />
+                    <Route path="/checkout" component={Checkout} />
                     <Route path="/shoeCreate" component={ShoeCreate} />
                     <Route path="/shoes" component={ShoeCreate} />
                     <Route path="/signin" component={SignIn} />
