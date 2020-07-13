@@ -30,14 +30,18 @@ function Shoe (props) {
     // eslint-disable-next-line
     }, [shoeSaveSuccess]);
     const submitHandler = (e) => {
-        e.preventDefault();
-        dispatch(
-            saveShoeReview(props.match.params.id, {
-                name: userInfo.name,
-                rating: rating,
-                comment: comment,
-            })
-        );
+        try {
+            e.preventDefault();
+            dispatch(
+                    saveShoeReview(props.match.params.id, {
+                        name: userInfo.name,
+                        rating: parseInt((rating.substring(0,1))),
+                        comment: comment,
+                    })
+            );
+        }catch(error){
+            alert("Please select a rating.");
+        }
     };
     const addToCart = () => {
         props.history.push('/cart/' + props.match.params.id + '?qty=' + qty);
@@ -132,15 +136,17 @@ function Shoe (props) {
                                     <label htmlFor="rating">
                                         Rating
                                     </label>
-                                    <select name="rating" id="rating" value={rating}
-                                    onChange={(e)=> setRating(e.target.value)}>
-                                        <option value="0" disabled selected data-default>Select your rating...</option>
-                                        <option value="1">1 Star</option>
-                                        <option value="2">2 Stars</option>
-                                        <option value="3">3 Stars</option>
-                                        <option value="4">4 Stars</option>
-                                        <option value="5">5 Stars</option>
-                                    </select>
+                                    <div className="select">
+                                        <select name="rating" required id="rating" value={rating}
+                                        onChange={(e)=> setRating(e.target.value)}>
+                                            <option value="1" disabled selected data-default>Select your rating...</option>
+                                            <option value="1s">1 Star</option>
+                                            <option value="2s">2 Stars</option>
+                                            <option value="3s">3 Stars</option>
+                                            <option value="4s">4 Stars</option>
+                                            <option value="5s">5 Stars</option>
+                                        </select>
+                                    </div>
                                 </li>
                                 <li>
                                     <label htmlFor="comment">Comment</label>

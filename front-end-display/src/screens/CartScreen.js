@@ -84,11 +84,13 @@ function CartScreen(props){
                                     </div>
                                     <div className="cart-quantity">
                                     Quantity &nbsp;
-                                    <select value ={item.qty} onChange={(e) => dispatch(addToCart(item.shoe, parseInt(e.target.value)))}>
-                                    {[...Array(item.stock).keys()].map((x) =>
-                                        <option key={x+1} value={x+1}>{x+1}</option>
-                                    )}
-                                    </select>
+                                        <div className="select">
+                                            <select value ={item.qty} onChange={(e) => dispatch(addToCart(item.shoe, parseInt(e.target.value)))}>
+                                            {[...Array(item.stock).keys()].map((x) =>
+                                                <option key={x+1} value={x+1}>{x+1}</option>
+                                            )}
+                                            </select>
+                                        </div>
                                     </div>
                                 </div>
                             </li>)

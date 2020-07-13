@@ -911,12 +911,19 @@ select::-ms-expand {
 .select {
   position: relative;
   display: flex;
-  width: 10em;
-  height: 2em;
+  width: 100%;
+  height: 1.5em;
   line-height: 3;
   background: #b3b3b4;
   overflow: hidden;
   border-radius: .25em;
+}
+
+.s
+{
+    color:white;
+        font-size:0px;
+    display:none;
 }
 select {
   flex: 1;
@@ -941,7 +948,7 @@ select {
 }
 /* Transition */
 .select:hover::after {
-  color: #f39c12;
+  color: #1329f3;
 }
 
 
