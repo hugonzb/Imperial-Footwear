@@ -32,7 +32,7 @@ function SignIn (props) {
     return <div className="form">
         <form onSubmit={submitHandler}>
             <ul className="form-container">
-                <div className="montserrat-header"><FontAwesomeIcon size="10px" icon={faUser}/>&nbsp;Sign In</div>
+                <div className="montserrat-header"><FontAwesomeIcon size="1x"icon={faUser}/>&nbsp;Sign In</div>
                 <li>
                     {loading && <div>Loading Sign In...</div>}
                     {error && <div>Invalid Email or Password</div>}
@@ -46,12 +46,12 @@ function SignIn (props) {
                     <input className="input-box" type ="password" name="password" id="password" onChange ={(e) => setPassword(e.target.value)}></input>
                 </li>
                 <li>
-                    <button type = "submit" className="signin-submit-button">Sign In</button>
+                    <button type = "submit" className="signreg-submit-button">SIGN IN</button>
                 </li>
                 <li className="montserrat-text">
                     <br></br>
                     New to Imperial Footwear?
-                    <Link to="/register" className="montserrat-text">Create your account here</Link>
+                    <div className="align-center"><Link to="/register">REGISTER HERE</Link></div>
                 </li>
             </ul>
         </form>

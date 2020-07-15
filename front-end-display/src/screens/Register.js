@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { register } from '../actions/userActions';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAddressCard } from "@fortawesome/free-solid-svg-icons";
 
 function Register (props) {
 
@@ -32,7 +34,7 @@ function Register (props) {
     return <div className="form">
         <form onSubmit={submitHandler}>
             <ul className="form-container">
-                <h2>Register</h2>
+                <div className="montserrat-header"><FontAwesomeIcon size="1x" icon={faAddressCard}></FontAwesomeIcon>&nbsp;Register</div>
                 <li>
                     {loading && <div>Loading Register Form...</div>}
                     {error && <div>{error}</div>}
@@ -41,23 +43,23 @@ function Register (props) {
                     {message}
                 </li>
                 <li>
-                    <label htmlFor="email">Email</label>
-                    <input type ="email" name="email" id="email" onChange ={(e) => setEmail(e.target.value.toLowerCase())}></input>
+                    <label className="montserrat-text" htmlFor="email">Email</label>
+                    <input className="input-box" type ="email" name="email" id="email" onChange ={(e) => setEmail(e.target.value.toLowerCase())}></input>
                 </li>
                 <li>
-                    <label htmlFor="name">Name</label>
-                    <input type ="name" name="name" id="name" onChange ={(e) => setName(e.target.value)}></input>
+                    <label className="montserrat-text" htmlFor="name">Name</label>
+                    <input className="input-box" type ="name" name="name" id="name" onChange ={(e) => setName(e.target.value)}></input>
                 </li>
                 <li>
-                    <label htmlFor="password">Password</label>
-                    <input type ="password" name="password" id="password" onChange ={(e) => setPassword(e.target.value)}></input>
+                    <label className="montserrat-text" htmlFor="password">Password</label>
+                    <input className="input-box" type ="password" name="password" id="password" onChange ={(e) => setPassword(e.target.value)}></input>
                 </li>
                 <li>
-                    <label htmlFor="rePassword">Re-Enter Password</label>
-                    <input type ="password" name="rePassword" id="rePassword" onChange ={(e) => setRePassword(e.target.value)}></input>
+                    <label className="montserrat-text" htmlFor="rePassword">Re-enter Password</label>
+                    <input className="input-box" type ="password" name="rePassword" id="rePassword" onChange ={(e) => setRePassword(e.target.value)}></input>
                 </li>
                 <li>
-                    <button type = "submit" className="submit-button">Register</button>
+                    <button type = "submit" className="signreg-submit-button">REGISTER</button>
                 </li>
             </ul>
         </form>
