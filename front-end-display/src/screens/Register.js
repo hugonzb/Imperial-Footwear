@@ -34,7 +34,7 @@ function Register (props) {
     return <div className="form">
         <form onSubmit={submitHandler}>
             <ul className="form-container">
-                <div className="montserrat-header"><FontAwesomeIcon size="1x" icon={faAddressCard}></FontAwesomeIcon>&nbsp;Register</div>
+                <div className="montserrat-header"><FontAwesomeIcon size="1x" icon={faAddressCard}/>&nbsp;Register</div>
                 <li>
                     {loading && <div>Loading Register Form...</div>}
                     {error && <div>{error}</div>}

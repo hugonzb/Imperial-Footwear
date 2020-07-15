@@ -2,6 +2,8 @@ import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { addToCart, removeFromCart, removeCart } from '../actions/cartActions';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 
 function CartScreen(props){
     const cart = useSelector(state => state.cart);
@@ -35,7 +37,7 @@ function CartScreen(props){
     return <div className="cart">
         <div className="cart-list">
             <div className="home-brand-name">
-                Shopping Cart
+                <FontAwesomeIcon icon={faShoppingCart}/> Shopping Cart
             </div>
             { cartItems.length !== 0?
             <div className="shoe-detailed-back">
@@ -43,7 +45,7 @@ function CartScreen(props){
                     <div><img src="../images/arrow.png" alt="arrow"></img></div>
                 </Link>
                 <Link to="/"> 
-                    <div className="cart-name">&nbsp; Continue Shopping</div>
+                    <div className="continue-shopping">&nbsp; Continue Shopping</div>
                 </Link>
             </div> 
             :
