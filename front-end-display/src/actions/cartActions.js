@@ -30,9 +30,10 @@ const removeFromCart = (shoeId) => (dispatch, getState) =>{
     Cookie.set("cartItems", JSON.stringify(cartItems));
 }
 
-const removeCart = () =>(dispatch)=>{
-    Cookie.remove("cartItems");
+const removeCart = () =>(dispatch, getState)=>{
     dispatch({type: CART_REMOVE_ALL_ITEMS});
+    const {cart:{cartItems}} = getState();
+    Cookie.set("cartItems", JSON.stringify(cartItems));
 }
 
 export { addToCart, removeFromCart, removeCart };

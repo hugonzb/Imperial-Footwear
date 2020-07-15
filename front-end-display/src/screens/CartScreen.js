@@ -29,7 +29,7 @@ function CartScreen(props){
             props.history.push("/checkout");
             dispatch(removeCart());
         }else{
-            props.history.push("/signin?redirect=checkout");
+            props.history.push("/signin?redirect=cart");
         }
     }
 
