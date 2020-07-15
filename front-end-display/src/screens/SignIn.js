@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import {Link} from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import { signin } from '../actions/userActions';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faUser } from "@fortawesome/free-solid-svg-icons";
 
 function SignIn (props) {
 
@@ -30,28 +32,26 @@ function SignIn (props) {
     return <div className="form">
         <form onSubmit={submitHandler}>
             <ul className="form-container">
-                <h2>Sign In</h2>
+                <div className="montserrat-header"><FontAwesomeIcon size="10px" icon={faUser}/>&nbsp;Sign In</div>
                 <li>
                     {loading && <div>Loading Sign In...</div>}
                     {error && <div>Invalid Email or Password</div>}
                 </li>
                 <li>
-                    <label htmlFor="email">Email</label>
-                    <input type ="email" name="email" id="email" onChange ={(e) => setEmail(e.target.value.toLowerCase())}></input>
+                    <label className="montserrat-text" htmlFor="email">Email</label>
+                    <input className="input-box" type ="email" name="email" id="email" onChange ={(e) => setEmail(e.target.value.toLowerCase())}></input>
                 </li>
                 <li>
-                    <label htmlFor="password">Password</label>
-                    <input type ="password" name="password" id="password" onChange ={(e) => setPassword(e.target.value)}></input>
+                    <label className="montserrat-text" htmlFor="password">Password</label>
+                    <input className="input-box" type ="password" name="password" id="password" onChange ={(e) => setPassword(e.target.value)}></input>
                 </li>
                 <li>
-                    <button type = "submit" className="submit-button">Sign In</button>
+                    <button type = "submit" className="signin-submit-button">Sign In</button>
                 </li>
-                <li>
+                <li className="montserrat-text">
                     <br></br>
                     New to Imperial Footwear?
-                </li>
-                <li>
-                    <Link to="/register" className="button full-width">Create your account here</Link>
+                    <Link to="/register" className="montserrat-text">Create your account here</Link>
                 </li>
             </ul>
         </form>
