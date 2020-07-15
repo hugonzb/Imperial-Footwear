@@ -9,7 +9,7 @@ import Favorites from './screens/Favorites';
 import { useSelector, useDispatch } from 'react-redux';
 import ShoeCreate from './screens/ShoeCreate';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAngleDown, faShoppingCart, faUserCircle, faInfoCircle } from "@fortawesome/free-solid-svg-icons";
+import { faAngleDown, faShoppingCart, faUserCircle, faInfoCircle, faShoePrints } from "@fortawesome/free-solid-svg-icons";
 import { faHeart } from "@fortawesome/free-solid-svg-icons";
 import { logout } from './actions/userActions';
 import About from './screens/About';
@@ -42,7 +42,7 @@ function App() {
                     </button>
                     </div>
                     <div className ="if-logo">
-                    <Link to="/">Imperial Footwear</Link>
+                        <Link to="/">IMPERIAL FOOTWEAR&nbsp; <FontAwesomeIcon color="white" icon={faShoePrints}/></Link>
                     </div>
                 </div>
                 <div className="header-buttons">
