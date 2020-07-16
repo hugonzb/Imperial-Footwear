@@ -30,7 +30,24 @@ function Home (props) {
 
     return <>
         {brand &&
-           <div className="home-brand-name">{brand}</div>}
+           <div className="home-brand-name">
+               {brand === "Jordan"?
+                <div><img src="../images/jordan.png" alt="jordan"></img></div>:null}
+                {brand === "Nike"?
+                <div><img src="../images/nike.png" alt="nike"></img></div>:null}
+                {brand === "Adidas"?
+                <div><img src="../images/adidas.png" alt="adidas"></img></div>:null}
+                {brand === "Converse"?
+                <div><img src="../images/converse.png" alt="converse"></img></div>:null}
+                {brand === "BAPE"?
+                <div><img src="../images/bape.png" alt="bape"></img></div>:null}
+                {brand === "Asics"?
+                <div><img src="../images/asics.png" alt="asics"></img></div>:null}
+                {brand === "Puma"?
+                <div><img src="../images/puma.png" alt="puma"></img></div>:null}
+                {brand === "Vans"?
+                <div><img src="../images/vans.png" alt="vans"></img></div>:null}
+            </div>}
 
         <ul className="filter">
             <li>

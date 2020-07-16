@@ -328,7 +328,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .home-brand-name{
-  background-color: white;
+  background-color: rgb(165, 163, 163);
   font-size: 3rem;
   font-family: 'Raleway', sans-serif;
   text-align: center;
@@ -337,9 +337,13 @@ body::-webkit-scrollbar-thumb {
   margin-bottom: 3rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  border: 0.1px rgb(184, 184, 184) solid;
+  border: 1px rgb(102, 101, 101) solid;
 }
 
+.home-brand-name img{
+  max-width: 10rem;
+  height: 5rem;
+}
 /* Display of all-footwear */
 .all-footwear{
   display: flex;
