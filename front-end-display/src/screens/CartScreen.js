@@ -36,7 +36,7 @@ function CartScreen(props){
     
     return <div className="cart">
         <div className="cart-list">
-            <div className="home-brand-name">
+            <div className="cart-header">
                 <FontAwesomeIcon icon={faShoppingCart}/> Shopping Cart
             </div>
             { cartItems.length !== 0?
@@ -54,9 +54,9 @@ function CartScreen(props){
                     {
                         cartItems.length === 0?
                         <div className="cart-empty-message">
-                            Your cart is currently empty. 
+                            Currently Empty. 
                             <br></br>
-                            Start shopping <Link to="/"> here </Link>
+                            Start Shopping <Link to="/"> Here </Link>
                         </div>
                         :
                         cartItems.map( item =>

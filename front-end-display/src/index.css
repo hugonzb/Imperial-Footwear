@@ -388,7 +388,7 @@ body::-webkit-scrollbar-thumb {
   flex-direction: column;
   text-decoration: none;
   justify-content: space-between;
-  background-color: rgb(169, 181, 194);
+  background-color: rgb(159, 167, 175);
 }
 
 .shoe-info-detailed{
@@ -792,10 +792,23 @@ input{
 
 /* Shopping  Cart */
 
+.cart-header{
+  background-color: rgb(251, 251, 251);
+  font-size: 3rem;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  align-items: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  padding-top: 1rem;
+  width: 100%;
+  padding-bottom: 1rem;
+  border: 0.1rem solid rgb(163, 163, 163);
+}
+
 .cart{
   display: flex;
   flex-wrap: wrap;
-  margin: 1rem;
 }
 
 .cart-list{
@@ -923,6 +936,9 @@ input{
 
 .cart-empty-message{
   text-align: center;
+  padding-top: 8rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 16.5rem;
 }
 
 .checkout{
@@ -980,7 +996,7 @@ option {
   font-weight: bold;
   margin-bottom: 1rem;
   background-color: rgb(251, 251, 251);
-  border: 0.1rem solid rgb(5, 11, 94);
+  border: 0.1rem solid rgb(163, 163, 163);
   padding: 1rem;
   width: 34rem;
   text-align: center;
