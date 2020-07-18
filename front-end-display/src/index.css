@@ -388,7 +388,7 @@ body::-webkit-scrollbar-thumb {
   flex-direction: column;
   text-decoration: none;
   justify-content: space-between;
-  background-color: rgb(159, 167, 175);
+  background-color: rgb(154, 168, 182);
 }
 
 .shoe-info-detailed{
@@ -603,7 +603,7 @@ a > .rating > span:last-child {
   max-width: 62rem;
   max-height: 62rem;
   display: flex;
-  border: grey solid;
+  border: 0.2rem rgb(1, 11, 68) solid;
   border-radius: 0.5rem;
 }
 
@@ -747,7 +747,7 @@ input{
   border: 0.125rem rgb(18, 18, 54) solid;
   font-family: 'Quicksand', sans-serif;
   padding:3rem;
-  background-color: rgb(197, 200, 218);
+  background-color: rgb(214, 217, 235);
   border-radius: 25px;
   text-align: center;
 }
@@ -801,9 +801,9 @@ input{
   margin-top: 3rem;
   margin-bottom: 3rem;
   padding-top: 1rem;
-  width: 100%;
+  width: 99.6%;
   padding-bottom: 1rem;
-  border: 0.1rem solid rgb(163, 163, 163);
+  border: 0.1rem solid rgb(180, 179, 179);
 }
 
 .cart{
@@ -887,7 +887,7 @@ input{
 
 .cart-action{
   flex: 1 1 20rem;
-  background-color: #e0dddd;
+  background-color: #c1bfd6;
   border: .1rem #f0f0f0 solid;
   border-radius: 0.5rem;
   padding: 1rem;

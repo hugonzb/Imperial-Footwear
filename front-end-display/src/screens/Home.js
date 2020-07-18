@@ -3,8 +3,7 @@ import {Link} from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import { listShoes } from '../actions/shoeActions';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSearch } from "@fortawesome/free-solid-svg-icons";
-import { faFilter } from "@fortawesome/free-solid-svg-icons";
+import { faSearch, faFilter, faSpinner } from "@fortawesome/free-solid-svg-icons";
 import Rating from '../components/Rating';
 
 function Home (props) {
@@ -68,7 +67,7 @@ function Home (props) {
                 </form>
             </li>
         </ul>
-        {loading ? <div> Loading Shoes...</div>:
+        {loading ? <div><FontAwesomeIcon icon={faSpinner} spin /> Loading Footwear...</div>:
         error ? <div>{error}</div>:
     <ul className="all-footwear">
     {

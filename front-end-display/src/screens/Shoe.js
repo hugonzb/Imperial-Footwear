@@ -4,6 +4,8 @@ import { useSelector, useDispatch } from 'react-redux';
 import { detailsShoe, saveShoeReview } from '../actions/shoeActions';
 import Rating from '../components/Rating';
 import { SHOE_REVIEW_SAVE_RESET } from '../constants/shoeConstants';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSpinner } from "@fortawesome/free-solid-svg-icons";
 
 function Shoe (props) {
     const [qty, setQty] = useState(1);
@@ -54,7 +56,7 @@ function Shoe (props) {
                 <img src="../images/arrow.png" alt="arrow"></img>
             </Link>
         </div>
-        {loading? <div>Loading Chosen Shoe...</div>:
+        {loading? <div><FontAwesomeIcon icon={faSpinner} spin /> Loading Chosen Shoe...</div>:
             error ? <div>{error}</div>:
             (        
                 <>   
