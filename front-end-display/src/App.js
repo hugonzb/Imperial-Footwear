@@ -111,13 +111,6 @@ function App() {
                         </Link>
                     </li>
                     <li className= "sidebar-logo">
-                        <Link to="/brand/Puma">
-                        <button className ="sidebar-button">
-                            <img src="../images/puma.png" alt="puma"></img>
-                        </button>
-                        </Link>
-                    </li>
-                    <li className= "sidebar-logo">
                         <Link to="/brand/Vans">
                         <button className ="sidebar-button">
                             <img src="../images/vans.png" alt="vans"></img>

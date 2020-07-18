@@ -328,16 +328,17 @@ body::-webkit-scrollbar-thumb {
 }
 
 .home-brand-name{
-  background-color: rgb(165, 163, 163);
+  background-color: rgb(194, 203, 216);
   font-size: 3rem;
   font-family: 'Raleway', sans-serif;
   text-align: center;
   align-items: center;
   margin-top: 3rem;
+  min-height: 5.8rem;
   margin-bottom: 3rem;
-  padding-top: 1rem;
+  padding-top: 3rem;
   padding-bottom: 1rem;
-  border: 1px rgb(102, 101, 101) solid;
+  border: 1px rgb(211, 210, 210) solid;
 }
 
 .home-brand-name img{

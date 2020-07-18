@@ -42,8 +42,6 @@ function Home (props) {
                 <div><img src="../images/bape.png" alt="bape"></img></div>:null}
                 {brand === "Asics"?
                 <div><img src="../images/asics.png" alt="asics"></img></div>:null}
-                {brand === "Puma"?
-                <div><img src="../images/puma.png" alt="puma"></img></div>:null}
                 {brand === "Vans"?
                 <div><img src="../images/vans.png" alt="vans"></img></div>:null}
             </div>}

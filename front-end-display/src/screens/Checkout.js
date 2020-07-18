@@ -8,13 +8,17 @@ function Checkout () {
             <div>Successfully placed your order.</div>
             <div>Thank you for shopping with us!</div>
             <div className="checkout-buttons">
-                <div className ="signreg-submit-button">
-                    <Link to="/" className ="reset-text-decoration"> Order History </Link>
-                </div>
+                <Link to="/" className ="reset-text-decoration">
+                    <div className ="signreg-submit-button">
+                        Order History 
+                    </div>
+                </Link>
                 <div>&nbsp;</div>
-                <div className ="signreg-submit-button">
-                    <Link to="/" className ="reset-text-decoration"> Home </Link>
-                </div>
+                <Link to="/" className ="reset-text-decoration">
+                    <div className ="signreg-submit-button">
+                        Home 
+                    </div>
+                </Link>
             </div>
         </div>
     </div>
