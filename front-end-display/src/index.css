@@ -380,7 +380,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .shoe-info{
-  min-height: 15.rem;
+  min-height: 16rem;
   margin-bottom: 1rem;
   margin-top:1rem;
   border-top: 2px rgb(119, 143, 196) solid;
@@ -514,7 +514,7 @@ ul.review {
 /* Shoe Rating */
 
 .rating span {
-  color: rgb(175, 173, 22);
+  color: rgb(196, 193, 34);
   font-size: 2.3rem;
   margin: 0.1rem;
 }
@@ -558,6 +558,10 @@ a > .rating > span:last-child {
 }
 
 /* Styling for shoe details (when user clicks on a shoe) */
+
+.shoe-loading{
+  margin-top: 50rem;
+}
 
 .shoe-container{
   justify-content: center;

@@ -51,7 +51,7 @@ function Shoe (props) {
     };
 
     return <div>
-        {loading? <div><FontAwesomeIcon icon={faSpinner} spin /> Loading Chosen Shoe...</div>:
+        {loading? <div className="shoe-loading"><FontAwesomeIcon icon={faSpinner} spin /> Loading Chosen Shoe...</div>:
             error ? <div>{error}</div>:
             (        
                 <>
