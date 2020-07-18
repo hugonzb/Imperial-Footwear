@@ -381,14 +381,14 @@ body::-webkit-scrollbar-thumb {
   min-height: 15.4rem;
   margin-bottom: 1rem;
   margin-top:1rem;
-  border-top: rgb(201, 199, 199) solid;
+  border-top: rgb(114, 114, 167) solid;
   padding: 1rem;
   display: flex;
   color: black;
   flex-direction: column;
   text-decoration: none;
   justify-content: space-between;
-  background-color: rgb(154, 168, 182);
+  background-color: rgb(174, 185, 196);
 }
 
 .shoe-info-detailed{
@@ -603,7 +603,7 @@ a > .rating > span:last-child {
   max-width: 62rem;
   max-height: 62rem;
   display: flex;
-  border: 0.2rem rgb(1, 11, 68) solid;
+  border: 1.5px rgb(78, 83, 109) solid;
   border-radius: 0.5rem;
 }
 

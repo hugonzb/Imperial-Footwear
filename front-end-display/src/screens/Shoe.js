@@ -53,7 +53,10 @@ function Shoe (props) {
     return <div>
         <div className="shoe-detailed-back">
             <Link to="/"> 
-                <img src="../images/arrow.png" alt="arrow"></img>
+                <img src="../images/arrow.png" alt="arrow"></img> 
+            </Link>
+            <Link to="/"> 
+                <div className="continue-shopping">&nbsp; Home </div>
             </Link>
         </div>
         {loading? <div><FontAwesomeIcon icon={faSpinner} spin /> Loading Chosen Shoe...</div>:

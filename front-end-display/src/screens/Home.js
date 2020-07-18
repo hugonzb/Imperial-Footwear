@@ -73,6 +73,7 @@ function Home (props) {
     {
     shoes.map(shoe =>               
       <li key ={shoe._id}> 
+        {loading? <div><FontAwesomeIcon icon={faSpinner} spin /> Loading Chosen Shoe...</div>:
           <Link to={'/shoe/' + shoe._id}>
           <div className="footwear">
                 <Link to={'/shoe/' + shoe._id} >
@@ -97,7 +98,7 @@ function Home (props) {
                 </div>
           </div> 
           </Link>
-      </li>)
+    }</li>)
     }   
     </ul>
     }
