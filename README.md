@@ -7,22 +7,23 @@ Note: The link may take a while to load - you may have to be a little patient!
 
 ## Features
 
-**1. Search for particular Footwear.**
+**1. Search for particular footwear.**
 
-**2. Filter Footwear by a particular brand.**
+**2. Filter footwear by a particular brand.**
 
-**3. Create account and Sign in functionality (with JWT Authentication).**
+**3. Create account and sign in functionality (with JWT Authentication).**
 
-**4. Add footwear to a shopping cart with a redirect to checkout.**
+**4. Add footwear to a shopping cart and then checkout.**
 
-**5. Create a review for a specific shoe/footwear and rate it out of 5.**
+**5. Create a review for a specific shoe/footwear and rate it out of 5 with a comment.**
 
 **6. Responsive design and mobile-friendly.**
+
+**7. Clean and effective UI/UX.**
 <br>
 ## Upcoming features
-- Add to cart and checkout
-- Responsive header
-- Imperial-Footwear Logo
+- Order History
+- More data (footwear)
 
 ## Run the project in your environment
 
