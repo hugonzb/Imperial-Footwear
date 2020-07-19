@@ -879,7 +879,7 @@ input{
 
 .cart-item{
   display: flex;
-  max-width: 50rem;
+  max-width: 100rem;
 }
 
 .cart-image{
@@ -900,7 +900,7 @@ input{
 
 .cart-name{
   flex: 8 1;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   margin-top: 0.5rem;
   color: rgb(21, 27, 107);
   text-decoration: none;
@@ -910,14 +910,19 @@ input{
 
 .cart-colorway{
   flex: 1 1;
-  margin-top: 0.8rem;
+  margin-top: 0.7rem;
+}
+
+.cart-size{
+  flex: 1 1;
+  margin-top: 0.7rem;
 }
 
 .cart-price{
   flex: 1 1;
   font-size: 1.8rem;
   font-weight: bold;
-  margin-top: 0.8rem;
+  margin-top: 0.7rem;
 }
 
 .cart-action{

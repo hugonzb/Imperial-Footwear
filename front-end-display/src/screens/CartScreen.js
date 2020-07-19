@@ -11,14 +11,15 @@ function CartScreen(props){
     const {userInfo} = userSignin;
     const { cartItems } = cart;
     const shoeId = props.match.params.id;
-    const qty = props.location.search? Number(props.location.search.split("=")[1]):1;
+    const qty = props.location.search? Number((props.location.search.split("=")[1]).substring(0,1)):1;
+    const size = props.location.search? (props.location.search.split("=")[2]):"US10";
     const dispatch = useDispatch();
     const removeFromCartHandler = (shoeId) => {
         dispatch(removeFromCart(shoeId));
     }
     useEffect(() =>{
         if(shoeId){
-            dispatch(addToCart(shoeId, qty));
+            dispatch(addToCart(shoeId, qty, size));
         }
         window.scrollTo(0, 0);
     // eslint-disable-next-line
@@ -76,6 +77,9 @@ function CartScreen(props){
                                         </div>
                                         <div className="cart-colorway">
                                             {item.colorway}
+                                        </div>
+                                        <div className="cart-size">
+                                            {item.size}
                                         </div>
                                         <div className="cart-price">
                                             ${item.price}

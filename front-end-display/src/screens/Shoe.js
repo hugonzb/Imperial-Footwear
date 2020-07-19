@@ -9,6 +9,7 @@ import { faSpinner } from "@fortawesome/free-solid-svg-icons";
 
 function Shoe (props) {
     const [qty, setQty] = useState(1);
+    const [size, setSize] = useState(1);
     const [rating, setRating] = useState(1);
     const [comment, setComment] = useState('');
     const userSignin = useSelector(state => state.userSignin);
@@ -47,7 +48,11 @@ function Shoe (props) {
         }
     };
     const addToCart = () => {
-        props.history.push('/cart/' + props.match.params.id + '?qty=' + qty);
+        if (size !== 1){
+            props.history.push('/cart/' + props.match.params.id + '?qty=' + qty + '?size=' + size);
+        } else {
+            alert("Please specify your shoe size before adding to cart");
+        }
     };
 
     const reviewSignin = () => {
@@ -128,18 +133,19 @@ function Shoe (props) {
                         <li>
                             Size: 
                             <div className="select">{' '} 
-                                <select>
-                                    <option key="US7">US 7</option>
-                                    <option key="US7.5">US 7.5</option>
-                                    <option key="US8">US 8</option>
-                                    <option key="US8.5">US 8.5</option>
-                                    <option key="US9">US 9</option>
-                                    <option key="US9.5">US 9.5</option>
-                                    <option key="US10">US 10</option>
-                                    <option key="US10.5">US 10.5</option>
-                                    <option key="US11">US 11</option>
-                                    <option key="US11.5">US 11.5</option>
-                                    <option key="US12">US 12</option>
+                                <select value={size} onChange={(e) => {setSize(e.target.value)}}>
+                                    <option value="" selected data-default>Choose your size...</option>
+                                    <option value="US7">US7</option>
+                                    <option value="US7.5">US7.5</option>
+                                    <option value="US8">US8</option>
+                                    <option value="US8.5">US8.5</option>
+                                    <option value="US9">US9</option>
+                                    <option value="US9.5">US9.5</option>
+                                    <option value="US10">US10</option>
+                                    <option value="US10.5">US10.5</option>
+                                    <option value="US11">US11</option>
+                                    <option value="US11.5">US11.5</option>
+                                    <option value="US12">US12</option>
                                 </select>
                             </div>
                         </li>
@@ -193,7 +199,7 @@ function Shoe (props) {
                         </li>
                     <div>
                     <h2> Customer Reviews </h2>
-                    {!shoe.reviews.length && <div className="review-signin-message"> There are currently no reviews, be the first? </div>}
+                    {!shoe.reviews.length && <div className="review-signin-message"> There are currently no reviews. Why not be the first user to submit one? </div>}
                     <ul className="review" id="reviews">
                         {shoe.reviews.slice(0).reverse().map((review) => (
                             <li key={review._id}>
