@@ -89,7 +89,7 @@ function Shoe (props) {
                             Style: {shoe.style}
                         </li>
                         <li>
-                            Price: <b>${shoe.price}</b>
+                            Category: {shoe.type}
                         </li>
                         <li>
                             Designer: {shoe.designer}
@@ -117,13 +117,30 @@ function Shoe (props) {
                             Stock: {shoe.stock}
                         </li>
                         <li>
-                           
                             Quantity: 
                             <div className="select">{' '} <select value={qty} onChange={(e) => {setQty(e.target.value)}}>
                             {[...Array(shoe.stock).keys()].map((x) =>
                                 <option key={x+1} value={x+1}>{x+1}</option>
                                 )}
                             </select>
+                            </div>
+                        </li>
+                        <li>
+                            Size: 
+                            <div className="select">{' '} 
+                                <select>
+                                    <option key="US7">US 7</option>
+                                    <option key="US7.5">US 7.5</option>
+                                    <option key="US8">US 8</option>
+                                    <option key="US8.5">US 8.5</option>
+                                    <option key="US9">US 9</option>
+                                    <option key="US9.5">US 9.5</option>
+                                    <option key="US10">US 10</option>
+                                    <option key="US10.5">US 10.5</option>
+                                    <option key="US11">US 11</option>
+                                    <option key="US11.5">US 11.5</option>
+                                    <option key="US12">US 12</option>
+                                </select>
                             </div>
                         </li>
                         <li>
@@ -138,7 +155,7 @@ function Shoe (props) {
             <div className="content-margined">
                         <li>
                         <h2>
-                            Write a review for this shoe
+                            Write Your Review
                         </h2>
                         <div className="form-review">
                         {userInfo ? <form className="review-form" onSubmit={submitHandler}>

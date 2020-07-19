@@ -447,7 +447,7 @@ body::-webkit-scrollbar-thumb {
   min-width: 10rem;
   width: 100%;
   margin-bottom: 2rem;
-  margin-left: 1rem;
+  margin-left: 3px;
 }
 
 .content-margined {
@@ -471,6 +471,7 @@ body::-webkit-scrollbar-thumb {
   list-style-type: none;
   background-color: rgb(226, 226, 226);
   margin-bottom: 4rem;
+  font-weight: bold;
 }
 
 .form-review ul{
@@ -515,10 +516,11 @@ ul.review {
 .review-submit{
   padding: 1rem;
   border: 1px rgb(134, 134, 134) solid;
-  background-color: rgb(223, 223, 236);
+  background-color: rgb(226, 226, 226);
   border-radius: 0.5rem;
   width: 16rem;
   cursor: pointer;
+  font-weight: bold;
 }
 
 .review-submit:hover{
@@ -594,7 +596,6 @@ a > .rating > span:last-child {
   display: flex;
   width: 100%;
   align-items: center;
-  padding: 1rem;
   flex-wrap: wrap;
 }
 
@@ -605,7 +606,7 @@ a > .rating > span:last-child {
   max-height: 60rem;
   width: 100%;
   max-width: 60rem;
-  margin-top: 3%;
+  margin-top: 2.5%;
 }
 
 .shoe-detailed-image{
@@ -629,16 +630,21 @@ a > .rating > span:last-child {
   border-radius: 0.5rem;
 }
 
+.shoe-detailed-info-centered{
+  margin-right: 1rem;
+}
+
 .shoe-detailed-info{
   flex: 1 1 30rem;
   border: .1rem dimgray solid;
   border-radius: 0.5rem;
   display: flex;
-  min-height: 22rem;
-  width: 95%;
-  padding: 0.5rem;
+  min-height: 20rem;
+  width: 100%;
+  padding-bottom: 1rem;
   margin: .5rem;
-  max-height: 20rem;
+  max-height: 15rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .shoe-detailed-actions{
@@ -646,18 +652,28 @@ a > .rating > span:last-child {
   border: .1rem grey solid;
   border-radius: .5rem;
   background-color: lightgray;
-  padding: 0.5rem;
   padding-bottom: 1.5rem;
-  width: 95%;
+  width: 100%;
   display: flex;
   margin: .5rem;
-  max-height: 20rem;
+  max-height: 23rem;
+  font-family: 'Cairo', sans-serif;
 }
 
-.shoe-detailed-info li, .shoe-detailed-actions li{
+.shoe-detailed-actions button{
+  margin-top: 1rem;
+}
+
+.shoe-detailed-info li {
   list-style-type: none;
   padding: 0;
-  margin: 1rem;
+  margin: 0.5rem;
+}
+
+.shoe-detailed-actions li {
+  list-style-type: none;
+  padding: 0;
+  margin: 0rem;
 }
 
 .shoe-detailed-back{
@@ -707,7 +723,7 @@ a > .rating > span:last-child {
 .submit-button{
   padding: 1rem;
   border: 1px rgb(134, 134, 134) solid;
-  background-color: rgb(223, 223, 236);
+  background-color: rgb(226, 226, 226);
   border-radius: 0.5rem;
   width: 18rem;
   cursor: pointer;
@@ -766,7 +782,7 @@ input{
   border: 0.125rem rgb(18, 18, 54) solid;
   font-family: 'Quicksand', sans-serif;
   padding:3rem;
-  background-color: rgb(214, 217, 235);
+  background-color: rgb(193, 203, 212);
   border-radius: 25px;
   text-align: center;
 }
