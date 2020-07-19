@@ -1,10 +1,12 @@
 import React from 'react';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { fa, faStar, faSpinner, faGlobe, faGlobeAsia, faCog, faAtom, faPencilAlt, faEnvelopeSquare, faMailBulk, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 function About () {
 
     return <div className="about">
         <div className="about-text">
-            <h2>Overview</h2>
+            <h2>Overview <FontAwesomeIcon icon={faCog} spin/></h2>
             This is a personal full-stack development 
             project that aims to provide an eCommerce 
             footwear service for users to purchase and 
@@ -27,9 +29,8 @@ function About () {
         <div className="about-text">
             <h2>Developed by Hugo Baird</h2>
             <div className = "about-email-text">
-                <img className="about-email-img" src="../images/email.png" alt="email" ></img>
                 <div className ="about-email">
-                    hugonzb@gmail.com
+                    <FontAwesomeIcon icon={faEnvelope}/> hugonzb@gmail.com
                 </div>
             </div>
             <div>

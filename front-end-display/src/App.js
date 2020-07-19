@@ -9,7 +9,7 @@ import Favorites from './screens/Favorites';
 import { useSelector, useDispatch } from 'react-redux';
 import ShoeCreate from './screens/ShoeCreate';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAngleDown, faShoppingCart, faUserCircle, faInfoCircle, faShoePrints } from "@fortawesome/free-solid-svg-icons";
+import { faAngleDown, faShoppingCart, faUserCircle, faInfoCircle, faShoePrints, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faHeart } from "@fortawesome/free-solid-svg-icons";
 import { logout } from './actions/userActions';
 import About from './screens/About';
@@ -143,8 +143,11 @@ function App() {
             </div>
             <footer className="footer">
                 <div>
-                Developed and Maintained by Hugo Baird (hugonzb@gmail.com)
+                    Developed and Maintained by Hugo Baird
                 </div>
+                <div>
+                    <FontAwesomeIcon icon={faEnvelope}/> hugonzb@gmail.com
+                    </div>
                 <div>
                     <a href="https://github.com/hugonzb">
                         <img className ="github-footer" src="../images/githubwhite.png" alt="github"></img>

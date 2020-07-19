@@ -50,7 +50,7 @@ function Home (props) {
             <li>
                 <form onSubmit={submitHandler}>
                     <input className = "search" name="searchWord" placeholder="Search..." onChange={(e) => {setSearchWord(e.target.value)}} />
-                    <button className = "cursor-pointer" type = "submit"><FontAwesomeIcon icon={faSearch}/></button>
+                    <button className = "filter-button" type = "submit"><FontAwesomeIcon icon={faSearch}/></button>
                 </form>
             </li>
             <li>
@@ -61,7 +61,7 @@ function Home (props) {
                     <option value="Training"> Training </option>
                     <option value="Slides"> Slides </option>
                 </select>
-                <button className = "cursor-pointer" type = "submit"><FontAwesomeIcon icon={faFilter}/></button>
+                <button className = "filter-button" type = "submit"><FontAwesomeIcon icon={faFilter}/></button>
                 </form>
             </li>
         </ul>
