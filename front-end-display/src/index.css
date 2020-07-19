@@ -513,11 +513,10 @@ ul.review {
 
 .review-submit{
   padding: 1rem;
-  border: .1rem rgb(0, 0, 0) solid;
+  border: 1px rgb(134, 134, 134) solid;
   background-color: rgb(223, 223, 236);
   border-radius: 0.5rem;
   width: 16rem;
-  font-weight: bold;
   cursor: pointer;
 }
 
@@ -708,7 +707,7 @@ a > .rating > span:last-child {
 
 .submit-button{
   padding: 1rem;
-  border: .1rem rgb(0, 0, 0) solid;
+  border: 1px rgb(134, 134, 134) solid;
   background-color: rgb(223, 223, 236);
   border-radius: 0.5rem;
   width: 18rem;
