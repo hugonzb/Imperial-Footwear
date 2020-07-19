@@ -56,10 +56,10 @@ function Home (props) {
             <li>
                 <form onSubmit={submitHandler}>
                 <select name="sortOrder" onChange={(e) => {setSortOrder(e.target.value)}}>
-                    <option value=" ">All</option>
-                    <option value="Low">Low</option>
-                    <option value="Mid">Mid</option>
-                    <option value="High">High</option>
+                    <option value=" "> All Shoes</option>
+                    <option value="Lifestyle"> Lifestyle </option>
+                    <option value="Training"> Training </option>
+                    <option value="Slides"> Slides </option>
                 </select>
                 <button className = "cursor-pointer" type = "submit"><FontAwesomeIcon icon={faFilter}/></button>
                 </form>

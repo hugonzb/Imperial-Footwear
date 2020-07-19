@@ -20,6 +20,7 @@ const shoeSchema = new mongoose.Schema({
     stock: { type: Number, default: 0, required: true },
     reviews: [ reviewSchema ], 
     style: { type: String, required: true },
+    type: { type: String, required: true },
     favorites: { type: String, required: true },
 });
 

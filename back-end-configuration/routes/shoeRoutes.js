@@ -14,7 +14,7 @@ router.get('/', async (req, res) =>{
     },
   } : {};
   const sortOrder = req.query.sortOrder ? { 
-    name: {
+    type: {
       $regex: req.query.sortOrder,
       $options: 'i',
     },
