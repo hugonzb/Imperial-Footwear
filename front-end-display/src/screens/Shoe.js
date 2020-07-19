@@ -125,7 +125,7 @@ function Shoe (props) {
                             </div>
                         </li>
                         <li>
-                            <button onClick={addToCart} className="submit-button">Add to Cart</button>
+                            <button onClick={addToCart} className="submit-button">Add To Cart</button>
                         </li>
                     </ul>
                 </div>
@@ -162,7 +162,7 @@ function Shoe (props) {
                                     <textarea name="comment" placeholder="E.g. Why did you give it this rating?" rows="4" cols="50" value={comment} onChange={(e)=>setComment(e.target.value)}></textarea>
                                 </li>
                                 <li>
-                                    <button type="submit" className="shoe-purchase-button">Submit</button>
+                                    <button type="submit" className="review-submit">Submit Review</button>
                                 </li>
                             </ul>
                             </form>:
