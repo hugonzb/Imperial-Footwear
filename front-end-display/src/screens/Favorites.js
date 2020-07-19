@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import { favListShoes } from '../actions/shoeActions';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSearch } from "@fortawesome/free-solid-svg-icons";
+import { faSearch, faSpinner } from "@fortawesome/free-solid-svg-icons";
 import { faFilter } from "@fortawesome/free-solid-svg-icons";
 import { faHeart } from "@fortawesome/free-solid-svg-icons";
 import Rating from '../components/Rating';
@@ -51,7 +51,9 @@ function Favorites(props) {
                 </form>
             </li>
         </ul>
-        {loading ? <div> Loading Shoes...</div>:
+        {loading ?  <div> 
+                        <FontAwesomeIcon icon={faSpinner} pulse /> Loading Footwear... 
+                    </div>:
         error ? <div>{error}</div>:
     <ul className="all-footwear">
     {

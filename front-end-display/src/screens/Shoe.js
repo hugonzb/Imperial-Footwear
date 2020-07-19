@@ -82,7 +82,7 @@ function Shoe (props) {
                     <div className="shoe-detailed-info-centered">
                     <ul>
                         <li>
-                            <h3>{shoe.name}</h3>
+                            {shoe.name}
                         </li>
                         <li>
                             Colorway: {shoe.colorway}

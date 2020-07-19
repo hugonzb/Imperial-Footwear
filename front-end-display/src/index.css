@@ -624,6 +624,7 @@ a > .rating > span:last-child {
   max-height: 60rem;
   width: 100%;
   max-width: 60rem;
+  flex: 2 1 30rem;
   margin-top: 2.5%;
 }
 
@@ -659,10 +660,10 @@ a > .rating > span:last-child {
   display: flex;
   min-height: 20rem;
   width: 100%;
-  padding-bottom: 1rem;
-  margin: .5rem;
+  padding-bottom: 2rem;
+  margin-left: .5rem;
   max-height: 15rem;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Cairo', sans-serif;
 }
 
 .shoe-detailed-actions{
@@ -673,7 +674,7 @@ a > .rating > span:last-child {
   padding-bottom: 1.5rem;
   width: 100%;
   display: flex;
-  margin: .5rem;
+  margin-left: .5rem;
   max-height: 23rem;
   font-family: 'Cairo', sans-serif;
 }
@@ -685,7 +686,11 @@ a > .rating > span:last-child {
 .shoe-detailed-info li {
   list-style-type: none;
   padding: 0;
-  margin: 0.5rem;
+}
+
+.shoe-detailed-info li:first-child {
+  margin-bottom: 1px;
+  font-size: 20px;
 }
 
 .shoe-detailed-actions li {
@@ -909,7 +914,7 @@ input{
   flex: 8 1;
   margin-bottom: 1.5rem;
   margin-top: 0.25rem;
-  color: rgb(0, 0, 0);
+  color: black;
   text-decoration: none;
   font-size: 1.8rem;
   font-family: 'Montserrat', sans-serif;
@@ -1061,6 +1066,11 @@ option {
   padding: 1rem;
   width: 34rem;
   text-align: center;
+}
+
+.select-style{
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bold;
 }
 
 .montserrat-text{
