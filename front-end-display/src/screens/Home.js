@@ -68,7 +68,8 @@ function Home (props) {
         {loading ?  <div className="shoe-loading">
                         <FontAwesomeIcon icon={faSpinner} spin /> Loading Footwear...
                     </div>:
-        error ? <div>{error}</div>:
+        error ? <div>{error}</div> 
+        : shoes.length > 0 ? 
     <ul className="all-footwear">
     {
     shoes.map(shoe =>               
@@ -99,8 +100,11 @@ function Home (props) {
           </Link>
     </li>)
     }   
-    </ul>
-    }
+    </ul> : <div className="shoe-loading">
+                <div>Currently no shoes in this category are available.</div>
+                <div>This may be due to insufficient stock levels. Please check again later.</div>
+            </div> 
+    } 
     </>
     
 }

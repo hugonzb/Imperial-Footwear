@@ -580,6 +580,8 @@ a > .rating > span:last-child {
   height: 100%;
   margin-top: 10rem;
   text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
 }
 
 .shoe-container{
@@ -891,11 +893,15 @@ input{
   flex: 8 1;
   margin-bottom: 1.5rem;
   margin-top: 0.25rem;
-  color: rgb(21, 27, 107);
+  color: rgb(0, 0, 0);
   text-decoration: none;
   font-size: 1.8rem;
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
+}
+
+.continue-shopping:hover{
+  color: rgb(100, 100, 100);
 }
 
 .cart-name{

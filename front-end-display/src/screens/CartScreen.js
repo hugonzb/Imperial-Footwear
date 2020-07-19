@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { addToCart, removeFromCart, removeCart } from '../actions/cartActions';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
+import { faShoppingCart, faChevronLeft } from "@fortawesome/free-solid-svg-icons";
 
 function CartScreen(props){
     const cart = useSelector(state => state.cart);
@@ -43,10 +43,7 @@ function CartScreen(props){
             { cartItems.length !== 0?
             <div className="shoe-detailed-back">
                 <Link to="/"> 
-                    <div><img src="../images/arrow.png" alt="arrow"></img></div>
-                </Link>
-                <Link to="/"> 
-                    <div className="continue-shopping">&nbsp; Continue Shopping</div>
+                    <div className="continue-shopping"><FontAwesomeIcon icon={faChevronLeft}/>&nbsp; Continue Shopping</div>
                 </Link>
             </div> 
             :

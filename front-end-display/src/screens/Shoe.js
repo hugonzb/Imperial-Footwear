@@ -5,7 +5,7 @@ import { detailsShoe, saveShoeReview } from '../actions/shoeActions';
 import Rating from '../components/Rating';
 import { SHOE_REVIEW_SAVE_RESET } from '../constants/shoeConstants';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSpinner } from "@fortawesome/free-solid-svg-icons";
+import { faSpinner, faChevronLeft } from "@fortawesome/free-solid-svg-icons";
 
 function Shoe (props) {
     const [qty, setQty] = useState(1);
@@ -68,10 +68,7 @@ function Shoe (props) {
                 <>
                 <div className="shoe-detailed-back">
                     <Link to="/"> 
-                        <img src="../images/arrow.png" alt="arrow"></img> 
-                    </Link>
-                    <Link to="/"> 
-                        <div className="continue-shopping">&nbsp; Home </div>
+                        <div className="continue-shopping"><FontAwesomeIcon icon={faChevronLeft}/>&nbsp; Home </div>
                     </Link>
                 </div>
                 <div className="shoe-container">
