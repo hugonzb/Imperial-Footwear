@@ -1,6 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { fa, faStar, faSpinner, faGlobe, faGlobeAsia, faCog, faAtom, faPencilAlt, faEnvelopeSquare, faMailBulk, faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faCog, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 function About () {
 

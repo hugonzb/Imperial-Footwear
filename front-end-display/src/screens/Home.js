@@ -66,7 +66,7 @@ function Home (props) {
             </li>
         </ul>
         {loading ?  <div className="shoe-loading">
-                        <FontAwesomeIcon icon={faSpinner} spin /> Loading Footwear...
+                        <FontAwesomeIcon icon={faSpinner} pulse /> Loading Footwear...
                     </div>:
         error ? <div>{error}</div> 
         : shoes.length > 0 ? 
