@@ -560,7 +560,8 @@ a > .rating > span:last-child {
 /* Styling for shoe details (when user clicks on a shoe) */
 
 .shoe-loading{
-  margin-top: 10rem;
+  margin-top: 5rem;
+  font-size: 18px;
 }
 
 .shoe-container{
@@ -1100,7 +1101,12 @@ select {
   .main-logo{
     display: flex;
     align-content: center;
-    margin-top: 5.5rem;
+    margin-top: 4rem;
+    max-width: 8rem;
+  }
+
+  .sidebar-burger{
+    margin-top: 1.4rem;
   }
 
   .cart-info{
