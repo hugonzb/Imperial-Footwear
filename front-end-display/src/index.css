@@ -949,7 +949,7 @@ input{
 
 .cart-action{
   flex: 1 1 20rem;
-  background-color: #c1bfd6;
+  background-color: #aeb4cc;
   border: .1rem #f0f0f0 solid;
   border-radius: 0.5rem;
   padding: 1rem;
@@ -1019,7 +1019,7 @@ input{
 .checkout-message{
   display: flex;
   flex-direction: column;
-  background-color: rgb(168, 172, 192);
+  background-color: #aeb4cc;
   align-items: center;
   font-size: 20px;
   max-width: 40rem;
