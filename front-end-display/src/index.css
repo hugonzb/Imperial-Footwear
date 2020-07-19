@@ -445,8 +445,9 @@ body::-webkit-scrollbar-thumb {
   padding: 5rem;
   background-color: rgb(235, 233, 233);
   min-width: 10rem;
-  max-width: 100rem;
   width: 100%;
+  margin-bottom: 2rem;
+  margin-left: 1rem;
 }
 
 .content-margined {
@@ -584,7 +585,7 @@ a > .rating > span:last-child {
   flex-wrap: wrap;
   width: 86.5%;
   min-width: 0;
-  margin-left: 5%;
+  margin-left: 6%;
 }
 
 .shoe-details{
@@ -601,7 +602,7 @@ a > .rating > span:last-child {
   flex-wrap: wrap;
   max-height: 60rem;
   width: 100%;
-  max-width: 50rem;
+  max-width: 60rem;
   margin-top: 3%;
 }
 
@@ -609,17 +610,17 @@ a > .rating > span:last-child {
   justify-content: center;
   flex: 1 2 60rem;
   width: 100%;
-  min-width: 22.5rem;
-  max-width: 64rem;
+  min-width: 0rem;
+  max-width: 70rem;
   max-height: 60rem;
-  margin-left: 1%;
-  margin-top: 3rem;
+  margin: .5rem;
+  margin-top: 4rem;
 }
 
 .shoe-detailed-image img{
   width: 100%;
   min-width: 10rem;
-  max-width: 62rem;
+  max-width: 70rem;
   max-height: 62rem;
   display: flex;
   border: 1.5px rgb(78, 83, 109) solid;
@@ -631,7 +632,6 @@ a > .rating > span:last-child {
   border: .1rem dimgray solid;
   border-radius: 0.5rem;
   display: flex;
-  min-width: 10rem;
   min-height: 22rem;
   width: 95%;
   padding: 0.5rem;
@@ -646,12 +646,9 @@ a > .rating > span:last-child {
   background-color: lightgray;
   padding: 0.5rem;
   padding-bottom: 1.5rem;
-  min-width: 10rem;
   width: 95%;
   display: flex;
   margin: .5rem;
-  margin-bottom: 1rem;
-  margin-top: 1rem;
   max-height: 20rem;
 }
 
