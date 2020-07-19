@@ -131,7 +131,7 @@ function Shoe (props) {
                             Size: 
                             <div className="select">{' '} 
                                 <select value={size} onChange={(e) => {setSize(e.target.value)}}>
-                                    <option value="" selected data-default>Choose your size...</option>
+                                    <option value="1" disabled selected data-default>Choose your size...</option>
                                     <option value="US7">US7</option>
                                     <option value="US7.5">US7.5</option>
                                     <option value="US8">US8</option>
