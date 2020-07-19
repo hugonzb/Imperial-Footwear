@@ -50,6 +50,10 @@ function Shoe (props) {
         props.history.push('/cart/' + props.match.params.id + '?qty=' + qty);
     };
 
+    const reviewSignin = () => {
+        props.history.push(`/signin?redirect=shoe/`+ props.match.params.id);
+    }
+
     return <div>
         {loading? <div className="shoe-loading"><FontAwesomeIcon icon={faSpinner} spin /> Loading Chosen Shoe...</div>:
             error ? <div>{error}</div>:
@@ -136,7 +140,6 @@ function Shoe (props) {
                         </h2>
                         <div className="form-review">
                         {userInfo ? <form className="review-form" onSubmit={submitHandler}>
-                          
                             <ul> 
                                 <li>
                                     <label htmlFor="rating">
@@ -163,7 +166,10 @@ function Shoe (props) {
                                 </li>
                             </ul>
                             </form>:
-                            <div className="review-signin-message">Please <Link to="/signin">Sign In</Link> to write a review for this shoe.</div>}
+                                <button onClick={reviewSignin} className ="submit-button">
+                                    Sign In
+                                </button>
+                            }
                             </div>
                         </li>
                     <div>
