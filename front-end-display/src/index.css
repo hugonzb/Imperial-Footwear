@@ -389,10 +389,12 @@ body::-webkit-scrollbar-thumb {
   font-family: 'Cairo', sans-serif;
   border: 1px white;
   border-radius: 0.5rem;
+  box-shadow: 0 0px 1px 0 rgba(0, 0, 0, 0.2), 0 0px 10px 0 rgba(0, 0, 0, 0.19);
+
 }
 
 .footwear:hover{
-  box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.2), 0 10px 30px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2), 0 20px 30px 0 rgba(0, 0, 0, 0.19);
 }
 
 .shoe-info{
@@ -802,19 +804,20 @@ input{
 .about-text{
   max-width: 40rem;
   margin: 1.5rem;
-  border: 0.125rem rgb(18, 18, 54) solid;
   font-family: 'Quicksand', sans-serif;
   padding:3rem;
   background-color: rgb(193, 203, 212);
   border-radius: 25px;
   text-align: center;
+  box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.2), 0 10px 30px 0 rgba(0, 0, 0, 0.19);
 }
 
 .profile {
   margin-top: 1.5rem;
   border-radius: 50%;
   float: top;   
-  border: .25rem rgb(16, 2, 97) solid;
+  border: 0.5rem rgb(255, 255, 255) solid;
+  box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.2), 0 10px 30px 0 rgba(0, 0, 0, 0.19);
   max-width: 30rem;
 }
 
