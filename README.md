@@ -2,8 +2,8 @@
 [![HitCount](http://hits.dwyl.com/hugonzb/Imperial-Footwear.svg)](http://hits.dwyl.com/hugonzb/Imperial-Footwear)
 <br><br>
 ## [LIVE Demo Here!](https://imperial-footwear.herokuapp.com/)
-# Note: The LINK MAY TAKE A WHILE TO LOAD - you may have to be a little patient! 
-# This is due to Heroku servers fetching imperial-footwear which is likely due to not enough users accessing it.
+#### NOTE: The LINK MAY TAKE A WHILE TO LOAD - you may have to be a little patient, but it will get there eventually!
+#### This is due to Heroku servers fetching imperial-footwear which is likely due to not enough users accessing it.
 <br>
 
 ## Features
