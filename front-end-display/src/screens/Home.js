@@ -56,7 +56,7 @@ function Home (props) {
             <li>
                 <form onSubmit={submitHandler}>
                 <select name="sortOrder" className="select-style" onChange={(e) => {setSortOrder(e.target.value)}}>
-                    <option value=" "> All Shoes</option>
+                    <option value=" "> All Types </option>
                     <option value="Lifestyle"> Lifestyle </option>
                     <option value="Training"> Training </option>
                     <option value="Slides"> Slides </option>

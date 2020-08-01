@@ -143,7 +143,7 @@ function App() {
             </div>
             <footer className="footer">
                 <div>
-                    Developed and Maintained by Hugo Baird
+                    Developed & Maintained by Hugo Baird
                 </div>
                 <div>
                     <FontAwesomeIcon icon={faEnvelope}/> hugonzb@gmail.com
