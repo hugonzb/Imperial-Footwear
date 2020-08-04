@@ -8,7 +8,7 @@ import Rating from '../components/Rating';
 
 function Home (props) {
     const [searchWord, setSearchWord] = useState('');
-    const[sortOrder, setSortOrder] = useState('');
+    const [sortOrder, setSortOrder] = useState('');
     const brand = props.match.params.id ? props.match.params.id : '';
     const shoeList = useSelector(state => state.shoeList);
     const { shoes, loading, error } = shoeList;
@@ -101,7 +101,7 @@ function Home (props) {
     </li>)
     }   
     </ul> : <div className="shoe-loading">
-                <div>Currently no shoes in this category are available.</div>
+                <div>Currently there are no shoes available that match your request.</div>
                 <div>This may be due to insufficient stock levels. Please check again later.</div>
             </div> 
     } 

@@ -14,7 +14,7 @@ function Register (props) {
     const {loading, userInfo, error} = userRegister;
     const [message, setMessage] = useState('');
     const dispatch = useDispatch();
-
+ 
     useEffect(() => {
         window.scrollTo(0, 0);
         return () => {
