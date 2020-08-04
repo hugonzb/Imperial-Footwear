@@ -450,7 +450,7 @@ body::-webkit-scrollbar-thumb {
 .shoe-image{
   margin-left: 2rem;
   max-width: 20rem;
-  max-height: 13rem;
+  height: 13rem;
 }
 
 /* Shoe Reviews */
