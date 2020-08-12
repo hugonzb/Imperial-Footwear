@@ -51,7 +51,7 @@ function Favorites(props) {
                 </form>
             </li>
         </ul>
-        {loading ?  <div> 
+        {loading ?  <div className="shoe-loading">
                         <FontAwesomeIcon icon={faSpinner} pulse /> Loading Footwear... 
                     </div>:
         error ? <div>{error}</div>:
