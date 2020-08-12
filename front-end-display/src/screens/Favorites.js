@@ -88,6 +88,6 @@ function Favorites(props) {
     </ul>
     }
     </>
-    
 }
+
 export default Favorites;
