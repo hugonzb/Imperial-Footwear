@@ -22,9 +22,6 @@
 
 **7. Clean and effective UI/UX.**
 <br>
-## Upcoming features
-- Order History
-- More data (footwear)
 
 ## Run the project in your environment
 
